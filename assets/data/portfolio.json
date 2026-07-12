@@ -1,0 +1,335 @@
+{
+    "schemaVersion": 1,
+    "profile": {
+        "name": "Abdo Zainaldin",
+        "nickname": "Zenal",
+        "location": "Neuwied, Germany",
+        "portrait": "assets/images/profile/portrait.webp",
+        "professionalTitle": {
+            "en": "Flutter Developer",
+            "de": "Flutter-Entwickler"
+        },
+        "introduction": {
+            "en": "I build modern, responsive applications and practical digital solutions.",
+            "de": "Ich entwickle moderne, responsive Anwendungen und praktische digitale Lösungen."
+        },
+        "availability": {
+            "isAvailable": true,
+            "text": {
+                "en": "Available for opportunities",
+                "de": "Offen für neue Möglichkeiten"
+            }
+        },
+        "cv": {
+            "en": "assets/documents/cv_en.pdf",
+            "de": "assets/documents/cv_de.pdf"
+        },
+        "languages": [
+            "English",
+            "Arabic",
+            "Kurdish",
+            "Turkish",
+            "German"
+        ]
+    },
+    "about": {
+        "title": {
+            "en": "About Me",
+            "de": "Über mich"
+        },
+        "paragraphs": [
+            {
+                "en": "I am a Flutter developer based in Neuwied, Germany.",
+                "de": "Ich bin Flutter-Entwickler und lebe in Neuwied."
+            },
+            {
+                "en": "My experience also includes web development, graphic design and digital solutions.",
+                "de": "Meine Erfahrung umfasst außerdem Webentwicklung, Grafikdesign und digitale Lösungen."
+            }
+        ],
+        "highlights": [
+            {
+                "icon": "code",
+                "title": {
+                    "en": "Software Development",
+                    "de": "Softwareentwicklung"
+                },
+                "description": {
+                    "en": "Flutter applications, APIs and automation tools.",
+                    "de": "Flutter-Anwendungen, APIs und Automatisierungstools."
+                }
+            }
+        ]
+    },
+    "statistics": [
+        {
+            "id": "languages",
+            "value": "5",
+            "label": {
+                "en": "Languages",
+                "de": "Sprachen"
+            },
+            "sortOrder": 1,
+            "isVisible": true
+        }
+    ],
+    "skills": [
+        {
+            "id": "mobile-development",
+            "title": {
+                "en": "Mobile Development",
+                "de": "Mobile Entwicklung"
+            },
+            "description": {
+                "en": "Modern cross-platform application development.",
+                "de": "Moderne plattformübergreifende Anwendungsentwicklung."
+            },
+            "icon": "assets/images/icons/mobile_development.svg",
+            "items": [
+                "Flutter",
+                "Dart",
+                "BLoC",
+                "Firebase"
+            ],
+            "sortOrder": 1,
+            "isVisible": true
+        }
+    ],
+    "projects": [
+        {
+            "id": "sample-atlas-platform",
+            "slug": "sample-atlas-platform",
+            "isSample": true,
+            "category": "softwareDevelopment",
+            "status": "completed",
+            "year": 2026,
+            "featured": true,
+            "isVisible": true,
+            "sortOrder": 1,
+            "title": {
+                "en": "Atlas Productivity Platform",
+                "de": "Atlas Produktivitätsplattform"
+            },
+            "role": {
+                "en": "Lead Flutter Developer",
+                "de": "Leitender Flutter-Entwickler"
+            },
+            "client": {
+                "en": "Fictional Client",
+                "de": "Fiktiver Kunde"
+            },
+            "shortDescription": {
+                "en": "A responsive productivity platform for mobile and web.",
+                "de": "Eine responsive Produktivitätsplattform für Mobilgeräte und Web."
+            },
+            "fullDescription": {
+                "en": "Atlas is a fictional platform that demonstrates the complete project-details functionality of the portfolio.",
+                "de": "Atlas ist eine fiktive Plattform, die alle Funktionen der Projektdetailseite demonstriert."
+            },
+            "problem": {
+                "en": "Users needed one platform to manage tasks, teams and project communication.",
+                "de": "Benutzer benötigten eine zentrale Plattform für Aufgaben, Teams und Projektkommunikation."
+            },
+            "solution": {
+                "en": "A responsive Flutter application with authentication, real-time synchronization and role-based access.",
+                "de": "Eine responsive Flutter-Anwendung mit Authentifizierung, Echtzeitsynchronisierung und rollenbasiertem Zugriff."
+            },
+            "responsibilities": [
+                {
+                    "en": "Designed the application architecture.",
+                    "de": "Entwicklung der Anwendungsarchitektur."
+                },
+                {
+                    "en": "Implemented responsive mobile and web interfaces.",
+                    "de": "Implementierung responsiver Oberflächen für Mobilgeräte und Web."
+                },
+                {
+                    "en": "Managed application state using Cubit.",
+                    "de": "Verwaltung des Anwendungszustands mit Cubit."
+                }
+            ],
+            "features": [
+                {
+                    "en": "User authentication",
+                    "de": "Benutzerauthentifizierung"
+                },
+                {
+                    "en": "Real-time task synchronization",
+                    "de": "Echtzeit-Synchronisierung von Aufgaben"
+                },
+                {
+                    "en": "Responsive dashboard",
+                    "de": "Responsives Dashboard"
+                },
+                {
+                    "en": "Role-based permissions",
+                    "de": "Rollenbasierte Berechtigungen"
+                }
+            ],
+            "challenges": [
+                {
+                    "title": {
+                        "en": "Responsive architecture",
+                        "de": "Responsive Architektur"
+                    },
+                    "description": {
+                        "en": "Creating one interface that worked effectively across mobile, tablet and desktop.",
+                        "de": "Entwicklung einer Oberfläche für Mobilgeräte, Tablets und Desktop."
+                    }
+                }
+            ],
+            "results": [
+                {
+                    "value": "40%",
+                    "label": {
+                        "en": "Faster task management",
+                        "de": "Schnellere Aufgabenverwaltung"
+                    },
+                    "description": {
+                        "en": "Example result used to test project metrics.",
+                        "de": "Beispielergebnis zum Testen der Projektkennzahlen."
+                    }
+                }
+            ],
+            "lessonsLearned": [
+                {
+                    "en": "Planning responsive behavior early simplifies development.",
+                    "de": "Eine frühzeitige Planung des responsiven Verhaltens vereinfacht die Entwicklung."
+                }
+            ],
+            "technologies": [
+                "Flutter",
+                "Dart",
+                "Firebase",
+                "BLoC",
+                "go_router",
+                "REST API"
+            ],
+            "platforms": [
+                "Android",
+                "iOS",
+                "Web"
+            ],
+            "tags": [
+                "Responsive",
+                "Real-time",
+                "Authentication",
+                "Clean Architecture"
+            ],
+            "thumbnailImage": {
+                "path": "assets/images/projects/sample_atlas/thumbnail.webp",
+                "alt": {
+                    "en": "Atlas platform preview",
+                    "de": "Vorschau der Atlas-Plattform"
+                }
+            },
+            "coverImage": {
+                "path": "assets/images/projects/sample_atlas/cover.webp",
+                "alt": {
+                    "en": "Atlas productivity platform dashboard",
+                    "de": "Dashboard der Atlas Produktivitätsplattform"
+                }
+            },
+            "gallery": [
+                {
+                    "type": "image",
+                    "path": "assets/images/projects/sample_atlas/dashboard.webp",
+                    "alt": {
+                        "en": "Dashboard screen",
+                        "de": "Dashboard-Ansicht"
+                    },
+                    "caption": {
+                        "en": "Responsive project dashboard",
+                        "de": "Responsives Projekt-Dashboard"
+                    },
+                    "sortOrder": 1
+                },
+                {
+                    "type": "image",
+                    "path": "assets/images/projects/sample_atlas/mobile.webp",
+                    "alt": {
+                        "en": "Mobile application screen",
+                        "de": "Mobile Anwendungsansicht"
+                    },
+                    "caption": {
+                        "en": "Mobile task management interface",
+                        "de": "Mobile Oberfläche zur Aufgabenverwaltung"
+                    },
+                    "sortOrder": 2
+                }
+            ],
+            "links": [
+                {
+                    "type": "live",
+                    "url": "https://example.com",
+                    "isVisible": true
+                },
+                {
+                    "type": "github",
+                    "url": "https://github.com/example/sample-project",
+                    "isVisible": true
+                }
+            ]
+        }
+    ],
+    "experience": [
+        {
+            "id": "werbestudio-21",
+            "organization": "Werbestudio 21",
+            "role": {
+                "en": "Software Development and Graphic Design",
+                "de": "Softwareentwicklung und Grafikdesign"
+            },
+            "location": "Neuwied, Germany",
+            "startDate": "2025-04-01",
+            "endDate": null,
+            "isCurrent": true,
+            "description": {
+                "en": "Development of websites, applications and digital solutions alongside graphic and production work.",
+                "de": "Entwicklung von Websites, Anwendungen und digitalen Lösungen sowie Grafik- und Produktionsarbeiten."
+            },
+            "responsibilities": [
+                {
+                    "en": "Developing websites and applications.",
+                    "de": "Entwicklung von Websites und Anwendungen."
+                },
+                {
+                    "en": "Creating graphic and branding materials.",
+                    "de": "Erstellung von Grafik- und Brandingmaterialien."
+                }
+            ],
+            "technologies": [
+                "Flutter",
+                "WordPress",
+                "Graphic Design"
+            ],
+            "logo": "assets/images/experience/werbestudio_21.webp",
+            "website": null,
+            "sortOrder": 1,
+            "isVisible": true
+        }
+    ],
+    "socialLinks": [
+        {
+            "id": "github",
+            "platform": "GitHub",
+            "url": "https://github.com/your-username",
+            "icon": "assets/images/logos/github.svg",
+            "sortOrder": 1,
+            "isVisible": true
+        },
+        {
+            "id": "linkedin",
+            "platform": "LinkedIn",
+            "url": "https://linkedin.com/in/your-profile",
+            "icon": "assets/images/logos/linkedin.svg",
+            "sortOrder": 2,
+            "isVisible": true
+        }
+    ],
+    "contact": {
+        "email": null,
+        "location": "Neuwied, Germany",
+        "contactFormEnabled": false
+    }
+}
