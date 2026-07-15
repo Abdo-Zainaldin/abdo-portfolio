@@ -15,7 +15,7 @@ T _$identity<T>(T value) => value;
 /// @nodoc
 mixin _$PortfolioData {
 
- int get schemaVersion; Profile get profile; About get about; List<PortfolioStatistic> get statistics; List<Skill> get skills; List<Project> get projects; List<Experience> get experience; List<SocialLink> get socialLinks; Contact get contact;
+ int get schemaVersion; Profile get profile; About get about; List<PortfolioStatistic> get statistics; List<Skill> get skills; List<PortfolioTool> get tools; List<Project> get projects; List<Experience> get experience; List<SocialLink> get socialLinks; Contact get contact;
 /// Create a copy of PortfolioData
 /// with the given fields replaced by the non-null parameter values.
 @JsonKey(includeFromJson: false, includeToJson: false)
@@ -28,16 +28,16 @@ $PortfolioDataCopyWith<PortfolioData> get copyWith => _$PortfolioDataCopyWithImp
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is PortfolioData&&(identical(other.schemaVersion, schemaVersion) || other.schemaVersion == schemaVersion)&&(identical(other.profile, profile) || other.profile == profile)&&(identical(other.about, about) || other.about == about)&&const DeepCollectionEquality().equals(other.statistics, statistics)&&const DeepCollectionEquality().equals(other.skills, skills)&&const DeepCollectionEquality().equals(other.projects, projects)&&const DeepCollectionEquality().equals(other.experience, experience)&&const DeepCollectionEquality().equals(other.socialLinks, socialLinks)&&(identical(other.contact, contact) || other.contact == contact));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is PortfolioData&&(identical(other.schemaVersion, schemaVersion) || other.schemaVersion == schemaVersion)&&(identical(other.profile, profile) || other.profile == profile)&&(identical(other.about, about) || other.about == about)&&const DeepCollectionEquality().equals(other.statistics, statistics)&&const DeepCollectionEquality().equals(other.skills, skills)&&const DeepCollectionEquality().equals(other.tools, tools)&&const DeepCollectionEquality().equals(other.projects, projects)&&const DeepCollectionEquality().equals(other.experience, experience)&&const DeepCollectionEquality().equals(other.socialLinks, socialLinks)&&(identical(other.contact, contact) || other.contact == contact));
 }
 
 @JsonKey(includeFromJson: false, includeToJson: false)
 @override
-int get hashCode => Object.hash(runtimeType,schemaVersion,profile,about,const DeepCollectionEquality().hash(statistics),const DeepCollectionEquality().hash(skills),const DeepCollectionEquality().hash(projects),const DeepCollectionEquality().hash(experience),const DeepCollectionEquality().hash(socialLinks),contact);
+int get hashCode => Object.hash(runtimeType,schemaVersion,profile,about,const DeepCollectionEquality().hash(statistics),const DeepCollectionEquality().hash(skills),const DeepCollectionEquality().hash(tools),const DeepCollectionEquality().hash(projects),const DeepCollectionEquality().hash(experience),const DeepCollectionEquality().hash(socialLinks),contact);
 
 @override
 String toString() {
-  return 'PortfolioData(schemaVersion: $schemaVersion, profile: $profile, about: $about, statistics: $statistics, skills: $skills, projects: $projects, experience: $experience, socialLinks: $socialLinks, contact: $contact)';
+  return 'PortfolioData(schemaVersion: $schemaVersion, profile: $profile, about: $about, statistics: $statistics, skills: $skills, tools: $tools, projects: $projects, experience: $experience, socialLinks: $socialLinks, contact: $contact)';
 }
 
 
@@ -48,7 +48,7 @@ abstract mixin class $PortfolioDataCopyWith<$Res>  {
   factory $PortfolioDataCopyWith(PortfolioData value, $Res Function(PortfolioData) _then) = _$PortfolioDataCopyWithImpl;
 @useResult
 $Res call({
- int schemaVersion, Profile profile, About about, List<PortfolioStatistic> statistics, List<Skill> skills, List<Project> projects, List<Experience> experience, List<SocialLink> socialLinks, Contact contact
+ int schemaVersion, Profile profile, About about, List<PortfolioStatistic> statistics, List<Skill> skills, List<PortfolioTool> tools, List<Project> projects, List<Experience> experience, List<SocialLink> socialLinks, Contact contact
 });
 
 
@@ -65,14 +65,15 @@ class _$PortfolioDataCopyWithImpl<$Res>
 
 /// Create a copy of PortfolioData
 /// with the given fields replaced by the non-null parameter values.
-@pragma('vm:prefer-inline') @override $Res call({Object? schemaVersion = null,Object? profile = null,Object? about = null,Object? statistics = null,Object? skills = null,Object? projects = null,Object? experience = null,Object? socialLinks = null,Object? contact = null,}) {
+@pragma('vm:prefer-inline') @override $Res call({Object? schemaVersion = null,Object? profile = null,Object? about = null,Object? statistics = null,Object? skills = null,Object? tools = null,Object? projects = null,Object? experience = null,Object? socialLinks = null,Object? contact = null,}) {
   return _then(_self.copyWith(
 schemaVersion: null == schemaVersion ? _self.schemaVersion : schemaVersion // ignore: cast_nullable_to_non_nullable
 as int,profile: null == profile ? _self.profile : profile // ignore: cast_nullable_to_non_nullable
 as Profile,about: null == about ? _self.about : about // ignore: cast_nullable_to_non_nullable
 as About,statistics: null == statistics ? _self.statistics : statistics // ignore: cast_nullable_to_non_nullable
 as List<PortfolioStatistic>,skills: null == skills ? _self.skills : skills // ignore: cast_nullable_to_non_nullable
-as List<Skill>,projects: null == projects ? _self.projects : projects // ignore: cast_nullable_to_non_nullable
+as List<Skill>,tools: null == tools ? _self.tools : tools // ignore: cast_nullable_to_non_nullable
+as List<PortfolioTool>,projects: null == projects ? _self.projects : projects // ignore: cast_nullable_to_non_nullable
 as List<Project>,experience: null == experience ? _self.experience : experience // ignore: cast_nullable_to_non_nullable
 as List<Experience>,socialLinks: null == socialLinks ? _self.socialLinks : socialLinks // ignore: cast_nullable_to_non_nullable
 as List<SocialLink>,contact: null == contact ? _self.contact : contact // ignore: cast_nullable_to_non_nullable
@@ -188,10 +189,10 @@ return $default(_that);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( int schemaVersion,  Profile profile,  About about,  List<PortfolioStatistic> statistics,  List<Skill> skills,  List<Project> projects,  List<Experience> experience,  List<SocialLink> socialLinks,  Contact contact)?  $default,{required TResult orElse(),}) {final _that = this;
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( int schemaVersion,  Profile profile,  About about,  List<PortfolioStatistic> statistics,  List<Skill> skills,  List<PortfolioTool> tools,  List<Project> projects,  List<Experience> experience,  List<SocialLink> socialLinks,  Contact contact)?  $default,{required TResult orElse(),}) {final _that = this;
 switch (_that) {
 case _PortfolioData() when $default != null:
-return $default(_that.schemaVersion,_that.profile,_that.about,_that.statistics,_that.skills,_that.projects,_that.experience,_that.socialLinks,_that.contact);case _:
+return $default(_that.schemaVersion,_that.profile,_that.about,_that.statistics,_that.skills,_that.tools,_that.projects,_that.experience,_that.socialLinks,_that.contact);case _:
   return orElse();
 
 }
@@ -209,10 +210,10 @@ return $default(_that.schemaVersion,_that.profile,_that.about,_that.statistics,_
 /// }
 /// ```
 
-@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( int schemaVersion,  Profile profile,  About about,  List<PortfolioStatistic> statistics,  List<Skill> skills,  List<Project> projects,  List<Experience> experience,  List<SocialLink> socialLinks,  Contact contact)  $default,) {final _that = this;
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( int schemaVersion,  Profile profile,  About about,  List<PortfolioStatistic> statistics,  List<Skill> skills,  List<PortfolioTool> tools,  List<Project> projects,  List<Experience> experience,  List<SocialLink> socialLinks,  Contact contact)  $default,) {final _that = this;
 switch (_that) {
 case _PortfolioData():
-return $default(_that.schemaVersion,_that.profile,_that.about,_that.statistics,_that.skills,_that.projects,_that.experience,_that.socialLinks,_that.contact);case _:
+return $default(_that.schemaVersion,_that.profile,_that.about,_that.statistics,_that.skills,_that.tools,_that.projects,_that.experience,_that.socialLinks,_that.contact);case _:
   throw StateError('Unexpected subclass');
 
 }
@@ -229,10 +230,10 @@ return $default(_that.schemaVersion,_that.profile,_that.about,_that.statistics,_
 /// }
 /// ```
 
-@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( int schemaVersion,  Profile profile,  About about,  List<PortfolioStatistic> statistics,  List<Skill> skills,  List<Project> projects,  List<Experience> experience,  List<SocialLink> socialLinks,  Contact contact)?  $default,) {final _that = this;
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( int schemaVersion,  Profile profile,  About about,  List<PortfolioStatistic> statistics,  List<Skill> skills,  List<PortfolioTool> tools,  List<Project> projects,  List<Experience> experience,  List<SocialLink> socialLinks,  Contact contact)?  $default,) {final _that = this;
 switch (_that) {
 case _PortfolioData() when $default != null:
-return $default(_that.schemaVersion,_that.profile,_that.about,_that.statistics,_that.skills,_that.projects,_that.experience,_that.socialLinks,_that.contact);case _:
+return $default(_that.schemaVersion,_that.profile,_that.about,_that.statistics,_that.skills,_that.tools,_that.projects,_that.experience,_that.socialLinks,_that.contact);case _:
   return null;
 
 }
@@ -244,7 +245,7 @@ return $default(_that.schemaVersion,_that.profile,_that.about,_that.statistics,_
 @JsonSerializable()
 
 class _PortfolioData implements PortfolioData {
-  const _PortfolioData({required this.schemaVersion, required this.profile, required this.about, final  List<PortfolioStatistic> statistics = const <PortfolioStatistic>[], final  List<Skill> skills = const <Skill>[], final  List<Project> projects = const <Project>[], final  List<Experience> experience = const <Experience>[], final  List<SocialLink> socialLinks = const <SocialLink>[], required this.contact}): _statistics = statistics,_skills = skills,_projects = projects,_experience = experience,_socialLinks = socialLinks;
+  const _PortfolioData({required this.schemaVersion, required this.profile, required this.about, final  List<PortfolioStatistic> statistics = const <PortfolioStatistic>[], final  List<Skill> skills = const <Skill>[], required final  List<PortfolioTool> tools, final  List<Project> projects = const <Project>[], final  List<Experience> experience = const <Experience>[], final  List<SocialLink> socialLinks = const <SocialLink>[], required this.contact}): _statistics = statistics,_skills = skills,_tools = tools,_projects = projects,_experience = experience,_socialLinks = socialLinks;
   factory _PortfolioData.fromJson(Map<String, dynamic> json) => _$PortfolioDataFromJson(json);
 
 @override final  int schemaVersion;
@@ -262,6 +263,13 @@ class _PortfolioData implements PortfolioData {
   if (_skills is EqualUnmodifiableListView) return _skills;
   // ignore: implicit_dynamic_type
   return EqualUnmodifiableListView(_skills);
+}
+
+ final  List<PortfolioTool> _tools;
+@override List<PortfolioTool> get tools {
+  if (_tools is EqualUnmodifiableListView) return _tools;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableListView(_tools);
 }
 
  final  List<Project> _projects;
@@ -300,16 +308,16 @@ Map<String, dynamic> toJson() {
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is _PortfolioData&&(identical(other.schemaVersion, schemaVersion) || other.schemaVersion == schemaVersion)&&(identical(other.profile, profile) || other.profile == profile)&&(identical(other.about, about) || other.about == about)&&const DeepCollectionEquality().equals(other._statistics, _statistics)&&const DeepCollectionEquality().equals(other._skills, _skills)&&const DeepCollectionEquality().equals(other._projects, _projects)&&const DeepCollectionEquality().equals(other._experience, _experience)&&const DeepCollectionEquality().equals(other._socialLinks, _socialLinks)&&(identical(other.contact, contact) || other.contact == contact));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _PortfolioData&&(identical(other.schemaVersion, schemaVersion) || other.schemaVersion == schemaVersion)&&(identical(other.profile, profile) || other.profile == profile)&&(identical(other.about, about) || other.about == about)&&const DeepCollectionEquality().equals(other._statistics, _statistics)&&const DeepCollectionEquality().equals(other._skills, _skills)&&const DeepCollectionEquality().equals(other._tools, _tools)&&const DeepCollectionEquality().equals(other._projects, _projects)&&const DeepCollectionEquality().equals(other._experience, _experience)&&const DeepCollectionEquality().equals(other._socialLinks, _socialLinks)&&(identical(other.contact, contact) || other.contact == contact));
 }
 
 @JsonKey(includeFromJson: false, includeToJson: false)
 @override
-int get hashCode => Object.hash(runtimeType,schemaVersion,profile,about,const DeepCollectionEquality().hash(_statistics),const DeepCollectionEquality().hash(_skills),const DeepCollectionEquality().hash(_projects),const DeepCollectionEquality().hash(_experience),const DeepCollectionEquality().hash(_socialLinks),contact);
+int get hashCode => Object.hash(runtimeType,schemaVersion,profile,about,const DeepCollectionEquality().hash(_statistics),const DeepCollectionEquality().hash(_skills),const DeepCollectionEquality().hash(_tools),const DeepCollectionEquality().hash(_projects),const DeepCollectionEquality().hash(_experience),const DeepCollectionEquality().hash(_socialLinks),contact);
 
 @override
 String toString() {
-  return 'PortfolioData(schemaVersion: $schemaVersion, profile: $profile, about: $about, statistics: $statistics, skills: $skills, projects: $projects, experience: $experience, socialLinks: $socialLinks, contact: $contact)';
+  return 'PortfolioData(schemaVersion: $schemaVersion, profile: $profile, about: $about, statistics: $statistics, skills: $skills, tools: $tools, projects: $projects, experience: $experience, socialLinks: $socialLinks, contact: $contact)';
 }
 
 
@@ -320,7 +328,7 @@ abstract mixin class _$PortfolioDataCopyWith<$Res> implements $PortfolioDataCopy
   factory _$PortfolioDataCopyWith(_PortfolioData value, $Res Function(_PortfolioData) _then) = __$PortfolioDataCopyWithImpl;
 @override @useResult
 $Res call({
- int schemaVersion, Profile profile, About about, List<PortfolioStatistic> statistics, List<Skill> skills, List<Project> projects, List<Experience> experience, List<SocialLink> socialLinks, Contact contact
+ int schemaVersion, Profile profile, About about, List<PortfolioStatistic> statistics, List<Skill> skills, List<PortfolioTool> tools, List<Project> projects, List<Experience> experience, List<SocialLink> socialLinks, Contact contact
 });
 
 
@@ -337,14 +345,15 @@ class __$PortfolioDataCopyWithImpl<$Res>
 
 /// Create a copy of PortfolioData
 /// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? schemaVersion = null,Object? profile = null,Object? about = null,Object? statistics = null,Object? skills = null,Object? projects = null,Object? experience = null,Object? socialLinks = null,Object? contact = null,}) {
+@override @pragma('vm:prefer-inline') $Res call({Object? schemaVersion = null,Object? profile = null,Object? about = null,Object? statistics = null,Object? skills = null,Object? tools = null,Object? projects = null,Object? experience = null,Object? socialLinks = null,Object? contact = null,}) {
   return _then(_PortfolioData(
 schemaVersion: null == schemaVersion ? _self.schemaVersion : schemaVersion // ignore: cast_nullable_to_non_nullable
 as int,profile: null == profile ? _self.profile : profile // ignore: cast_nullable_to_non_nullable
 as Profile,about: null == about ? _self.about : about // ignore: cast_nullable_to_non_nullable
 as About,statistics: null == statistics ? _self._statistics : statistics // ignore: cast_nullable_to_non_nullable
 as List<PortfolioStatistic>,skills: null == skills ? _self._skills : skills // ignore: cast_nullable_to_non_nullable
-as List<Skill>,projects: null == projects ? _self._projects : projects // ignore: cast_nullable_to_non_nullable
+as List<Skill>,tools: null == tools ? _self._tools : tools // ignore: cast_nullable_to_non_nullable
+as List<PortfolioTool>,projects: null == projects ? _self._projects : projects // ignore: cast_nullable_to_non_nullable
 as List<Project>,experience: null == experience ? _self._experience : experience // ignore: cast_nullable_to_non_nullable
 as List<Experience>,socialLinks: null == socialLinks ? _self._socialLinks : socialLinks // ignore: cast_nullable_to_non_nullable
 as List<SocialLink>,contact: null == contact ? _self.contact : contact // ignore: cast_nullable_to_non_nullable
@@ -1301,7 +1310,7 @@ $LocalizedStringCopyWith<$Res> get text {
 /// @nodoc
 mixin _$About {
 
- LocalizedString get title; List<LocalizedString> get paragraphs; List<AboutHighlight> get highlights;
+ LocalizedString get title; LocalizedString get headline; List<LocalizedString> get paragraphs; List<AboutHighlight> get highlights;
 /// Create a copy of About
 /// with the given fields replaced by the non-null parameter values.
 @JsonKey(includeFromJson: false, includeToJson: false)
@@ -1314,16 +1323,16 @@ $AboutCopyWith<About> get copyWith => _$AboutCopyWithImpl<About>(this as About, 
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is About&&(identical(other.title, title) || other.title == title)&&const DeepCollectionEquality().equals(other.paragraphs, paragraphs)&&const DeepCollectionEquality().equals(other.highlights, highlights));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is About&&(identical(other.title, title) || other.title == title)&&(identical(other.headline, headline) || other.headline == headline)&&const DeepCollectionEquality().equals(other.paragraphs, paragraphs)&&const DeepCollectionEquality().equals(other.highlights, highlights));
 }
 
 @JsonKey(includeFromJson: false, includeToJson: false)
 @override
-int get hashCode => Object.hash(runtimeType,title,const DeepCollectionEquality().hash(paragraphs),const DeepCollectionEquality().hash(highlights));
+int get hashCode => Object.hash(runtimeType,title,headline,const DeepCollectionEquality().hash(paragraphs),const DeepCollectionEquality().hash(highlights));
 
 @override
 String toString() {
-  return 'About(title: $title, paragraphs: $paragraphs, highlights: $highlights)';
+  return 'About(title: $title, headline: $headline, paragraphs: $paragraphs, highlights: $highlights)';
 }
 
 
@@ -1334,11 +1343,11 @@ abstract mixin class $AboutCopyWith<$Res>  {
   factory $AboutCopyWith(About value, $Res Function(About) _then) = _$AboutCopyWithImpl;
 @useResult
 $Res call({
- LocalizedString title, List<LocalizedString> paragraphs, List<AboutHighlight> highlights
+ LocalizedString title, LocalizedString headline, List<LocalizedString> paragraphs, List<AboutHighlight> highlights
 });
 
 
-$LocalizedStringCopyWith<$Res> get title;
+$LocalizedStringCopyWith<$Res> get title;$LocalizedStringCopyWith<$Res> get headline;
 
 }
 /// @nodoc
@@ -1351,9 +1360,10 @@ class _$AboutCopyWithImpl<$Res>
 
 /// Create a copy of About
 /// with the given fields replaced by the non-null parameter values.
-@pragma('vm:prefer-inline') @override $Res call({Object? title = null,Object? paragraphs = null,Object? highlights = null,}) {
+@pragma('vm:prefer-inline') @override $Res call({Object? title = null,Object? headline = null,Object? paragraphs = null,Object? highlights = null,}) {
   return _then(_self.copyWith(
 title: null == title ? _self.title : title // ignore: cast_nullable_to_non_nullable
+as LocalizedString,headline: null == headline ? _self.headline : headline // ignore: cast_nullable_to_non_nullable
 as LocalizedString,paragraphs: null == paragraphs ? _self.paragraphs : paragraphs // ignore: cast_nullable_to_non_nullable
 as List<LocalizedString>,highlights: null == highlights ? _self.highlights : highlights // ignore: cast_nullable_to_non_nullable
 as List<AboutHighlight>,
@@ -1367,6 +1377,15 @@ $LocalizedStringCopyWith<$Res> get title {
   
   return $LocalizedStringCopyWith<$Res>(_self.title, (value) {
     return _then(_self.copyWith(title: value));
+  });
+}/// Create a copy of About
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$LocalizedStringCopyWith<$Res> get headline {
+  
+  return $LocalizedStringCopyWith<$Res>(_self.headline, (value) {
+    return _then(_self.copyWith(headline: value));
   });
 }
 }
@@ -1450,10 +1469,10 @@ return $default(_that);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( LocalizedString title,  List<LocalizedString> paragraphs,  List<AboutHighlight> highlights)?  $default,{required TResult orElse(),}) {final _that = this;
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( LocalizedString title,  LocalizedString headline,  List<LocalizedString> paragraphs,  List<AboutHighlight> highlights)?  $default,{required TResult orElse(),}) {final _that = this;
 switch (_that) {
 case _About() when $default != null:
-return $default(_that.title,_that.paragraphs,_that.highlights);case _:
+return $default(_that.title,_that.headline,_that.paragraphs,_that.highlights);case _:
   return orElse();
 
 }
@@ -1471,10 +1490,10 @@ return $default(_that.title,_that.paragraphs,_that.highlights);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( LocalizedString title,  List<LocalizedString> paragraphs,  List<AboutHighlight> highlights)  $default,) {final _that = this;
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( LocalizedString title,  LocalizedString headline,  List<LocalizedString> paragraphs,  List<AboutHighlight> highlights)  $default,) {final _that = this;
 switch (_that) {
 case _About():
-return $default(_that.title,_that.paragraphs,_that.highlights);case _:
+return $default(_that.title,_that.headline,_that.paragraphs,_that.highlights);case _:
   throw StateError('Unexpected subclass');
 
 }
@@ -1491,10 +1510,10 @@ return $default(_that.title,_that.paragraphs,_that.highlights);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( LocalizedString title,  List<LocalizedString> paragraphs,  List<AboutHighlight> highlights)?  $default,) {final _that = this;
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( LocalizedString title,  LocalizedString headline,  List<LocalizedString> paragraphs,  List<AboutHighlight> highlights)?  $default,) {final _that = this;
 switch (_that) {
 case _About() when $default != null:
-return $default(_that.title,_that.paragraphs,_that.highlights);case _:
+return $default(_that.title,_that.headline,_that.paragraphs,_that.highlights);case _:
   return null;
 
 }
@@ -1506,19 +1525,20 @@ return $default(_that.title,_that.paragraphs,_that.highlights);case _:
 @JsonSerializable()
 
 class _About implements About {
-  const _About({required this.title, final  List<LocalizedString> paragraphs = const <LocalizedString>[], final  List<AboutHighlight> highlights = const <AboutHighlight>[]}): _paragraphs = paragraphs,_highlights = highlights;
+  const _About({required this.title, required this.headline, required final  List<LocalizedString> paragraphs, required final  List<AboutHighlight> highlights}): _paragraphs = paragraphs,_highlights = highlights;
   factory _About.fromJson(Map<String, dynamic> json) => _$AboutFromJson(json);
 
 @override final  LocalizedString title;
+@override final  LocalizedString headline;
  final  List<LocalizedString> _paragraphs;
-@override@JsonKey() List<LocalizedString> get paragraphs {
+@override List<LocalizedString> get paragraphs {
   if (_paragraphs is EqualUnmodifiableListView) return _paragraphs;
   // ignore: implicit_dynamic_type
   return EqualUnmodifiableListView(_paragraphs);
 }
 
  final  List<AboutHighlight> _highlights;
-@override@JsonKey() List<AboutHighlight> get highlights {
+@override List<AboutHighlight> get highlights {
   if (_highlights is EqualUnmodifiableListView) return _highlights;
   // ignore: implicit_dynamic_type
   return EqualUnmodifiableListView(_highlights);
@@ -1538,16 +1558,16 @@ Map<String, dynamic> toJson() {
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is _About&&(identical(other.title, title) || other.title == title)&&const DeepCollectionEquality().equals(other._paragraphs, _paragraphs)&&const DeepCollectionEquality().equals(other._highlights, _highlights));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _About&&(identical(other.title, title) || other.title == title)&&(identical(other.headline, headline) || other.headline == headline)&&const DeepCollectionEquality().equals(other._paragraphs, _paragraphs)&&const DeepCollectionEquality().equals(other._highlights, _highlights));
 }
 
 @JsonKey(includeFromJson: false, includeToJson: false)
 @override
-int get hashCode => Object.hash(runtimeType,title,const DeepCollectionEquality().hash(_paragraphs),const DeepCollectionEquality().hash(_highlights));
+int get hashCode => Object.hash(runtimeType,title,headline,const DeepCollectionEquality().hash(_paragraphs),const DeepCollectionEquality().hash(_highlights));
 
 @override
 String toString() {
-  return 'About(title: $title, paragraphs: $paragraphs, highlights: $highlights)';
+  return 'About(title: $title, headline: $headline, paragraphs: $paragraphs, highlights: $highlights)';
 }
 
 
@@ -1558,11 +1578,11 @@ abstract mixin class _$AboutCopyWith<$Res> implements $AboutCopyWith<$Res> {
   factory _$AboutCopyWith(_About value, $Res Function(_About) _then) = __$AboutCopyWithImpl;
 @override @useResult
 $Res call({
- LocalizedString title, List<LocalizedString> paragraphs, List<AboutHighlight> highlights
+ LocalizedString title, LocalizedString headline, List<LocalizedString> paragraphs, List<AboutHighlight> highlights
 });
 
 
-@override $LocalizedStringCopyWith<$Res> get title;
+@override $LocalizedStringCopyWith<$Res> get title;@override $LocalizedStringCopyWith<$Res> get headline;
 
 }
 /// @nodoc
@@ -1575,9 +1595,10 @@ class __$AboutCopyWithImpl<$Res>
 
 /// Create a copy of About
 /// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? title = null,Object? paragraphs = null,Object? highlights = null,}) {
+@override @pragma('vm:prefer-inline') $Res call({Object? title = null,Object? headline = null,Object? paragraphs = null,Object? highlights = null,}) {
   return _then(_About(
 title: null == title ? _self.title : title // ignore: cast_nullable_to_non_nullable
+as LocalizedString,headline: null == headline ? _self.headline : headline // ignore: cast_nullable_to_non_nullable
 as LocalizedString,paragraphs: null == paragraphs ? _self._paragraphs : paragraphs // ignore: cast_nullable_to_non_nullable
 as List<LocalizedString>,highlights: null == highlights ? _self._highlights : highlights // ignore: cast_nullable_to_non_nullable
 as List<AboutHighlight>,
@@ -1592,6 +1613,15 @@ $LocalizedStringCopyWith<$Res> get title {
   
   return $LocalizedStringCopyWith<$Res>(_self.title, (value) {
     return _then(_self.copyWith(title: value));
+  });
+}/// Create a copy of About
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$LocalizedStringCopyWith<$Res> get headline {
+  
+  return $LocalizedStringCopyWith<$Res>(_self.headline, (value) {
+    return _then(_self.copyWith(headline: value));
   });
 }
 }
@@ -2515,6 +2545,281 @@ $LocalizedStringCopyWith<$Res> get description {
     return _then(_self.copyWith(description: value));
   });
 }
+}
+
+
+/// @nodoc
+mixin _$PortfolioTool {
+
+ String get id; String get name; String get logo; int get sortOrder; bool get isVisible;
+/// Create a copy of PortfolioTool
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$PortfolioToolCopyWith<PortfolioTool> get copyWith => _$PortfolioToolCopyWithImpl<PortfolioTool>(this as PortfolioTool, _$identity);
+
+  /// Serializes this PortfolioTool to a JSON map.
+  Map<String, dynamic> toJson();
+
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is PortfolioTool&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name)&&(identical(other.logo, logo) || other.logo == logo)&&(identical(other.sortOrder, sortOrder) || other.sortOrder == sortOrder)&&(identical(other.isVisible, isVisible) || other.isVisible == isVisible));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,name,logo,sortOrder,isVisible);
+
+@override
+String toString() {
+  return 'PortfolioTool(id: $id, name: $name, logo: $logo, sortOrder: $sortOrder, isVisible: $isVisible)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class $PortfolioToolCopyWith<$Res>  {
+  factory $PortfolioToolCopyWith(PortfolioTool value, $Res Function(PortfolioTool) _then) = _$PortfolioToolCopyWithImpl;
+@useResult
+$Res call({
+ String id, String name, String logo, int sortOrder, bool isVisible
+});
+
+
+
+
+}
+/// @nodoc
+class _$PortfolioToolCopyWithImpl<$Res>
+    implements $PortfolioToolCopyWith<$Res> {
+  _$PortfolioToolCopyWithImpl(this._self, this._then);
+
+  final PortfolioTool _self;
+  final $Res Function(PortfolioTool) _then;
+
+/// Create a copy of PortfolioTool
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? id = null,Object? name = null,Object? logo = null,Object? sortOrder = null,Object? isVisible = null,}) {
+  return _then(_self.copyWith(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String,name: null == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String,logo: null == logo ? _self.logo : logo // ignore: cast_nullable_to_non_nullable
+as String,sortOrder: null == sortOrder ? _self.sortOrder : sortOrder // ignore: cast_nullable_to_non_nullable
+as int,isVisible: null == isVisible ? _self.isVisible : isVisible // ignore: cast_nullable_to_non_nullable
+as bool,
+  ));
+}
+
+}
+
+
+/// Adds pattern-matching-related methods to [PortfolioTool].
+extension PortfolioToolPatterns on PortfolioTool {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _PortfolioTool value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _PortfolioTool() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _PortfolioTool value)  $default,){
+final _that = this;
+switch (_that) {
+case _PortfolioTool():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _PortfolioTool value)?  $default,){
+final _that = this;
+switch (_that) {
+case _PortfolioTool() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String id,  String name,  String logo,  int sortOrder,  bool isVisible)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _PortfolioTool() when $default != null:
+return $default(_that.id,_that.name,_that.logo,_that.sortOrder,_that.isVisible);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String id,  String name,  String logo,  int sortOrder,  bool isVisible)  $default,) {final _that = this;
+switch (_that) {
+case _PortfolioTool():
+return $default(_that.id,_that.name,_that.logo,_that.sortOrder,_that.isVisible);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String id,  String name,  String logo,  int sortOrder,  bool isVisible)?  $default,) {final _that = this;
+switch (_that) {
+case _PortfolioTool() when $default != null:
+return $default(_that.id,_that.name,_that.logo,_that.sortOrder,_that.isVisible);case _:
+  return null;
+
+}
+}
+
+}
+
+/// @nodoc
+@JsonSerializable()
+
+class _PortfolioTool implements PortfolioTool {
+  const _PortfolioTool({required this.id, required this.name, required this.logo, required this.sortOrder, required this.isVisible});
+  factory _PortfolioTool.fromJson(Map<String, dynamic> json) => _$PortfolioToolFromJson(json);
+
+@override final  String id;
+@override final  String name;
+@override final  String logo;
+@override final  int sortOrder;
+@override final  bool isVisible;
+
+/// Create a copy of PortfolioTool
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$PortfolioToolCopyWith<_PortfolioTool> get copyWith => __$PortfolioToolCopyWithImpl<_PortfolioTool>(this, _$identity);
+
+@override
+Map<String, dynamic> toJson() {
+  return _$PortfolioToolToJson(this, );
+}
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _PortfolioTool&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name)&&(identical(other.logo, logo) || other.logo == logo)&&(identical(other.sortOrder, sortOrder) || other.sortOrder == sortOrder)&&(identical(other.isVisible, isVisible) || other.isVisible == isVisible));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,name,logo,sortOrder,isVisible);
+
+@override
+String toString() {
+  return 'PortfolioTool(id: $id, name: $name, logo: $logo, sortOrder: $sortOrder, isVisible: $isVisible)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$PortfolioToolCopyWith<$Res> implements $PortfolioToolCopyWith<$Res> {
+  factory _$PortfolioToolCopyWith(_PortfolioTool value, $Res Function(_PortfolioTool) _then) = __$PortfolioToolCopyWithImpl;
+@override @useResult
+$Res call({
+ String id, String name, String logo, int sortOrder, bool isVisible
+});
+
+
+
+
+}
+/// @nodoc
+class __$PortfolioToolCopyWithImpl<$Res>
+    implements _$PortfolioToolCopyWith<$Res> {
+  __$PortfolioToolCopyWithImpl(this._self, this._then);
+
+  final _PortfolioTool _self;
+  final $Res Function(_PortfolioTool) _then;
+
+/// Create a copy of PortfolioTool
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = null,Object? name = null,Object? logo = null,Object? sortOrder = null,Object? isVisible = null,}) {
+  return _then(_PortfolioTool(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String,name: null == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String,logo: null == logo ? _self.logo : logo // ignore: cast_nullable_to_non_nullable
+as String,sortOrder: null == sortOrder ? _self.sortOrder : sortOrder // ignore: cast_nullable_to_non_nullable
+as int,isVisible: null == isVisible ? _self.isVisible : isVisible // ignore: cast_nullable_to_non_nullable
+as bool,
+  ));
+}
+
+
 }
 
 

@@ -1,0 +1,69 @@
+{
+  "@@locale": "en",
+
+  "navHome": "Home",
+  "navAbout": "About",
+  "navProjects": "Projects",
+  "navExperience": "Experience",
+  "navContact": "Contact",
+
+  "letsTalk": "Let's Talk",
+  "viewMyWork": "View My Work",
+  "downloadCv": "Download CV",
+  "scrollToExplore": "Scroll to explore",
+
+  "allProjects": "All",
+  "softwareDevelopment": "Software Development",
+  "webDevelopment": "Web Development",
+  "creativeDesign": "Creative Design",
+
+  "viewProject": "View Project",
+  "viewAllProjects": "View All Projects",
+  "visitWebsite": "Visit Website",
+  "viewSourceCode": "View Source Code",
+  "backToProjects": "Back to Projects",
+
+  "projectOverview": "Project Overview",
+  "problem": "Problem",
+  "solution": "Solution",
+  "role": "My Role",
+  "responsibilities": "Responsibilities",
+  "features": "Key Features",
+  "challenges": "Challenges",
+  "results": "Results",
+  "lessonsLearned": "Lessons Learned",
+  "technologies": "Technologies",
+  "platforms": "Platforms",
+  "gallery": "Project Gallery",
+  "client": "Client",
+  "year": "Year",
+  "status": "Status",
+
+  "current": "Present",
+  "completed": "Completed",
+  "inProgress": "In Progress",
+
+  "getInTouch": "Get in Touch",
+  "sendMessage": "Send Message",
+  "email": "Email",
+  "location": "Location",
+  "followMe": "Follow Me",
+
+  "loading": "Loading portfolio...",
+  "somethingWentWrong": "Something went wrong.",
+  "tryAgain": "Try Again",
+  "projectNotFound": "Project not found.",
+
+  "builtWithFlutter": "Built with Flutter",
+  "allRightsReserved": "All rights reserved.",
+
+  "changeLanguage": "Change language",
+  "english": "English",
+  "german": "German",
+
+  "toolsBehindMyWork": "Tools behind my work",
+  "languagesSpoken": "Languages spoken",
+  "yearsExperience": "Years of experience",
+  "projectsDelivered": "Projects delivered",
+  "clientCollaborations": "Client collaborations"
+}

@@ -1,0 +1,69 @@
+{
+  "@@locale": "de",
+
+  "navHome": "Start",
+  "navAbout": "Über mich",
+  "navProjects": "Projekte",
+  "navExperience": "Erfahrung",
+  "navContact": "Kontakt",
+
+  "letsTalk": "Kontakt aufnehmen",
+  "viewMyWork": "Meine Projekte",
+  "downloadCv": "Lebenslauf herunterladen",
+  "scrollToExplore": "Weiter scrollen",
+
+  "allProjects": "Alle",
+  "softwareDevelopment": "Softwareentwicklung",
+  "webDevelopment": "Webentwicklung",
+  "creativeDesign": "Kreativdesign",
+
+  "viewProject": "Projekt ansehen",
+  "viewAllProjects": "Alle Projekte ansehen",
+  "visitWebsite": "Website besuchen",
+  "viewSourceCode": "Quellcode ansehen",
+  "backToProjects": "Zurück zu den Projekten",
+
+  "projectOverview": "Projektübersicht",
+  "problem": "Problem",
+  "solution": "Lösung",
+  "role": "Meine Rolle",
+  "responsibilities": "Aufgaben",
+  "features": "Hauptfunktionen",
+  "challenges": "Herausforderungen",
+  "results": "Ergebnisse",
+  "lessonsLearned": "Erkenntnisse",
+  "technologies": "Technologien",
+  "platforms": "Plattformen",
+  "gallery": "Projektgalerie",
+  "client": "Kunde",
+  "year": "Jahr",
+  "status": "Status",
+
+  "current": "Heute",
+  "completed": "Abgeschlossen",
+  "inProgress": "In Arbeit",
+
+  "getInTouch": "Kontakt aufnehmen",
+  "sendMessage": "Nachricht senden",
+  "email": "E-Mail",
+  "location": "Standort",
+  "followMe": "Folgen",
+
+  "loading": "Portfolio wird geladen...",
+  "somethingWentWrong": "Etwas ist schiefgelaufen.",
+  "tryAgain": "Erneut versuchen",
+  "projectNotFound": "Projekt wurde nicht gefunden.",
+
+  "builtWithFlutter": "Mit Flutter entwickelt",
+  "allRightsReserved": "Alle Rechte vorbehalten.",
+
+  "changeLanguage": "Sprache ändern",
+  "english": "Englisch",
+  "german": "Deutsch",
+
+  "toolsBehindMyWork": "Tools hinter meiner Arbeit",
+  "languagesSpoken": "Gesprochene Sprachen",
+  "yearsExperience": "Jahre Erfahrung",
+  "projectsDelivered": "Realisierte Projekte",
+  "clientCollaborations": "Kundenkooperationen"
+}

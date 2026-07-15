@@ -11,6 +11,7 @@ abstract class PortfolioData with _$PortfolioData {
     required About about,
     @Default(<PortfolioStatistic>[]) List<PortfolioStatistic> statistics,
     @Default(<Skill>[]) List<Skill> skills,
+    required List<PortfolioTool> tools,
     @Default(<Project>[]) List<Project> projects,
     @Default(<Experience>[]) List<Experience> experience,
     @Default(<SocialLink>[]) List<SocialLink> socialLinks,
@@ -63,8 +64,9 @@ abstract class Availability with _$Availability {
 abstract class About with _$About {
   const factory About({
     required LocalizedString title,
-    @Default(<LocalizedString>[]) List<LocalizedString> paragraphs,
-    @Default(<AboutHighlight>[]) List<AboutHighlight> highlights,
+    required LocalizedString headline,
+    required List<LocalizedString> paragraphs,
+    required List<AboutHighlight> highlights,
   }) = _About;
 
   factory About.fromJson(Map<String, dynamic> json) => _$AboutFromJson(json);
@@ -109,6 +111,20 @@ abstract class Skill with _$Skill {
   }) = _Skill;
 
   factory Skill.fromJson(Map<String, dynamic> json) => _$SkillFromJson(json);
+}
+
+@freezed
+abstract class PortfolioTool with _$PortfolioTool {
+  const factory PortfolioTool({
+    required String id,
+    required String name,
+    required String logo,
+    required int sortOrder,
+    required bool isVisible,
+  }) = _PortfolioTool;
+
+  factory PortfolioTool.fromJson(Map<String, dynamic> json) =>
+      _$PortfolioToolFromJson(json);
 }
 
 @freezed

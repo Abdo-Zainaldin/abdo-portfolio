@@ -23,6 +23,9 @@ _PortfolioData _$PortfolioDataFromJson(Map<String, dynamic> json) =>
               ?.map((e) => Skill.fromJson(e as Map<String, dynamic>))
               .toList() ??
           const <Skill>[],
+      tools: (json['tools'] as List<dynamic>)
+          .map((e) => PortfolioTool.fromJson(e as Map<String, dynamic>))
+          .toList(),
       projects:
           (json['projects'] as List<dynamic>?)
               ?.map((e) => Project.fromJson(e as Map<String, dynamic>))
@@ -44,14 +47,15 @@ _PortfolioData _$PortfolioDataFromJson(Map<String, dynamic> json) =>
 Map<String, dynamic> _$PortfolioDataToJson(_PortfolioData instance) =>
     <String, dynamic>{
       'schemaVersion': instance.schemaVersion,
-      'profile': instance.profile,
-      'about': instance.about,
-      'statistics': instance.statistics,
-      'skills': instance.skills,
-      'projects': instance.projects,
-      'experience': instance.experience,
-      'socialLinks': instance.socialLinks,
-      'contact': instance.contact,
+      'profile': instance.profile.toJson(),
+      'about': instance.about.toJson(),
+      'statistics': instance.statistics.map((e) => e.toJson()).toList(),
+      'skills': instance.skills.map((e) => e.toJson()).toList(),
+      'tools': instance.tools.map((e) => e.toJson()).toList(),
+      'projects': instance.projects.map((e) => e.toJson()).toList(),
+      'experience': instance.experience.map((e) => e.toJson()).toList(),
+      'socialLinks': instance.socialLinks.map((e) => e.toJson()).toList(),
+      'contact': instance.contact.toJson(),
     };
 
 _LocalizedString _$LocalizedStringFromJson(Map<String, dynamic> json) =>
@@ -85,10 +89,10 @@ Map<String, dynamic> _$ProfileToJson(_Profile instance) => <String, dynamic>{
   'nickname': instance.nickname,
   'location': instance.location,
   'portrait': instance.portrait,
-  'professionalTitle': instance.professionalTitle,
-  'introduction': instance.introduction,
-  'availability': instance.availability,
-  'cv': instance.cv,
+  'professionalTitle': instance.professionalTitle.toJson(),
+  'introduction': instance.introduction.toJson(),
+  'availability': instance.availability.toJson(),
+  'cv': instance.cv.toJson(),
   'languages': instance.languages,
 };
 
@@ -101,27 +105,25 @@ _Availability _$AvailabilityFromJson(Map<String, dynamic> json) =>
 Map<String, dynamic> _$AvailabilityToJson(_Availability instance) =>
     <String, dynamic>{
       'isAvailable': instance.isAvailable,
-      'text': instance.text,
+      'text': instance.text.toJson(),
     };
 
 _About _$AboutFromJson(Map<String, dynamic> json) => _About(
   title: LocalizedString.fromJson(json['title'] as Map<String, dynamic>),
-  paragraphs:
-      (json['paragraphs'] as List<dynamic>?)
-          ?.map((e) => LocalizedString.fromJson(e as Map<String, dynamic>))
-          .toList() ??
-      const <LocalizedString>[],
-  highlights:
-      (json['highlights'] as List<dynamic>?)
-          ?.map((e) => AboutHighlight.fromJson(e as Map<String, dynamic>))
-          .toList() ??
-      const <AboutHighlight>[],
+  headline: LocalizedString.fromJson(json['headline'] as Map<String, dynamic>),
+  paragraphs: (json['paragraphs'] as List<dynamic>)
+      .map((e) => LocalizedString.fromJson(e as Map<String, dynamic>))
+      .toList(),
+  highlights: (json['highlights'] as List<dynamic>)
+      .map((e) => AboutHighlight.fromJson(e as Map<String, dynamic>))
+      .toList(),
 );
 
 Map<String, dynamic> _$AboutToJson(_About instance) => <String, dynamic>{
-  'title': instance.title,
-  'paragraphs': instance.paragraphs,
-  'highlights': instance.highlights,
+  'title': instance.title.toJson(),
+  'headline': instance.headline.toJson(),
+  'paragraphs': instance.paragraphs.map((e) => e.toJson()).toList(),
+  'highlights': instance.highlights.map((e) => e.toJson()).toList(),
 };
 
 _AboutHighlight _$AboutHighlightFromJson(Map<String, dynamic> json) =>
@@ -136,8 +138,8 @@ _AboutHighlight _$AboutHighlightFromJson(Map<String, dynamic> json) =>
 Map<String, dynamic> _$AboutHighlightToJson(_AboutHighlight instance) =>
     <String, dynamic>{
       'icon': instance.icon,
-      'title': instance.title,
-      'description': instance.description,
+      'title': instance.title.toJson(),
+      'description': instance.description.toJson(),
     };
 
 _PortfolioStatistic _$PortfolioStatisticFromJson(Map<String, dynamic> json) =>
@@ -153,7 +155,7 @@ Map<String, dynamic> _$PortfolioStatisticToJson(_PortfolioStatistic instance) =>
     <String, dynamic>{
       'id': instance.id,
       'value': instance.value,
-      'label': instance.label,
+      'label': instance.label.toJson(),
       'sortOrder': instance.sortOrder,
       'isVisible': instance.isVisible,
     };
@@ -174,13 +176,31 @@ _Skill _$SkillFromJson(Map<String, dynamic> json) => _Skill(
 
 Map<String, dynamic> _$SkillToJson(_Skill instance) => <String, dynamic>{
   'id': instance.id,
-  'title': instance.title,
-  'description': instance.description,
+  'title': instance.title.toJson(),
+  'description': instance.description.toJson(),
   'icon': instance.icon,
   'items': instance.items,
   'sortOrder': instance.sortOrder,
   'isVisible': instance.isVisible,
 };
+
+_PortfolioTool _$PortfolioToolFromJson(Map<String, dynamic> json) =>
+    _PortfolioTool(
+      id: json['id'] as String,
+      name: json['name'] as String,
+      logo: json['logo'] as String,
+      sortOrder: (json['sortOrder'] as num).toInt(),
+      isVisible: json['isVisible'] as bool,
+    );
+
+Map<String, dynamic> _$PortfolioToolToJson(_PortfolioTool instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'logo': instance.logo,
+      'sortOrder': instance.sortOrder,
+      'isVisible': instance.isVisible,
+    };
 
 _Project _$ProjectFromJson(Map<String, dynamic> json) => _Project(
   id: json['id'] as String,
@@ -271,25 +291,25 @@ Map<String, dynamic> _$ProjectToJson(_Project instance) => <String, dynamic>{
   'featured': instance.featured,
   'isVisible': instance.isVisible,
   'sortOrder': instance.sortOrder,
-  'title': instance.title,
-  'role': instance.role,
-  'client': instance.client,
-  'shortDescription': instance.shortDescription,
-  'fullDescription': instance.fullDescription,
-  'problem': instance.problem,
-  'solution': instance.solution,
-  'responsibilities': instance.responsibilities,
-  'features': instance.features,
-  'challenges': instance.challenges,
-  'results': instance.results,
-  'lessonsLearned': instance.lessonsLearned,
+  'title': instance.title.toJson(),
+  'role': instance.role.toJson(),
+  'client': instance.client?.toJson(),
+  'shortDescription': instance.shortDescription.toJson(),
+  'fullDescription': instance.fullDescription.toJson(),
+  'problem': instance.problem?.toJson(),
+  'solution': instance.solution?.toJson(),
+  'responsibilities': instance.responsibilities.map((e) => e.toJson()).toList(),
+  'features': instance.features.map((e) => e.toJson()).toList(),
+  'challenges': instance.challenges.map((e) => e.toJson()).toList(),
+  'results': instance.results.map((e) => e.toJson()).toList(),
+  'lessonsLearned': instance.lessonsLearned.map((e) => e.toJson()).toList(),
   'technologies': instance.technologies,
   'platforms': instance.platforms,
   'tags': instance.tags,
-  'thumbnailImage': instance.thumbnailImage,
-  'coverImage': instance.coverImage,
-  'gallery': instance.gallery,
-  'links': instance.links,
+  'thumbnailImage': instance.thumbnailImage?.toJson(),
+  'coverImage': instance.coverImage.toJson(),
+  'gallery': instance.gallery.map((e) => e.toJson()).toList(),
+  'links': instance.links.map((e) => e.toJson()).toList(),
 };
 
 _ProjectChallenge _$ProjectChallengeFromJson(Map<String, dynamic> json) =>
@@ -302,8 +322,8 @@ _ProjectChallenge _$ProjectChallengeFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$ProjectChallengeToJson(_ProjectChallenge instance) =>
     <String, dynamic>{
-      'title': instance.title,
-      'description': instance.description,
+      'title': instance.title.toJson(),
+      'description': instance.description.toJson(),
     };
 
 _ProjectResult _$ProjectResultFromJson(Map<String, dynamic> json) =>
@@ -320,8 +340,8 @@ _ProjectResult _$ProjectResultFromJson(Map<String, dynamic> json) =>
 Map<String, dynamic> _$ProjectResultToJson(_ProjectResult instance) =>
     <String, dynamic>{
       'value': instance.value,
-      'label': instance.label,
-      'description': instance.description,
+      'label': instance.label.toJson(),
+      'description': instance.description?.toJson(),
     };
 
 _ProjectImage _$ProjectImageFromJson(Map<String, dynamic> json) =>
@@ -331,7 +351,7 @@ _ProjectImage _$ProjectImageFromJson(Map<String, dynamic> json) =>
     );
 
 Map<String, dynamic> _$ProjectImageToJson(_ProjectImage instance) =>
-    <String, dynamic>{'path': instance.path, 'alt': instance.alt};
+    <String, dynamic>{'path': instance.path, 'alt': instance.alt.toJson()};
 
 _ProjectGalleryItem _$ProjectGalleryItemFromJson(Map<String, dynamic> json) =>
     _ProjectGalleryItem(
@@ -348,8 +368,8 @@ Map<String, dynamic> _$ProjectGalleryItemToJson(_ProjectGalleryItem instance) =>
     <String, dynamic>{
       'type': instance.type,
       'path': instance.path,
-      'alt': instance.alt,
-      'caption': instance.caption,
+      'alt': instance.alt.toJson(),
+      'caption': instance.caption?.toJson(),
       'sortOrder': instance.sortOrder,
     };
 
@@ -393,23 +413,24 @@ _Experience _$ExperienceFromJson(Map<String, dynamic> json) => _Experience(
   isVisible: json['isVisible'] as bool? ?? true,
 );
 
-Map<String, dynamic> _$ExperienceToJson(_Experience instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'organization': instance.organization,
-      'role': instance.role,
-      'location': instance.location,
-      'startDate': instance.startDate,
-      'endDate': instance.endDate,
-      'isCurrent': instance.isCurrent,
-      'description': instance.description,
-      'responsibilities': instance.responsibilities,
-      'technologies': instance.technologies,
-      'logo': instance.logo,
-      'website': instance.website,
-      'sortOrder': instance.sortOrder,
-      'isVisible': instance.isVisible,
-    };
+Map<String, dynamic> _$ExperienceToJson(
+  _Experience instance,
+) => <String, dynamic>{
+  'id': instance.id,
+  'organization': instance.organization,
+  'role': instance.role.toJson(),
+  'location': instance.location,
+  'startDate': instance.startDate,
+  'endDate': instance.endDate,
+  'isCurrent': instance.isCurrent,
+  'description': instance.description.toJson(),
+  'responsibilities': instance.responsibilities.map((e) => e.toJson()).toList(),
+  'technologies': instance.technologies,
+  'logo': instance.logo,
+  'website': instance.website,
+  'sortOrder': instance.sortOrder,
+  'isVisible': instance.isVisible,
+};
 
 _SocialLink _$SocialLinkFromJson(Map<String, dynamic> json) => _SocialLink(
   id: json['id'] as String,

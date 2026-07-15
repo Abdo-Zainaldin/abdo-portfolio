@@ -6,18 +6,18 @@
         "location": "Neuwied, Germany",
         "portrait": "assets/images/profile/portrait.webp",
         "professionalTitle": {
-            "en": "Flutter Developer",
-            "de": "Flutter-Entwickler"
+            "en": "Software Developer",
+            "de": "Softwareentwickler"
         },
         "introduction": {
-            "en": "I build modern, responsive applications and practical digital solutions.",
-            "de": "Ich entwickle moderne, responsive Anwendungen und praktische digitale Lösungen."
+            "en": "I develop mobile and web applications, business websites and practical digital solutions with a focus on clear structure, usability and real requirements.",
+            "de": "Ich entwickle mobile und webbasierte Anwendungen, Unternehmenswebsites und praxisnahe Digitallösungen mit Fokus auf klare Strukturen, Benutzerfreundlichkeit und reale Anforderungen."
         },
         "availability": {
             "isAvailable": true,
             "text": {
-                "en": "Available for opportunities",
-                "de": "Offen für neue Möglichkeiten"
+                "en": "Open to software development opportunities, apprenticeships and internships",
+                "de": "Offen für Einstiegsmöglichkeiten, Ausbildungsplätze und Praktika in der Softwareentwicklung"
             }
         },
         "cv": {
@@ -25,10 +25,10 @@
             "de": "assets/documents/cv_de.pdf"
         },
         "languages": [
-            "English",
-            "Arabic",
             "Kurdish",
+            "Arabic",
             "Turkish",
+            "English",
             "German"
         ]
     },
@@ -37,26 +37,56 @@
             "en": "About Me",
             "de": "Über mich"
         },
+        "headline": {
+            "en": "Software first, strengthened by web, design and real client work.",
+            "de": "Software im Mittelpunkt, ergänzt durch Web, Design und echte Kundenprojekte."
+        },
         "paragraphs": [
             {
-                "en": "I am a Flutter developer based in Neuwied, Germany.",
-                "de": "Ich bin Flutter-Entwickler und lebe in Neuwied."
+                "en": "I am a software developer based in Neuwied, Germany. Flutter and Dart are central technologies in my work, but my professional identity is broader: I enjoy learning new tools, structuring applications and solving practical problems.",
+                "de": "Ich bin Softwareentwickler und lebe in Neuwied. Flutter und Dart gehören zu den zentralen Technologien meiner Arbeit, meine berufliche Ausrichtung ist jedoch breiter: Ich arbeite mich gerne in neue Werkzeuge ein, strukturiere Anwendungen und löse praktische Probleme."
             },
             {
-                "en": "My experience also includes web development, graphic design and digital solutions.",
-                "de": "Meine Erfahrung umfasst außerdem Webentwicklung, Grafikdesign und digitale Lösungen."
+                "en": "From 2019 to 2023, I independently developed mobile applications, websites, e-commerce systems and smaller software solutions for local clients in Istanbul. Since April 2025, I have worked at Werbestudio 21 in Neuwied on software, websites and visual communication.",
+                "de": "Von 2019 bis 2023 entwickelte ich in Istanbul selbstständig mobile Anwendungen, Websites, E-Commerce-Systeme und kleinere Softwarelösungen für lokale Kunden. Seit April 2025 arbeite ich bei Werbestudio 21 in Neuwied an Software, Websites und visueller Kommunikation."
+            },
+            {
+                "en": "My experience across software, web and design helps me consider both technical implementation and how people use a product. My knowledge of five languages also supports clear communication with clients and teams from different backgrounds.",
+                "de": "Meine Erfahrung in Software, Web und Design hilft mir, sowohl die technische Umsetzung als auch die Nutzung eines Produkts zu berücksichtigen. Meine Kenntnisse in fünf Sprachen unterstützen außerdem eine klare Kommunikation mit Kunden und Teams aus unterschiedlichen Hintergründen."
             }
         ],
         "highlights": [
             {
                 "icon": "code",
                 "title": {
-                    "en": "Software Development",
-                    "de": "Softwareentwicklung"
+                    "en": "Product-Oriented Software Development",
+                    "de": "Produktorientierte Softwareentwicklung"
                 },
                 "description": {
-                    "en": "Flutter applications, APIs and automation tools.",
-                    "de": "Flutter-Anwendungen, APIs und Automatisierungstools."
+                    "en": "Turning requirements into structured applications, useful features and clear user flows.",
+                    "de": "Anforderungen in strukturierte Anwendungen, nützliche Funktionen und klare Nutzerabläufe übersetzen."
+                }
+            },
+            {
+                "icon": "web",
+                "title": {
+                    "en": "Web and Business Solutions",
+                    "de": "Web- und Geschäftslösungen"
+                },
+                "description": {
+                    "en": "Websites, e-commerce experiences and digital touchpoints designed around practical business needs.",
+                    "de": "Websites, E-Commerce-Lösungen und digitale Kontaktpunkte, ausgerichtet an praktischen Unternehmensanforderungen."
+                }
+            },
+            {
+                "icon": "design",
+                "title": {
+                    "en": "Visual Communication",
+                    "de": "Visuelle Kommunikation"
+                },
+                "description": {
+                    "en": "Interface thinking, branding and production-ready digital and print design.",
+                    "de": "Interface-Denken, Branding sowie produktionsreifes Digital- und Printdesign."
                 }
             }
         ]
@@ -71,34 +101,207 @@
             },
             "sortOrder": 1,
             "isVisible": true
+        },
+        {
+            "id": "experience",
+            "value": "7+",
+            "label": {
+                "en": "Years of Experience",
+                "de": "Jahre Erfahrung"
+            },
+            "sortOrder": 2,
+            "isVisible": true
+        },
+        {
+            "id": "projects",
+            "value": "10+",
+            "label": {
+                "en": "Projects Delivered",
+                "de": "Umgesetzte Projekte"
+            },
+            "sortOrder": 3,
+            "isVisible": true
+        },
+        {
+            "id": "clients",
+            "value": "10+",
+            "label": {
+                "en": "Client Collaborations",
+                "de": "Kundenkooperationen"
+            },
+            "sortOrder": 4,
+            "isVisible": true
         }
     ],
     "skills": [
         {
-            "id": "mobile-development",
+            "id": "software-development",
             "title": {
-                "en": "Mobile Development",
-                "de": "Mobile Entwicklung"
+                "en": "Software Development",
+                "de": "Softwareentwicklung"
             },
             "description": {
-                "en": "Modern cross-platform application development.",
-                "de": "Moderne plattformübergreifende Anwendungsentwicklung."
+                "en": "Cross-platform applications, state management, cloud services and structured problem solving.",
+                "de": "Plattformübergreifende Anwendungen, Zustandsverwaltung, Cloud-Dienste und strukturierte Problemlösung."
             },
-            "icon": "assets/images/icons/mobile_development.svg",
+            "icon": "assets/images/icons/software_development.svg",
             "items": [
                 "Flutter",
                 "Dart",
-                "BLoC",
-                "Firebase"
+                "BLoC / Cubit",
+                "Firebase",
+                "Python",
+                "Object-Oriented Programming",
+                "JSON",
+                "Git"
             ],
             "sortOrder": 1,
+            "isVisible": true
+        },
+        {
+            "id": "web-development",
+            "title": {
+                "en": "Web Development",
+                "de": "Webentwicklung"
+            },
+            "description": {
+                "en": "Business websites, responsive interfaces, content systems and practical web solutions.",
+                "de": "Unternehmenswebsites, responsive Oberflächen, Content-Systeme und praktische Weblösungen."
+            },
+            "icon": "assets/images/icons/web_development.svg",
+            "items": [
+                "Flutter Web",
+                "WordPress",
+                "Elementor",
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "E-Commerce",
+                "Hosting & Domains"
+            ],
+            "sortOrder": 2,
+            "isVisible": true
+        },
+        {
+            "id": "automation-and-data",
+            "title": {
+                "en": "Automation and Data",
+                "de": "Automatisierung und Daten"
+            },
+            "description": {
+                "en": "Small automation tools, bots and structured data workflows for recurring digital tasks.",
+                "de": "Kleine Automatisierungstools, Bots und strukturierte Datenabläufe für wiederkehrende digitale Aufgaben."
+            },
+            "icon": "assets/images/icons/automation_data.svg",
+            "items": [
+                "Python",
+                "Telegram Bots",
+                "Firebase",
+                "JSON",
+                "MySQL Fundamentals"
+            ],
+            "sortOrder": 3,
+            "isVisible": true
+        },
+        {
+            "id": "design-and-branding",
+            "title": {
+                "en": "Design and Branding",
+                "de": "Design und Branding"
+            },
+            "description": {
+                "en": "Visual identities, interface concepts and production-ready assets for digital and print use.",
+                "de": "Visuelle Identitäten, Interface-Konzepte und produktionsreife Inhalte für digitale und gedruckte Anwendungen."
+            },
+            "icon": "assets/images/icons/design_branding.svg",
+            "items": [
+                "Affinity Designer",
+                "UI Design",
+                "Branding",
+                "Print Design",
+                "Social Media Assets",
+                "Vehicle Graphics"
+            ],
+            "sortOrder": 4,
+            "isVisible": true
+        }
+    ],
+    "tools": [
+        {
+            "id": "flutter",
+            "name": "Flutter",
+            "logo": "assets/images/logos/technologies/flutter.svg",
+            "sortOrder": 1,
+            "isVisible": true
+        },
+        {
+            "id": "dart",
+            "name": "Dart",
+            "logo": "assets/images/logos/technologies/dart.svg",
+            "sortOrder": 2,
+            "isVisible": true
+        },
+        {
+            "id": "firebase",
+            "name": "Firebase",
+            "logo": "assets/images/logos/technologies/firebase.svg",
+            "sortOrder": 3,
+            "isVisible": true
+        },
+        {
+            "id": "python",
+            "name": "Python",
+            "logo": "assets/images/logos/technologies/python.svg",
+            "sortOrder": 4,
+            "isVisible": true
+        },
+        {
+            "id": "git",
+            "name": "Git",
+            "logo": "assets/images/logos/technologies/git.svg",
+            "sortOrder": 5,
+            "isVisible": true
+        },
+        {
+            "id": "visual-studio-code",
+            "name": "VS Code",
+            "logo": "assets/images/logos/technologies/vscode.svg",
+            "sortOrder": 6,
+            "isVisible": true
+        },
+        {
+            "id": "wordpress",
+            "name": "WordPress",
+            "logo": "assets/images/logos/technologies/wordpress.svg",
+            "sortOrder": 7,
+            "isVisible": true
+        },
+        {
+            "id": "elementor",
+            "name": "Elementor",
+            "logo": "assets/images/logos/technologies/elementor.svg",
+            "sortOrder": 8,
+            "isVisible": true
+        },
+        {
+            "id": "figma",
+            "name": "Figma",
+            "logo": "assets/images/logos/technologies/figma.svg",
+            "sortOrder": 9,
+            "isVisible": true
+        },
+        {
+            "id": "affinity-designer",
+            "name": "Affinity Designer",
+            "logo": "assets/images/logos/technologies/affinity.svg",
+            "sortOrder": 10,
             "isVisible": true
         }
     ],
     "projects": [
         {
-            "id": "sample-atlas-platform",
-            "slug": "sample-atlas-platform",
+            "id": "sample-orbit-task-app",
+            "slug": "sample-orbit-task-app",
             "isSample": true,
             "category": "softwareDevelopment",
             "status": "completed",
@@ -107,103 +310,97 @@
             "isVisible": true,
             "sortOrder": 1,
             "title": {
-                "en": "Atlas Productivity Platform",
-                "de": "Atlas Produktivitätsplattform"
+                "en": "Orbit Task Manager",
+                "de": "Orbit Aufgabenmanager"
             },
             "role": {
-                "en": "Lead Flutter Developer",
-                "de": "Leitender Flutter-Entwickler"
+                "en": "Sample Software Developer",
+                "de": "Beispiel Softwareentwickler"
             },
             "client": {
-                "en": "Fictional Client",
-                "de": "Fiktiver Kunde"
+                "en": "Fictional sample project",
+                "de": "Fiktives Beispielprojekt"
             },
             "shortDescription": {
-                "en": "A responsive productivity platform for mobile and web.",
-                "de": "Eine responsive Produktivitätsplattform für Mobilgeräte und Web."
+                "en": "A fictional cross-platform productivity application used to test project cards and detail layouts.",
+                "de": "Eine fiktive plattformübergreifende Produktivitätsanwendung zum Testen von Projektkarten und Detailansichten."
             },
             "fullDescription": {
-                "en": "Atlas is a fictional platform that demonstrates the complete project-details functionality of the portfolio.",
-                "de": "Atlas ist eine fiktive Plattform, die alle Funktionen der Projektdetailseite demonstriert."
+                "en": "Orbit is sample content created only for interface development. It demonstrates how a completed software project appears across cards, filters and the project detail page.",
+                "de": "Orbit ist ein Beispielinhalt, der ausschließlich für die Entwicklung der Benutzeroberfläche erstellt wurde. Er zeigt, wie ein abgeschlossenes Softwareprojekt in Karten, Filtern und auf der Projektdetailseite dargestellt wird."
             },
             "problem": {
-                "en": "Users needed one platform to manage tasks, teams and project communication.",
-                "de": "Benutzer benötigten eine zentrale Plattform für Aufgaben, Teams und Projektkommunikation."
+                "en": "The portfolio needed realistic structured data for testing a complete software project presentation.",
+                "de": "Das Portfolio benötigte realistisch strukturierte Daten, um die vollständige Darstellung eines Softwareprojekts zu testen."
             },
             "solution": {
-                "en": "A responsive Flutter application with authentication, real-time synchronization and role-based access.",
-                "de": "Eine responsive Flutter-Anwendung mit Authentifizierung, Echtzeitsynchronisierung und rollenbasiertem Zugriff."
+                "en": "A fictional task-management case study with localized content, features, challenges, results, media and links.",
+                "de": "Eine fiktive Fallstudie für Aufgabenverwaltung mit lokalisierten Inhalten, Funktionen, Herausforderungen, Ergebnissen, Medien und Links."
             },
             "responsibilities": [
                 {
-                    "en": "Designed the application architecture.",
-                    "de": "Entwicklung der Anwendungsarchitektur."
+                    "en": "Structured the sample application architecture.",
+                    "de": "Strukturierung der Beispiel-Anwendungsarchitektur."
                 },
                 {
-                    "en": "Implemented responsive mobile and web interfaces.",
-                    "de": "Implementierung responsiver Oberflächen für Mobilgeräte und Web."
+                    "en": "Created responsive mobile and web interface concepts.",
+                    "de": "Erstellung responsiver Oberflächenkonzepte für Mobilgeräte und Web."
                 },
                 {
-                    "en": "Managed application state using Cubit.",
-                    "de": "Verwaltung des Anwendungszustands mit Cubit."
+                    "en": "Prepared sample project data for UI testing.",
+                    "de": "Vorbereitung von Beispielprojektdaten für UI-Tests."
                 }
             ],
             "features": [
-                {
-                    "en": "User authentication",
-                    "de": "Benutzerauthentifizierung"
-                },
-                {
-                    "en": "Real-time task synchronization",
-                    "de": "Echtzeit-Synchronisierung von Aufgaben"
-                },
                 {
                     "en": "Responsive dashboard",
                     "de": "Responsives Dashboard"
                 },
                 {
-                    "en": "Role-based permissions",
-                    "de": "Rollenbasierte Berechtigungen"
+                    "en": "Task organization",
+                    "de": "Aufgabenorganisation"
+                },
+                {
+                    "en": "Localized interface content",
+                    "de": "Lokalisierte Oberflächeninhalte"
                 }
             ],
             "challenges": [
                 {
                     "title": {
-                        "en": "Responsive architecture",
-                        "de": "Responsive Architektur"
+                        "en": "Responsive hierarchy",
+                        "de": "Responsive Hierarchie"
                     },
                     "description": {
-                        "en": "Creating one interface that worked effectively across mobile, tablet and desktop.",
-                        "de": "Entwicklung einer Oberfläche für Mobilgeräte, Tablets und Desktop."
+                        "en": "Testing how dense project information adapts across mobile and desktop layouts.",
+                        "de": "Testen, wie umfangreiche Projektinformationen an mobile und Desktop-Layouts angepasst werden."
                     }
                 }
             ],
             "results": [
                 {
-                    "value": "40%",
+                    "value": "100%",
                     "label": {
-                        "en": "Faster task management",
-                        "de": "Schnellere Aufgabenverwaltung"
+                        "en": "Sample coverage",
+                        "de": "Beispielabdeckung"
                     },
                     "description": {
-                        "en": "Example result used to test project metrics.",
-                        "de": "Beispielergebnis zum Testen der Projektkennzahlen."
+                        "en": "Fictional value used only to test the project result component.",
+                        "de": "Fiktiver Wert, der ausschließlich zum Testen der Ergebnis-Komponente verwendet wird."
                     }
                 }
             ],
             "lessonsLearned": [
                 {
-                    "en": "Planning responsive behavior early simplifies development.",
-                    "de": "Eine frühzeitige Planung des responsiven Verhaltens vereinfacht die Entwicklung."
+                    "en": "Clearly marked sample data makes interface testing safer without presenting fictional work as real experience.",
+                    "de": "Klar gekennzeichnete Beispieldaten ermöglichen sichere UI-Tests, ohne fiktive Arbeit als echte Erfahrung darzustellen."
                 }
             ],
             "technologies": [
                 "Flutter",
                 "Dart",
                 "Firebase",
-                "BLoC",
-                "go_router",
-                "REST API"
+                "Cubit"
             ],
             "platforms": [
                 "Android",
@@ -211,65 +408,151 @@
                 "Web"
             ],
             "tags": [
+                "Sample",
+                "Productivity",
                 "Responsive",
-                "Real-time",
-                "Authentication",
-                "Clean Architecture"
+                "State Management"
             ],
             "thumbnailImage": {
-                "path": "assets/images/projects/sample_atlas/thumbnail.webp",
+                "path": "assets/images/projects/sample_orbit/thumbnail.webp",
                 "alt": {
-                    "en": "Atlas platform preview",
-                    "de": "Vorschau der Atlas-Plattform"
+                    "en": "Sample Orbit task manager preview",
+                    "de": "Vorschau des Orbit Beispiel-Aufgabenmanagers"
                 }
             },
             "coverImage": {
-                "path": "assets/images/projects/sample_atlas/cover.webp",
+                "path": "assets/images/projects/sample_orbit/cover.webp",
                 "alt": {
-                    "en": "Atlas productivity platform dashboard",
-                    "de": "Dashboard der Atlas Produktivitätsplattform"
+                    "en": "Sample Orbit task manager interface",
+                    "de": "Oberfläche des Orbit Beispiel-Aufgabenmanagers"
                 }
             },
             "gallery": [
                 {
                     "type": "image",
-                    "path": "assets/images/projects/sample_atlas/dashboard.webp",
+                    "path": "assets/images/projects/sample_orbit/dashboard.webp",
                     "alt": {
-                        "en": "Dashboard screen",
-                        "de": "Dashboard-Ansicht"
+                        "en": "Sample dashboard screen",
+                        "de": "Beispiel-Dashboard"
                     },
                     "caption": {
-                        "en": "Responsive project dashboard",
-                        "de": "Responsives Projekt-Dashboard"
+                        "en": "Fictional responsive dashboard used for layout testing",
+                        "de": "Fiktives responsives Dashboard für Layout-Tests"
                     },
                     "sortOrder": 1
                 },
                 {
                     "type": "image",
-                    "path": "assets/images/projects/sample_atlas/mobile.webp",
+                    "path": "assets/images/projects/sample_orbit/mobile.webp",
                     "alt": {
-                        "en": "Mobile application screen",
-                        "de": "Mobile Anwendungsansicht"
+                        "en": "Sample mobile task screen",
+                        "de": "Beispiel einer mobilen Aufgabenansicht"
                     },
                     "caption": {
-                        "en": "Mobile task management interface",
-                        "de": "Mobile Oberfläche zur Aufgabenverwaltung"
+                        "en": "Fictional mobile interface used for gallery testing",
+                        "de": "Fiktive mobile Oberfläche für Galerie-Tests"
                     },
                     "sortOrder": 2
                 }
             ],
             "links": [
                 {
-                    "type": "live",
-                    "url": "https://example.com",
-                    "isVisible": true
-                },
-                {
                     "type": "github",
-                    "url": "https://github.com/example/sample-project",
-                    "isVisible": true
+                    "url": "https://example.com/sample-orbit",
+                    "isVisible": false
                 }
             ]
+        },
+        {
+            "id": "sample-studio-website",
+            "slug": "sample-studio-website",
+            "isSample": true,
+            "category": "webDevelopment",
+            "status": "inProgress",
+            "year": 2026,
+            "featured": true,
+            "isVisible": true,
+            "sortOrder": 2,
+            "title": {
+                "en": "North Studio Website",
+                "de": "North Studio Website"
+            },
+            "role": {
+                "en": "Sample Web Developer",
+                "de": "Beispiel Webentwickler"
+            },
+            "client": {
+                "en": "Fictional sample client",
+                "de": "Fiktiver Beispielkunde"
+            },
+            "shortDescription": {
+                "en": "A fictional business website used to test web-project filters, progress states and sparse project details.",
+                "de": "Eine fiktive Unternehmenswebsite zum Testen von Webprojekt-Filtern, Fortschrittsstatus und reduzierten Projektdetails."
+            },
+            "fullDescription": {
+                "en": "North Studio is sample content created only for UI development. Unlike the first project, it intentionally contains fewer detail items so empty and optional sections can be tested.",
+                "de": "North Studio ist ein Beispielinhalt, der ausschließlich für die UI-Entwicklung erstellt wurde. Im Gegensatz zum ersten Projekt enthält er bewusst weniger Detailangaben, damit leere und optionale Bereiche getestet werden können."
+            },
+            "problem": {
+                "en": "The project interface needed a second category and an in-progress state for realistic filter and status testing.",
+                "de": "Die Projektoberfläche benötigte eine zweite Kategorie und einen laufenden Status für realistische Filter- und Statustests."
+            },
+            "solution": {
+                "en": "A compact fictional website project with only the essential content fields populated.",
+                "de": "Ein kompaktes fiktives Website-Projekt, bei dem nur die wesentlichen Inhaltsfelder ausgefüllt sind."
+            },
+            "responsibilities": [
+                {
+                    "en": "Prepared a fictional responsive website concept.",
+                    "de": "Vorbereitung eines fiktiven responsiven Website-Konzepts."
+                },
+                {
+                    "en": "Added sample content for web-category testing.",
+                    "de": "Hinzufügen von Beispielinhalten zum Testen der Web-Kategorie."
+                }
+            ],
+            "features": [
+                {
+                    "en": "Responsive business layout",
+                    "de": "Responsives Unternehmenslayout"
+                },
+                {
+                    "en": "Clear contact paths",
+                    "de": "Klare Kontaktwege"
+                }
+            ],
+            "challenges": [],
+            "results": [],
+            "lessonsLearned": [],
+            "technologies": [
+                "WordPress",
+                "Elementor",
+                "CSS"
+            ],
+            "platforms": [
+                "Web"
+            ],
+            "tags": [
+                "Sample",
+                "Business Website",
+                "Responsive"
+            ],
+            "thumbnailImage": {
+                "path": "assets/images/projects/sample_studio/thumbnail.webp",
+                "alt": {
+                    "en": "Sample studio website preview",
+                    "de": "Vorschau der Beispiel-Studio-Website"
+                }
+            },
+            "coverImage": {
+                "path": "assets/images/projects/sample_studio/cover.webp",
+                "alt": {
+                    "en": "Sample responsive studio website",
+                    "de": "Beispiel einer responsiven Studio-Website"
+                }
+            },
+            "gallery": [],
+            "links": []
         }
     ],
     "experience": [
@@ -277,35 +560,90 @@
             "id": "werbestudio-21",
             "organization": "Werbestudio 21",
             "role": {
-                "en": "Software Development and Graphic Design",
-                "de": "Softwareentwicklung und Grafikdesign"
+                "en": "Software Development and Graphic Design, Minijob",
+                "de": "Softwareentwicklung und Grafikdesign, Minijob"
             },
             "location": "Neuwied, Germany",
             "startDate": "2025-04-01",
             "endDate": null,
             "isCurrent": true,
             "description": {
-                "en": "Development of websites, applications and digital solutions alongside graphic and production work.",
-                "de": "Entwicklung von Websites, Anwendungen und digitalen Lösungen sowie Grafik- und Produktionsarbeiten."
+                "en": "Development of websites, applications and practical digital solutions alongside branding, graphic design and production work for local businesses.",
+                "de": "Entwicklung von Websites, Anwendungen und praxisnahen Digitallösungen sowie Branding-, Grafik- und Produktionsarbeiten für lokale Unternehmen."
             },
             "responsibilities": [
                 {
-                    "en": "Developing websites and applications.",
-                    "de": "Entwicklung von Websites und Anwendungen."
+                    "en": "Developing business websites, applications and customer-oriented digital solutions.",
+                    "de": "Entwicklung von Unternehmenswebsites, Anwendungen und kundenorientierten Digitallösungen."
                 },
                 {
-                    "en": "Creating graphic and branding materials.",
-                    "de": "Erstellung von Grafik- und Brandingmaterialien."
+                    "en": "Translating customer requirements into clear digital and visual concepts.",
+                    "de": "Übertragung von Kundenanforderungen in klare digitale und visuelle Konzepte."
+                },
+                {
+                    "en": "Creating branding, social media and production-ready print materials.",
+                    "de": "Erstellung von Branding-, Social-Media- und produktionsreifen Printmedien."
+                },
+                {
+                    "en": "Supporting projects from initial concept to implementation and production.",
+                    "de": "Begleitung von Projekten von der ersten Idee bis zur Umsetzung und Produktion."
                 }
             ],
             "technologies": [
                 "Flutter",
                 "WordPress",
-                "Graphic Design"
+                "Elementor",
+                "Affinity Designer",
+                "Graphic Design",
+                "Print Production"
             ],
             "logo": "assets/images/experience/werbestudio_21.webp",
             "website": null,
             "sortOrder": 1,
+            "isVisible": true
+        },
+        {
+            "id": "self-employed-developer",
+            "organization": "Self-employed",
+            "role": {
+                "en": "Software Developer and Digital Solutions Freelancer",
+                "de": "Selbstständiger Softwareentwickler"
+            },
+            "location": "Istanbul, Turkey",
+            "startDate": "2019-01-01",
+            "endDate": "2023-12-31",
+            "isCurrent": false,
+            "description": {
+                "en": "Development of mobile applications, websites, e-commerce systems and smaller software solutions for local clients.",
+                "de": "Entwicklung mobiler Anwendungen, Websites, E-Commerce-Systeme und kleinerer Softwarelösungen für lokale Kunden."
+            },
+            "responsibilities": [
+                {
+                    "en": "Planned and developed mobile applications and websites.",
+                    "de": "Planung und Entwicklung mobiler Anwendungen und Websites."
+                },
+                {
+                    "en": "Built e-commerce and smaller business software solutions.",
+                    "de": "Umsetzung von E-Commerce- und kleineren Unternehmenslösungen."
+                },
+                {
+                    "en": "Communicated with clients and translated requirements into project tasks.",
+                    "de": "Kommunikation mit Kunden und Übertragung von Anforderungen in Projektaufgaben."
+                },
+                {
+                    "en": "Organized projects independently from planning through implementation.",
+                    "de": "Eigenständige Organisation von Projekten von der Planung bis zur Umsetzung."
+                }
+            ],
+            "technologies": [
+                "Flutter",
+                "Dart",
+                "Firebase",
+                "Python"
+            ],
+            "logo": null,
+            "website": null,
+            "sortOrder": 2,
             "isVisible": true
         }
     ],
@@ -313,7 +651,7 @@
         {
             "id": "github",
             "platform": "GitHub",
-            "url": "https://github.com/your-username",
+            "url": "https://github.com/Abdo-Zainaldin",
             "icon": "assets/images/logos/github.svg",
             "sortOrder": 1,
             "isVisible": true
@@ -321,14 +659,14 @@
         {
             "id": "linkedin",
             "platform": "LinkedIn",
-            "url": "https://linkedin.com/in/your-profile",
+            "url": "",
             "icon": "assets/images/logos/linkedin.svg",
             "sortOrder": 2,
-            "isVisible": true
+            "isVisible": false
         }
     ],
     "contact": {
-        "email": null,
+        "email": "abdozainaldin@gmail.com",
         "location": "Neuwied, Germany",
         "contactFormEnabled": false
     }
