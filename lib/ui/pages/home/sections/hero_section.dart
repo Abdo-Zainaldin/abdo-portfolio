@@ -4,10 +4,10 @@ import '../../../../data/models/portfolio_data.dart';
 import '../../../app_widget/responsive/responsive_helper.dart';
 import '../../../app_widget/theme/app_theme.dart';
 import '../../../widgets/responsive_container.dart';
-import '../widgets/hero_content.dart';
-import '../widgets/hero_portrait.dart';
-import '../widgets/portfolio_statistics.dart';
-import '../widgets/technology_logos.dart';
+import '../widgets/hero/hero_content.dart';
+import '../widgets/hero/hero_portrait.dart';
+import '../widgets/hero/portfolio_statistics.dart';
+import '../widgets/hero/technology_logos.dart';
 
 class HeroSection extends StatelessWidget {
   const HeroSection({

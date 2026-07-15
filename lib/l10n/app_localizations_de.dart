@@ -172,4 +172,132 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get clientCollaborations => 'Kundenkooperationen';
+
+  @override
+  String get projectsSectionLabel => 'Projekte';
+
+  @override
+  String get projectsSectionHeadline =>
+      'Ausgewählte Arbeiten rund um reale Probleme.';
+
+  @override
+  String get projectsSectionDescription =>
+      'Softwareanwendungen, Weblösungen und kreative Arbeiten, dargestellt anhand der Entscheidungen und Probleme dahinter.';
+
+  @override
+  String get projectFilterSoftware => 'Softwareentwicklung';
+
+  @override
+  String get projectFilterWeb => 'Webentwicklung';
+
+  @override
+  String get projectFilterCreative => 'Design und Branding';
+
+  @override
+  String get projectCategorySoftware => 'Software';
+
+  @override
+  String get projectCategoryWeb => 'Web';
+
+  @override
+  String get projectCategoryCreative => 'Kreativ';
+
+  @override
+  String get projectStatusCompleted => 'Abgeschlossen';
+
+  @override
+  String get projectStatusInProgress => 'In Arbeit';
+
+  @override
+  String get projectViewAction => 'Projekt ansehen';
+
+  @override
+  String get projectsEmptyTitle =>
+      'In dieser Kategorie sind noch keine Projekte veröffentlicht.';
+
+  @override
+  String get projectsEmptyDescription =>
+      'Neue Arbeiten werden hier bald ergänzt.';
+
+  @override
+  String get pageNotFoundTitle => 'Seite nicht gefunden';
+
+  @override
+  String get pageNotFoundDescription =>
+      'Die gesuchte Seite existiert nicht oder wurde möglicherweise verschoben.';
+
+  @override
+  String get backToHome => 'Zurück zur Startseite';
+
+  @override
+  String get experienceSectionLabel => 'Erfahrung';
+
+  @override
+  String get experienceSectionHeadline =>
+      'Erfahrung aus selbstständiger Arbeit und echter Kundenverantwortung.';
+
+  @override
+  String get experienceSectionDescription =>
+      'Ein beruflicher Weg durch Softwareentwicklung, digitale Lösungen und visuelle Kommunikation.';
+
+  @override
+  String get experienceCurrent => 'Aktuell';
+
+  @override
+  String get experiencePresent => 'Aktuell';
+
+  @override
+  String get experienceResponsibilities => 'Aufgaben';
+
+  @override
+  String get experienceTechnologies => 'Technologien';
+
+  @override
+  String get experienceVisitWebsite => 'Website besuchen';
+
+  @override
+  String get contactSectionLabel => 'Kontakt';
+
+  @override
+  String get contactSectionHeadline =>
+      'Eine Möglichkeit, ein Projekt oder eine Idee?';
+
+  @override
+  String get contactSectionDescription =>
+      'Ob Softwareposition, Ausbildung, Praktikum oder digitales Projekt, ich freue mich über Ihre Nachricht.';
+
+  @override
+  String get contactPanelLabel => 'Kontakt aufnehmen';
+
+  @override
+  String get contactEmailLabel => 'E-Mail';
+
+  @override
+  String get contactEmailDescription =>
+      'Der schnellste und direkteste Weg, mich zu erreichen.';
+
+  @override
+  String get contactSendEmail => 'E-Mail senden';
+
+  @override
+  String get contactCopyEmail => 'E-Mail kopieren';
+
+  @override
+  String get contactEmailCopied => 'E-Mail kopiert';
+
+  @override
+  String get contactLinksLabel => 'Weitere Links';
+
+  @override
+  String get contactOpenLink => 'Öffnen';
+
+  @override
+  String get contactDownloadCv => 'Lebenslauf herunterladen';
+
+  @override
+  String get contactCvFormat => 'PDF · Deutsch';
+
+  @override
+  String get contactActionFailed =>
+      'Die Aktion konnte nicht ausgeführt werden. Bitte versuchen Sie es erneut.';
 }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../app_widget/theme/app_theme.dart';
+import '../../../../app_widget/theme/app_theme.dart';
 
 class AvailabilityBadge extends StatelessWidget {
   const AvailabilityBadge({required this.text, super.key});

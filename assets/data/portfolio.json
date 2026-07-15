@@ -652,7 +652,7 @@
             "id": "github",
             "platform": "GitHub",
             "url": "https://github.com/Abdo-Zainaldin",
-            "icon": "assets/images/logos/github.svg",
+            "icon": "assets/images/logos/technologies/github.svg",
             "sortOrder": 1,
             "isVisible": true
         },

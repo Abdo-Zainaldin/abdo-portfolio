@@ -427,6 +427,240 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Client collaborations'**
   String get clientCollaborations;
+
+  /// No description provided for @projectsSectionLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Projects'**
+  String get projectsSectionLabel;
+
+  /// No description provided for @projectsSectionHeadline.
+  ///
+  /// In en, this message translates to:
+  /// **'Selected work built around real problems.'**
+  String get projectsSectionHeadline;
+
+  /// No description provided for @projectsSectionDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Software applications, web solutions and creative work presented through the decisions and problems behind them.'**
+  String get projectsSectionDescription;
+
+  /// No description provided for @projectFilterSoftware.
+  ///
+  /// In en, this message translates to:
+  /// **'Software Development'**
+  String get projectFilterSoftware;
+
+  /// No description provided for @projectFilterWeb.
+  ///
+  /// In en, this message translates to:
+  /// **'Web Development'**
+  String get projectFilterWeb;
+
+  /// No description provided for @projectFilterCreative.
+  ///
+  /// In en, this message translates to:
+  /// **'Creative Design'**
+  String get projectFilterCreative;
+
+  /// No description provided for @projectCategorySoftware.
+  ///
+  /// In en, this message translates to:
+  /// **'Software'**
+  String get projectCategorySoftware;
+
+  /// No description provided for @projectCategoryWeb.
+  ///
+  /// In en, this message translates to:
+  /// **'Web'**
+  String get projectCategoryWeb;
+
+  /// No description provided for @projectCategoryCreative.
+  ///
+  /// In en, this message translates to:
+  /// **'Creative'**
+  String get projectCategoryCreative;
+
+  /// No description provided for @projectStatusCompleted.
+  ///
+  /// In en, this message translates to:
+  /// **'Completed'**
+  String get projectStatusCompleted;
+
+  /// No description provided for @projectStatusInProgress.
+  ///
+  /// In en, this message translates to:
+  /// **'In progress'**
+  String get projectStatusInProgress;
+
+  /// No description provided for @projectViewAction.
+  ///
+  /// In en, this message translates to:
+  /// **'View project'**
+  String get projectViewAction;
+
+  /// No description provided for @projectsEmptyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'No projects published in this category yet.'**
+  String get projectsEmptyTitle;
+
+  /// No description provided for @projectsEmptyDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'New work will be added here soon.'**
+  String get projectsEmptyDescription;
+
+  /// No description provided for @pageNotFoundTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Page not found'**
+  String get pageNotFoundTitle;
+
+  /// No description provided for @pageNotFoundDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'The page you are looking for does not exist or may have been moved.'**
+  String get pageNotFoundDescription;
+
+  /// No description provided for @backToHome.
+  ///
+  /// In en, this message translates to:
+  /// **'Back to home'**
+  String get backToHome;
+
+  /// No description provided for @experienceSectionLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Experience'**
+  String get experienceSectionLabel;
+
+  /// No description provided for @experienceSectionHeadline.
+  ///
+  /// In en, this message translates to:
+  /// **'Experience built through independent work and real client responsibility.'**
+  String get experienceSectionHeadline;
+
+  /// No description provided for @experienceSectionDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'A professional journey across software development, digital solutions and visual communication.'**
+  String get experienceSectionDescription;
+
+  /// No description provided for @experienceCurrent.
+  ///
+  /// In en, this message translates to:
+  /// **'Current'**
+  String get experienceCurrent;
+
+  /// No description provided for @experiencePresent.
+  ///
+  /// In en, this message translates to:
+  /// **'Present'**
+  String get experiencePresent;
+
+  /// No description provided for @experienceResponsibilities.
+  ///
+  /// In en, this message translates to:
+  /// **'Responsibilities'**
+  String get experienceResponsibilities;
+
+  /// No description provided for @experienceTechnologies.
+  ///
+  /// In en, this message translates to:
+  /// **'Technologies'**
+  String get experienceTechnologies;
+
+  /// No description provided for @experienceVisitWebsite.
+  ///
+  /// In en, this message translates to:
+  /// **'Visit website'**
+  String get experienceVisitWebsite;
+
+  /// No description provided for @contactSectionLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Contact'**
+  String get contactSectionLabel;
+
+  /// No description provided for @contactSectionHeadline.
+  ///
+  /// In en, this message translates to:
+  /// **'Have an opportunity, a project, or an idea?'**
+  String get contactSectionHeadline;
+
+  /// No description provided for @contactSectionDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Whether it is a software role, an apprenticeship, an internship or a digital project, I would be glad to hear from you.'**
+  String get contactSectionDescription;
+
+  /// No description provided for @contactPanelLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Let\'s talk'**
+  String get contactPanelLabel;
+
+  /// No description provided for @contactEmailLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Email'**
+  String get contactEmailLabel;
+
+  /// No description provided for @contactEmailDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'The quickest and most direct way to reach me.'**
+  String get contactEmailDescription;
+
+  /// No description provided for @contactSendEmail.
+  ///
+  /// In en, this message translates to:
+  /// **'Send an email'**
+  String get contactSendEmail;
+
+  /// No description provided for @contactCopyEmail.
+  ///
+  /// In en, this message translates to:
+  /// **'Copy email'**
+  String get contactCopyEmail;
+
+  /// No description provided for @contactEmailCopied.
+  ///
+  /// In en, this message translates to:
+  /// **'Email copied'**
+  String get contactEmailCopied;
+
+  /// No description provided for @contactLinksLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Elsewhere'**
+  String get contactLinksLabel;
+
+  /// No description provided for @contactOpenLink.
+  ///
+  /// In en, this message translates to:
+  /// **'Open'**
+  String get contactOpenLink;
+
+  /// No description provided for @contactDownloadCv.
+  ///
+  /// In en, this message translates to:
+  /// **'Download CV'**
+  String get contactDownloadCv;
+
+  /// No description provided for @contactCvFormat.
+  ///
+  /// In en, this message translates to:
+  /// **'PDF · English'**
+  String get contactCvFormat;
+
+  /// No description provided for @contactActionFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'The action could not be completed. Please try again.'**
+  String get contactActionFailed;
 }
 
 class _AppLocalizationsDelegate

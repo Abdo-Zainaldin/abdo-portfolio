@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import '../../../../data/models/portfolio_data.dart';
-import '../../../../l10n/localization_helper.dart';
-import '../../../app_widget/theme/app_theme.dart';
+import '../../../../../data/models/portfolio_data.dart';
+import '../../../../../l10n/localization_helper.dart';
+import '../../../../app_widget/theme/app_theme.dart';
 
 class TechnologyLogos extends StatefulWidget {
   const TechnologyLogos({required this.tools, super.key});

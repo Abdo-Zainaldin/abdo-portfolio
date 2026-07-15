@@ -135,6 +135,37 @@ abstract final class AppTheme {
         selectionColor: overlayWarm,
         selectionHandleColor: primary,
       ),
+
+      scrollbarTheme: ScrollbarThemeData(
+        interactive: true,
+        radius: const Radius.circular(12),
+        mainAxisMargin: 8,
+        crossAxisMargin: 3,
+        minThumbLength: 48,
+
+        thickness: WidgetStateProperty.resolveWith<double?>((states) {
+          if (states.contains(WidgetState.hovered) ||
+              states.contains(WidgetState.dragged)) {
+            return 8;
+          }
+
+          return 6;
+        }),
+
+        thumbColor: WidgetStateProperty.resolveWith<Color?>((states) {
+          if (states.contains(WidgetState.dragged)) {
+            return AppTheme.primary;
+          }
+
+          if (states.contains(WidgetState.hovered)) {
+            return AppTheme.primary.withAlpha(210);
+          }
+
+          return AppTheme.primary.withAlpha(105);
+        }),
+
+        trackVisibility: WidgetStateProperty.all(false),
+      ),
     );
   }
 

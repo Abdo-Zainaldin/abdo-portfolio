@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import '../../../../data/models/portfolio_data.dart';
-import '../../../../l10n/localization_helper.dart';
-import '../../../app_widget/responsive/responsive_helper.dart';
-import '../../../app_widget/theme/app_theme.dart';
-import '../../../widgets/app_button.dart';
+import '../../../../../data/models/portfolio_data.dart';
+import '../../../../../l10n/localization_helper.dart';
+import '../../../../app_widget/responsive/responsive_helper.dart';
+import '../../../../app_widget/theme/app_theme.dart';
+import '../../../../widgets/app_button.dart';
 import 'social_links.dart';
 
 class HeroContent extends StatelessWidget {

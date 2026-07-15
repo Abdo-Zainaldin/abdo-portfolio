@@ -172,4 +172,131 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get clientCollaborations => 'Client collaborations';
+
+  @override
+  String get projectsSectionLabel => 'Projects';
+
+  @override
+  String get projectsSectionHeadline =>
+      'Selected work built around real problems.';
+
+  @override
+  String get projectsSectionDescription =>
+      'Software applications, web solutions and creative work presented through the decisions and problems behind them.';
+
+  @override
+  String get projectFilterSoftware => 'Software Development';
+
+  @override
+  String get projectFilterWeb => 'Web Development';
+
+  @override
+  String get projectFilterCreative => 'Creative Design';
+
+  @override
+  String get projectCategorySoftware => 'Software';
+
+  @override
+  String get projectCategoryWeb => 'Web';
+
+  @override
+  String get projectCategoryCreative => 'Creative';
+
+  @override
+  String get projectStatusCompleted => 'Completed';
+
+  @override
+  String get projectStatusInProgress => 'In progress';
+
+  @override
+  String get projectViewAction => 'View project';
+
+  @override
+  String get projectsEmptyTitle =>
+      'No projects published in this category yet.';
+
+  @override
+  String get projectsEmptyDescription => 'New work will be added here soon.';
+
+  @override
+  String get pageNotFoundTitle => 'Page not found';
+
+  @override
+  String get pageNotFoundDescription =>
+      'The page you are looking for does not exist or may have been moved.';
+
+  @override
+  String get backToHome => 'Back to home';
+
+  @override
+  String get experienceSectionLabel => 'Experience';
+
+  @override
+  String get experienceSectionHeadline =>
+      'Experience built through independent work and real client responsibility.';
+
+  @override
+  String get experienceSectionDescription =>
+      'A professional journey across software development, digital solutions and visual communication.';
+
+  @override
+  String get experienceCurrent => 'Current';
+
+  @override
+  String get experiencePresent => 'Present';
+
+  @override
+  String get experienceResponsibilities => 'Responsibilities';
+
+  @override
+  String get experienceTechnologies => 'Technologies';
+
+  @override
+  String get experienceVisitWebsite => 'Visit website';
+
+  @override
+  String get contactSectionLabel => 'Contact';
+
+  @override
+  String get contactSectionHeadline =>
+      'Have an opportunity, a project, or an idea?';
+
+  @override
+  String get contactSectionDescription =>
+      'Whether it is a software role, an apprenticeship, an internship or a digital project, I would be glad to hear from you.';
+
+  @override
+  String get contactPanelLabel => 'Let\'s talk';
+
+  @override
+  String get contactEmailLabel => 'Email';
+
+  @override
+  String get contactEmailDescription =>
+      'The quickest and most direct way to reach me.';
+
+  @override
+  String get contactSendEmail => 'Send an email';
+
+  @override
+  String get contactCopyEmail => 'Copy email';
+
+  @override
+  String get contactEmailCopied => 'Email copied';
+
+  @override
+  String get contactLinksLabel => 'Elsewhere';
+
+  @override
+  String get contactOpenLink => 'Open';
+
+  @override
+  String get contactDownloadCv => 'Download CV';
+
+  @override
+  String get contactCvFormat => 'PDF · English';
+
+  @override
+  String get contactActionFailed =>
+      'The action could not be completed. Please try again.';
 }
