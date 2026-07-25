@@ -206,7 +206,9 @@ _Project _$ProjectFromJson(Map<String, dynamic> json) => _Project(
   id: json['id'] as String,
   slug: json['slug'] as String,
   isSample: json['isSample'] as bool? ?? false,
-  category: json['category'] as String,
+  categories: (json['categories'] as List<dynamic>)
+      .map((e) => e as String)
+      .toList(),
   status: json['status'] as String,
   year: (json['year'] as num).toInt(),
   featured: json['featured'] as bool,
@@ -285,7 +287,7 @@ Map<String, dynamic> _$ProjectToJson(_Project instance) => <String, dynamic>{
   'id': instance.id,
   'slug': instance.slug,
   'isSample': instance.isSample,
-  'category': instance.category,
+  'categories': instance.categories,
   'status': instance.status,
   'year': instance.year,
   'featured': instance.featured,

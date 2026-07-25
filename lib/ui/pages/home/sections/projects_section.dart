@@ -31,7 +31,7 @@ class _ProjectsSectionState extends State<ProjectsSection> {
         );
 
     final filteredProjects = visibleProjects.where((project) {
-      return project.category == _selectedCategory.jsonValue;
+      return project.categories.contains(_selectedCategory.jsonValue);
     }).toList();
 
     return Container(

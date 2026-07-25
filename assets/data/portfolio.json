@@ -300,10 +300,385 @@
     ],
     "projects": [
         {
+            "id": "sh-clean-website",
+            "slug": "sh-clean-website",
+            "isSample": false,
+            "categories": [
+                "webDevelopment"
+            ],
+            "status": "completed",
+            "year": 2025,
+            "featured": false,
+            "isVisible": true,
+            "sortOrder": 0,
+            "title": {
+                "en": "SH Clean Website",
+                "de": "SH Clean Website"
+            },
+            "role": {
+                "en": "Web Designer & Implementation Lead",
+                "de": "Webdesigner & Projektumsetzung"
+            },
+            "client": {
+                "en": "SH Clean",
+                "de": "SH Clean"
+            },
+            "shortDescription": {
+                "en": "Business website for SH Clean, presenting its cleaning services clearly and guiding customers toward contact and inquiries.",
+                "de": "Geschäftswebsite für SH Clean mit übersichtlichen Reinigungsleistungen und klaren Wegen zu Kontakt und Anfrage."
+            },
+            "fullDescription": {
+                "en": "SH Clean is a business website for a professional cleaning company serving private, commercial and industrial customers. I planned the structure, visual direction and customer journey, organized a broad service catalog, and evaluated an appointment workflow suited to the client's daily operations.",
+                "de": "SH Clean ist die Geschäftswebsite eines Reinigungsunternehmens für Privat-, Gewerbe- und Industriekunden. Ich plante Struktur, Gestaltung und Nutzerführung, organisierte das umfangreiche Leistungsangebot und prüfte einen passenden Ablauf für Kundentermine."
+            },
+            "problem": {
+                "en": "SH Clean needed a professional online presence for a broad range of cleaning services. The site had to make services easy to understand, support customer inquiries and accommodate appointments without turning the experience into an ecommerce flow.",
+                "de": "SH Clean benötigte einen professionellen Webauftritt für zahlreiche Reinigungsleistungen. Kunden sollten Angebote schnell verstehen, Kontakt aufnehmen und Termine anfragen können, ohne einen unpassenden Shop-Ablauf zu durchlaufen."
+            },
+            "solution": {
+                "en": "I organized the website around clear service sections, trust-building content and contact-focused actions, while establishing a consistent visual identity. For appointments, I evaluated external solutions and designed a simpler general booking concept instead of separate products for every cleaning service.",
+                "de": "Ich strukturierte die Website mit klaren Leistungsbereichen, vertrauensbildenden Inhalten und eindeutigen Kontaktmöglichkeiten. Für Termine prüfte ich externe Lösungen und plante einen allgemeinen Buchungsablauf statt einzelner Produkte für jede Reinigungsleistung."
+            },
+            "responsibilities": [
+                {
+                    "en": "Planned the website structure and customer journey around the client's services.",
+                    "de": "Planung von Website-Struktur und Nutzerführung anhand des Leistungsangebots."
+                },
+                {
+                    "en": "Organized a broad cleaning service catalog into clear website content.",
+                    "de": "Strukturierung des umfangreichen Reinigungsangebots für die Website."
+                },
+                {
+                    "en": "Defined the visual direction using dark blue, orange and white.",
+                    "de": "Festlegung der visuellen Gestaltung mit Dunkelblau, Orange und Weiß."
+                },
+                {
+                    "en": "Evaluated appointment systems based on usability and client administration.",
+                    "de": "Bewertung von Terminsystemen nach Nutzerfreundlichkeit und Kundenverwaltung."
+                },
+                {
+                    "en": "Prepared website and WhatsApp communication for customer interactions.",
+                    "de": "Vorbereitung von Website- und WhatsApp-Kommunikation für Kundenkontakte."
+                }
+            ],
+            "features": [
+                {
+                    "en": "Structured cleaning service catalog",
+                    "de": "Strukturierter Leistungskatalog"
+                },
+                {
+                    "en": "Promotional offers and calls to action",
+                    "de": "Angebote und Handlungsaufforderungen"
+                },
+                {
+                    "en": "Customer reviews and trust content",
+                    "de": "Kundenbewertungen und Vertrauensinhalte"
+                },
+                {
+                    "en": "Contact-focused customer journey",
+                    "de": "Kontaktorientierte Nutzerführung"
+                },
+                {
+                    "en": "WhatsApp customer communication",
+                    "de": "WhatsApp-Kundenkommunikation"
+                }
+            ],
+            "challenges": [
+                {
+                    "title": {
+                        "en": "Designing the booking workflow",
+                        "de": "Planung des Buchungsablaufs"
+                    },
+                    "description": {
+                        "en": "The available website booking flow treated cleaning appointments too much like ecommerce products. I evaluated alternatives and moved toward Calendly with one general appointment type instead of separate bookings for every service.",
+                        "de": "Die vorhandene Buchungslösung behandelte Reinigungstermine zu stark wie Shop-Produkte. Ich prüfte Alternativen und entschied mich für einen einfacheren Calendly-Ansatz mit einem allgemeinen Termintyp."
+                    }
+                },
+                {
+                    "title": {
+                        "en": "Separating client administration",
+                        "de": "Trennung der Kundenverwaltung"
+                    },
+                    "description": {
+                        "en": "The client needed to handle appointments without accessing the entire website environment. I evaluated a separate booking system so appointment management could remain independent from website administration.",
+                        "de": "Der Kunde sollte Termine verwalten können, ohne Zugriff auf die gesamte Website-Verwaltung zu benötigen. Dafür prüfte ich ein separates Buchungssystem unabhängig von der Website-Pflege."
+                    }
+                },
+                {
+                    "title": {
+                        "en": "Organizing a broad service catalog",
+                        "de": "Strukturierung vieler Leistungen"
+                    },
+                    "description": {
+                        "en": "SH Clean offers many different cleaning services. I organized them into concise website content so visitors could understand the available services without navigating an overloaded interface.",
+                        "de": "SH Clean bietet zahlreiche Reinigungsleistungen. Ich strukturierte sie in kurze, verständliche Inhalte, damit Besucher passende Leistungen schnell erfassen können."
+                    }
+                }
+            ],
+            "results": [
+                {
+                    "value": "Live",
+                    "label": {
+                        "en": "Published website",
+                        "de": "Veröffentlichte Website"
+                    },
+                    "description": {
+                        "en": "The completed SH Clean business website was published at sh-clean.de.",
+                        "de": "Die fertige Geschäftswebsite von SH Clean wurde unter sh-clean.de veröffentlicht."
+                    }
+                }
+            ],
+            "lessonsLearned": [
+                {
+                    "en": "A feature should be selected based on how well its interaction model fits the actual business workflow, not simply because it is already available.",
+                    "de": "Eine Funktion sollte danach ausgewählt werden, wie gut ihr Ablauf zum tatsächlichen Geschäftsprozess passt, nicht nur nach ihrer Verfügbarkeit."
+                },
+                {
+                    "en": "Client administration and handoff requirements should be considered while integrations are selected, not only after the website is completed.",
+                    "de": "Kundenverwaltung und spätere Übergabe sollten bereits bei der Auswahl von Integrationen berücksichtigt werden."
+                },
+                {
+                    "en": "A broad service catalog becomes easier to navigate when content is structured around customer decisions rather than internal business categories.",
+                    "de": "Ein umfangreiches Leistungsangebot wird verständlicher, wenn die Inhalte nach Kundenbedürfnissen statt internen Kategorien strukturiert werden."
+                }
+            ],
+            "technologies": [
+                "Hostinger Builder",
+                "Calendly",
+                "WhatsApp Business"
+            ],
+            "platforms": [
+                "Web"
+            ],
+            "tags": [
+                "Business Website",
+                "UX Design",
+                "Booking Workflow",
+                "Information Architecture",
+                "Client Handoff"
+            ],
+            "coverImage": {
+                "path": "assets/images/projects/sh_clean/cover.webp",
+                "alt": {
+                    "en": "SH Clean cleaning service business website",
+                    "de": "Geschäftswebsite des Reinigungsunternehmens SH Clean"
+                }
+            },
+            "gallery": [],
+            "links": [
+                {
+                    "type": "live",
+                    "url": "https://sh-clean.de/",
+                    "isVisible": true
+                }
+            ]
+        },
+        {
+            "id": "prime-trockenbau",
+            "slug": "prime-trockenbau",
+            "isSample": false,
+            "categories": [
+                "webDevelopment",
+                "creativeDesign"
+            ],
+            "status": "inProgress",
+            "year": 2026,
+            "featured": true,
+            "isVisible": true,
+            "sortOrder": 0,
+            "title": {
+                "en": "Prime Trockenbau",
+                "de": "Prime Trockenbau"
+            },
+            "role": {
+                "en": "Web Designer & Graphic Designer",
+                "de": "Webdesigner & Grafikdesigner"
+            },
+            "client": {
+                "en": "Prime Trockenbau",
+                "de": "Prime Trockenbau"
+            },
+            "shortDescription": {
+                "en": "Website and brand identity for a construction company, organizing a broad service range into a clear customer experience.",
+                "de": "Website und Markenauftritt für einen Baubetrieb mit klar strukturierter Darstellung eines umfangreichen Leistungsangebots."
+            },
+            "fullDescription": {
+                "en": "Prime Trockenbau is a website and branding project for a German construction and renovation company. I planned the website structure, organized the extensive service catalog, developed the visual direction and extended the brand across web, business card and flyer concepts.",
+                "de": "Prime Trockenbau ist ein Website- und Branding-Projekt für einen deutschen Bau- und Renovierungsbetrieb. Ich plante die Website-Struktur, ordnete das umfangreiche Leistungsangebot, entwickelte die visuelle Richtung und übertrug sie auf Website, Visitenkarte und Flyer."
+            },
+            "problem": {
+                "en": "The company needed a professional identity that could represent a wide range of construction and renovation services without overwhelming potential customers. The branding also had to balance a premium appearance with a credible craftsmanship-focused identity.",
+                "de": "Das Unternehmen benötigte einen professionellen Auftritt für zahlreiche Bau- und Renovierungsleistungen, ohne Kunden mit Informationen zu überladen. Gleichzeitig sollte die Marke hochwertig wirken und glaubwürdig zum Handwerk passen."
+            },
+            "solution": {
+                "en": "I created a four-page website structure, grouped the complete service catalog into clear categories and selected different content priorities for the homepage and print materials. A dark blue, orange and white visual system connected the website, branding and marketing concepts.",
+                "de": "Ich entwickelte eine Website mit vier Hauptseiten, strukturierte das gesamte Leistungsangebot in klare Kategorien und setzte je nach Medium unterschiedliche Schwerpunkte. Dunkelblau, Orange und Weiß verbinden Website, Branding und Werbemittel visuell."
+            },
+            "responsibilities": [
+                {
+                    "en": "Planned the website architecture and customer-facing content hierarchy.",
+                    "de": "Planung der Website-Struktur und kundenorientierten Inhaltshierarchie."
+                },
+                {
+                    "en": "Organized the complete service catalog into clear categories and priorities.",
+                    "de": "Strukturierung des gesamten Leistungsangebots in klare Kategorien und Prioritäten."
+                },
+                {
+                    "en": "Developed the brand colors, visual direction and logo presentation.",
+                    "de": "Entwicklung von Markenfarben, visueller Richtung und Logo-Präsentation."
+                },
+                {
+                    "en": "Created German website copy, calls to action and trust messaging.",
+                    "de": "Erstellung deutscher Website-Texte, Handlungsaufforderungen und Vertrauensbotschaften."
+                },
+                {
+                    "en": "Extended the visual direction into business card and flyer concepts.",
+                    "de": "Übertragung der visuellen Richtung auf Visitenkarten- und Flyer-Konzepte."
+                }
+            ],
+            "features": [
+                {
+                    "en": "Four-page website architecture",
+                    "de": "Website-Struktur mit vier Hauptseiten"
+                },
+                {
+                    "en": "Categorized service catalog",
+                    "de": "Kategorisierter Leistungskatalog"
+                },
+                {
+                    "en": "Multi-path homepage calls to action",
+                    "de": "Mehrere Handlungswege auf der Startseite"
+                },
+                {
+                    "en": "Trust-focused homepage content",
+                    "de": "Vertrauensbildende Startseiteninhalte"
+                },
+                {
+                    "en": "Consistent cross-channel branding",
+                    "de": "Einheitliches medienübergreifendes Branding"
+                },
+                {
+                    "en": "SEO-oriented website copy",
+                    "de": "SEO-orientierte Website-Texte"
+                }
+            ],
+            "challenges": [
+                {
+                    "title": {
+                        "en": "Structuring a broad service catalog",
+                        "de": "Strukturierung vieler Leistungen"
+                    },
+                    "description": {
+                        "en": "The company offers services across many construction disciplines. I grouped them into eight categories and used smaller priority sets on the homepage and print materials to prevent information overload.",
+                        "de": "Das Unternehmen bietet Leistungen aus vielen Baubereichen. Ich gliederte sie in acht Kategorien und nutzte auf Startseite und Printmedien kleinere Schwerpunkte, um Informationsüberlastung zu vermeiden."
+                    }
+                },
+                {
+                    "title": {
+                        "en": "Defining the premium brand direction",
+                        "de": "Definition der Markenrichtung"
+                    },
+                    "description": {
+                        "en": "The client associated a premium appearance with gold. I explored that direction, compared it with the original dark blue and orange system and returned to the original palette after evaluating its fit with the business.",
+                        "de": "Der Kunde verband einen hochwertigen Auftritt zunächst mit Gold. Ich prüfte diese Richtung, verglich sie mit Dunkelblau und Orange und kehrte nach Bewertung der Markenwirkung zur ursprünglichen Palette zurück."
+                    }
+                },
+                {
+                    "title": {
+                        "en": "Adapting content across media",
+                        "de": "Inhalte für verschiedene Medien"
+                    },
+                    "description": {
+                        "en": "The full service catalog was too large for every touchpoint. I defined different information levels for the Services page, homepage, business card and flyer while keeping the same overall positioning.",
+                        "de": "Das vollständige Leistungsangebot war für einzelne Medien zu umfangreich. Ich definierte unterschiedliche Informationstiefen für Leistungsseite, Startseite, Visitenkarte und Flyer."
+                    }
+                }
+            ],
+            "results": [
+                {
+                    "value": "8",
+                    "label": {
+                        "en": "Service groups",
+                        "de": "Leistungsgruppen"
+                    },
+                    "description": {
+                        "en": "The complete service offering was organized into eight customer-facing categories.",
+                        "de": "Das vollständige Leistungsangebot wurde in acht übersichtliche Kategorien gegliedert."
+                    }
+                },
+                {
+                    "value": "4",
+                    "label": {
+                        "en": "Primary pages",
+                        "de": "Hauptseiten"
+                    },
+                    "description": {
+                        "en": "The website architecture was reduced to Home, Services, About Us and Contact.",
+                        "de": "Die Website-Struktur wurde auf Startseite, Leistungen, Über uns und Kontakt reduziert."
+                    }
+                },
+                {
+                    "value": "Brand",
+                    "label": {
+                        "en": "Unified visual identity",
+                        "de": "Einheitlicher Markenauftritt"
+                    },
+                    "description": {
+                        "en": "One visual direction was developed for the website, logo presentation and print concepts.",
+                        "de": "Eine gemeinsame visuelle Richtung wurde für Website, Logo-Präsentation und Print-Konzepte entwickelt."
+                    }
+                }
+            ],
+            "lessonsLearned": [
+                {
+                    "en": "Information hierarchy should change with the medium instead of repeating the complete service catalog everywhere.",
+                    "de": "Die Informationshierarchie sollte sich dem Medium anpassen, statt überall das gesamte Leistungsangebot zu wiederholen."
+                },
+                {
+                    "en": "Client feedback is most useful when the underlying business goal is identified before changing the visual direction.",
+                    "de": "Kundenfeedback wird besonders wertvoll, wenn vor einer Designänderung das zugrunde liegende Geschäftsziel verstanden wird."
+                },
+                {
+                    "en": "Premium positioning depends on industry context and does not automatically require traditional luxury design cues.",
+                    "de": "Eine hochwertige Positionierung hängt vom Branchenkontext ab und benötigt nicht automatisch klassische Luxusmerkmale."
+                }
+            ],
+            "technologies": [
+                "Hostinger Builder"
+            ],
+            "platforms": [
+                "Web"
+            ],
+            "tags": [
+                "Brand Identity",
+                "Responsive Design",
+                "Information Architecture",
+                "Content Strategy",
+                "Print Design"
+            ],
+            "coverImage": {
+                "path": "assets/images/projects/primetrockenbau/cover.webp",
+                "alt": {
+                    "en": "Prime Trockenbau website and brand identity presentation",
+                    "de": "Website- und Markenpräsentation von Prime Trockenbau"
+                }
+            },
+            "gallery": [],
+            "links": [
+                {
+                    "type": "live",
+                    "url": "https://primetrockenbau.de/",
+                    "isVisible": true
+                }
+            ]
+        },
+        {
             "id": "sample-orbit-task-app",
             "slug": "sample-orbit-task-app",
             "isSample": true,
-            "category": "softwareDevelopment",
+            "categories": [
+                "softwareDevelopment"
+            ],
             "status": "completed",
             "year": 2026,
             "featured": true,
@@ -462,97 +837,6 @@
                     "isVisible": false
                 }
             ]
-        },
-        {
-            "id": "sample-studio-website",
-            "slug": "sample-studio-website",
-            "isSample": true,
-            "category": "webDevelopment",
-            "status": "inProgress",
-            "year": 2026,
-            "featured": true,
-            "isVisible": true,
-            "sortOrder": 2,
-            "title": {
-                "en": "North Studio Website",
-                "de": "North Studio Website"
-            },
-            "role": {
-                "en": "Sample Web Developer",
-                "de": "Beispiel Webentwickler"
-            },
-            "client": {
-                "en": "Fictional sample client",
-                "de": "Fiktiver Beispielkunde"
-            },
-            "shortDescription": {
-                "en": "A fictional business website used to test web-project filters, progress states and sparse project details.",
-                "de": "Eine fiktive Unternehmenswebsite zum Testen von Webprojekt-Filtern, Fortschrittsstatus und reduzierten Projektdetails."
-            },
-            "fullDescription": {
-                "en": "North Studio is sample content created only for UI development. Unlike the first project, it intentionally contains fewer detail items so empty and optional sections can be tested.",
-                "de": "North Studio ist ein Beispielinhalt, der ausschließlich für die UI-Entwicklung erstellt wurde. Im Gegensatz zum ersten Projekt enthält er bewusst weniger Detailangaben, damit leere und optionale Bereiche getestet werden können."
-            },
-            "problem": {
-                "en": "The project interface needed a second category and an in-progress state for realistic filter and status testing.",
-                "de": "Die Projektoberfläche benötigte eine zweite Kategorie und einen laufenden Status für realistische Filter- und Statustests."
-            },
-            "solution": {
-                "en": "A compact fictional website project with only the essential content fields populated.",
-                "de": "Ein kompaktes fiktives Website-Projekt, bei dem nur die wesentlichen Inhaltsfelder ausgefüllt sind."
-            },
-            "responsibilities": [
-                {
-                    "en": "Prepared a fictional responsive website concept.",
-                    "de": "Vorbereitung eines fiktiven responsiven Website-Konzepts."
-                },
-                {
-                    "en": "Added sample content for web-category testing.",
-                    "de": "Hinzufügen von Beispielinhalten zum Testen der Web-Kategorie."
-                }
-            ],
-            "features": [
-                {
-                    "en": "Responsive business layout",
-                    "de": "Responsives Unternehmenslayout"
-                },
-                {
-                    "en": "Clear contact paths",
-                    "de": "Klare Kontaktwege"
-                }
-            ],
-            "challenges": [],
-            "results": [],
-            "lessonsLearned": [],
-            "technologies": [
-                "WordPress",
-                "Elementor",
-                "CSS"
-            ],
-            "platforms": [
-                "Web"
-            ],
-            "tags": [
-                "Sample",
-                "Business Website",
-                "Responsive"
-            ],
-            "thumbnailImage": {
-                "path": "assets/images/projects/sample_studio/thumbnail.webp",
-                "alt": {
-                    "en": "Sample studio website preview",
-                    "de": "Vorschau der Beispiel-Studio-Website"
-                }
-            },
-            "coverImage": {
-                "path": "assets/images/projects/sample_studio/cover.webp",
-                "alt": {
-                    "en": "Sample responsive studio website",
-                    "de": "Beispiel einer responsiven Studio-Website"
-                }
-            },
-            "gallery": [],
-            "links": []
         }
     ],
     "experience": [

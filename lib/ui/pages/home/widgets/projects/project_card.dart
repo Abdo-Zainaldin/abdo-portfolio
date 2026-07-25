@@ -64,7 +64,10 @@ class _ProjectCardState extends State<ProjectCard> {
             clipBehavior: Clip.antiAlias,
             child: InkWell(
               onTap: () {
-                context.push('/projects/${project.slug}');
+                context.pushNamed(
+                  'projectDetails',
+                  pathParameters: {'slug': project.slug},
+                );
               },
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -78,7 +81,7 @@ class _ProjectCardState extends State<ProjectCard> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         ProjectCardMetadata(
-                          category: project.category,
+                          categories: project.categories,
                           status: project.status,
                           year: project.year,
                         ),
@@ -138,6 +141,8 @@ class ProjectCardImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final image = project.thumbnailImage ?? project.coverImage;
+
     return AspectRatio(
       aspectRatio: 16 / 9,
       child: ClipRect(
@@ -147,9 +152,9 @@ class ProjectCardImage extends StatelessWidget {
           curve: Curves.easeOutCubic,
           child: Semantics(
             image: true,
-            label: context.localized(project.thumbnailImage!.alt),
+            label: context.localized(image.alt),
             child: Image.asset(
-              project.thumbnailImage!.path,
+              image.path,
               fit: BoxFit.cover,
               excludeFromSemantics: true,
               errorBuilder: (_, __, ___) {
@@ -173,13 +178,13 @@ class ProjectCardImage extends StatelessWidget {
 
 class ProjectCardMetadata extends StatelessWidget {
   const ProjectCardMetadata({
-    required this.category,
+    required this.categories,
     required this.status,
     required this.year,
     super.key,
   });
 
-  final String category;
+  final List<String> categories;
   final String status;
   final int year;
 
@@ -190,10 +195,11 @@ class ProjectCardMetadata extends StatelessWidget {
       runSpacing: 10,
       crossAxisAlignment: WrapCrossAlignment.center,
       children: [
-        ProjectMetadataLabel(
-          text: _categoryLabel(context),
-          color: AppTheme.secondary,
-        ),
+        for (final category in categories)
+          ProjectMetadataLabel(
+            text: _categoryLabel(context, category),
+            color: AppTheme.secondary,
+          ),
         ProjectMetadataLabel(text: _statusLabel(context), color: _statusColor),
         Text(
           year.toString(),
@@ -218,7 +224,7 @@ class ProjectCardMetadata extends StatelessWidget {
     }
   }
 
-  String _categoryLabel(BuildContext context) {
+  String _categoryLabel(BuildContext context, String category) {
     switch (category) {
       case 'softwareDevelopment':
         return context.l10n.projectCategorySoftware;

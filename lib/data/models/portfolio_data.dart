@@ -133,7 +133,7 @@ abstract class Project with _$Project {
     required String id,
     required String slug,
     @Default(false) bool isSample,
-    required String category,
+    required List<String> categories,
     required String status,
     required int year,
     required bool featured,
