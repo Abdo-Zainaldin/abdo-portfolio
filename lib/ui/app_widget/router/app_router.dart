@@ -3,12 +3,17 @@ import 'package:go_router/go_router.dart';
 
 import '../../../l10n/localization_helper.dart';
 import '../../pages/home/home_page.dart';
+import '../../pages/legal/datenschutz_page.dart';
+import '../../pages/legal/impressum_page.dart';
 import '../../pages/project_details/project_details_page.dart';
 import '../theme/app_theme.dart';
 
 abstract final class AppRouter {
   static const String homePath = '/';
+  static const String projectsLocation = '/?section=projects';
   static const String projectDetailsPath = '/projects/:slug';
+  static const String impressumPath = '/impressum';
+  static const String datenschutzPath = '/datenschutz';
 
   static final GoRouter router = GoRouter(
     initialLocation: homePath,
@@ -23,6 +28,29 @@ abstract final class AppRouter {
           );
         },
       ),
+
+      GoRoute(
+        path: impressumPath,
+        name: 'impressum',
+        pageBuilder: (context, state) {
+          return NoTransitionPage<void>(
+            key: state.pageKey,
+            child: const ImpressumPage(),
+          );
+        },
+      ),
+
+      GoRoute(
+        path: datenschutzPath,
+        name: 'datenschutz',
+        pageBuilder: (context, state) {
+          return NoTransitionPage<void>(
+            key: state.pageKey,
+            child: const DatenschutzPage(),
+          );
+        },
+      ),
+
       GoRoute(
         path: projectDetailsPath,
         name: 'projectDetails',

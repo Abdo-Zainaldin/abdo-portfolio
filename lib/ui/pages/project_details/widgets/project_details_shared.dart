@@ -292,7 +292,7 @@ class ProjectBottomNavigation extends StatelessWidget {
           if (context.canPop()) {
             context.pop();
           } else {
-            context.go(AppRouter.homePath);
+            context.go(AppRouter.projectsLocation);
           }
         },
         icon: const Icon(Icons.arrow_back_rounded),

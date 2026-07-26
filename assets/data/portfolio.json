@@ -32,6 +32,12 @@
             "German"
         ]
     },
+    "legal": {
+        "street": null,
+        "postalCode": null,
+        "city": "Neuwied",
+        "country": "Deutschland"
+    },
     "about": {
         "title": {
             "en": "About Me",

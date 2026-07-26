@@ -144,7 +144,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get projectNotFound => 'Project not found.';
 
   @override
-  String get builtWithFlutter => 'Built with Flutter';
+  String get footerBuiltWith => 'Built with Flutter, crafted with';
+
+  @override
+  String get footerBy => 'by';
 
   @override
   String get allRightsReserved => 'All rights reserved.';
@@ -299,4 +302,83 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get contactActionFailed =>
       'The action could not be completed. Please try again.';
+
+  @override
+  String get impressum => 'Imprint';
+
+  @override
+  String get datenschutz => 'Privacy Policy';
+
+  @override
+  String get legalAddressPending =>
+      'A full postal address will be added if and when it becomes legally required for this website.';
+
+  @override
+  String get legalContactPending =>
+      'Contact information will be provided here when required.';
+
+  @override
+  String get impressumProviderTitle => 'Provider information';
+
+  @override
+  String get impressumContactTitle => 'Contact';
+
+  @override
+  String get impressumWebsitePurposeTitle => 'Purpose of this website';
+
+  @override
+  String get impressumWebsitePurposeText =>
+      'This website is a personal professional portfolio used to present my work, experience and skills. It does not currently operate as an online shop or offer paid services directly through the website.';
+
+  @override
+  String get privacyControllerTitle => '1. Controller';
+
+  @override
+  String get privacyGeneralTitle => '2. General information';
+
+  @override
+  String get privacyGeneralText =>
+      'This website processes personal data only where necessary to provide the website, maintain its security, or respond to direct contact. No personal data is collected for advertising or profiling purposes.';
+
+  @override
+  String get privacyHostingTitle => '3. Hosting and server logs';
+
+  @override
+  String get privacyHostingText =>
+      'This website is hosted by Hostinger. When the website is accessed, technically necessary server data may be processed, such as the IP address, date and time of access, requested page or file, browser information and technical request information. This processing is necessary for the secure and reliable operation of the website. The legal basis is Article 6(1)(f) GDPR, based on the legitimate interest in securely providing and maintaining this website. Server data is retained only for as long as necessary for operation, security and troubleshooting, unless a longer retention period is legally required.';
+
+  @override
+  String get privacyEmailTitle => '4. Contact by email';
+
+  @override
+  String get privacyEmailText =>
+      'If you contact me by email, the information you provide, including your email address and message content, is processed in order to respond to your request. Depending on the nature of the request, processing is based on Article 6(1)(b) GDPR for pre-contractual communication or Article 6(1)(f) GDPR based on the legitimate interest in responding to enquiries. The data is deleted when it is no longer required for the purpose of the communication, unless legal retention obligations apply.';
+
+  @override
+  String get privacyFontsTitle => '5. Local fonts';
+
+  @override
+  String get privacyFontsText =>
+      'The fonts used on this website are stored and delivered locally with the website. No connection to external font providers such as Google Fonts is required when displaying the website.';
+
+  @override
+  String get privacyExternalLinksTitle => '6. External links';
+
+  @override
+  String get privacyExternalLinksText =>
+      'This website contains links to external websites and services, including professional profiles, source-code repositories and project websites. A connection to those providers is established only when you open the corresponding link. The respective provider is responsible for data processing on its website.';
+
+  @override
+  String get privacyCookiesTitle => '7. Cookies and tracking';
+
+  @override
+  String get privacyCookiesText =>
+      'This website currently does not use analytics, advertising or tracking services and does not use non-essential cookies.';
+
+  @override
+  String get privacyRightsTitle => '8. Your rights';
+
+  @override
+  String get privacyRightsText =>
+      'Under the applicable data protection laws, you may have rights including access to your personal data, rectification, erasure, restriction of processing, objection to processing and data portability. You also have the right to lodge a complaint with a competent data protection supervisory authority.';
 }

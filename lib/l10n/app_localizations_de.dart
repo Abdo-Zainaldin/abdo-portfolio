@@ -144,7 +144,10 @@ class AppLocalizationsDe extends AppLocalizations {
   String get projectNotFound => 'Projekt wurde nicht gefunden.';
 
   @override
-  String get builtWithFlutter => 'Mit Flutter entwickelt';
+  String get footerBuiltWith => 'Mit Flutter entwickelt, mit';
+
+  @override
+  String get footerBy => 'gestaltet von';
 
   @override
   String get allRightsReserved => 'Alle Rechte vorbehalten.';
@@ -300,4 +303,83 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get contactActionFailed =>
       'Die Aktion konnte nicht ausgeführt werden. Bitte versuchen Sie es erneut.';
+
+  @override
+  String get impressum => 'Impressum';
+
+  @override
+  String get datenschutz => 'Datenschutzerklärung';
+
+  @override
+  String get legalAddressPending =>
+      'Eine vollständige Postanschrift wird ergänzt, sofern und sobald sie für diese Website gesetzlich erforderlich ist.';
+
+  @override
+  String get legalContactPending =>
+      'Erforderliche Kontaktangaben werden hier ergänzt, sobald dies notwendig ist.';
+
+  @override
+  String get impressumProviderTitle => 'Angaben zum Anbieter';
+
+  @override
+  String get impressumContactTitle => 'Kontakt';
+
+  @override
+  String get impressumWebsitePurposeTitle => 'Zweck dieser Website';
+
+  @override
+  String get impressumWebsitePurposeText =>
+      'Diese Website ist ein persönliches berufliches Portfolio zur Darstellung meiner Arbeiten, Erfahrungen und Fähigkeiten. Derzeit wird über die Website weder ein Online-Shop betrieben noch werden unmittelbar kostenpflichtige Leistungen angeboten.';
+
+  @override
+  String get privacyControllerTitle => '1. Verantwortlicher';
+
+  @override
+  String get privacyGeneralTitle => '2. Allgemeine Hinweise';
+
+  @override
+  String get privacyGeneralText =>
+      'Auf dieser Website werden personenbezogene Daten nur verarbeitet, soweit dies für die Bereitstellung der Website, ihre Sicherheit oder die Beantwortung einer direkten Kontaktaufnahme erforderlich ist. Eine Verarbeitung zu Werbe- oder Profilingzwecken findet nicht statt.';
+
+  @override
+  String get privacyHostingTitle => '3. Hosting und Server-Logfiles';
+
+  @override
+  String get privacyHostingText =>
+      'Diese Website wird bei Hostinger gehostet. Beim Aufruf der Website können technisch erforderliche Serverdaten verarbeitet werden, beispielsweise die IP-Adresse, Datum und Uhrzeit des Zugriffs, die aufgerufene Seite oder Datei, Browserinformationen sowie technische Informationen zur Anfrage. Die Verarbeitung dient dem sicheren und zuverlässigen Betrieb der Website. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO aufgrund des berechtigten Interesses an der sicheren Bereitstellung und dem Betrieb dieser Website. Serverdaten werden nur so lange gespeichert, wie dies für Betrieb, Sicherheit und Fehleranalyse erforderlich ist, sofern keine längere gesetzliche Aufbewahrungspflicht besteht.';
+
+  @override
+  String get privacyEmailTitle => '4. Kontakt per E-Mail';
+
+  @override
+  String get privacyEmailText =>
+      'Wenn Sie mich per E-Mail kontaktieren, werden die von Ihnen übermittelten Angaben, einschließlich Ihrer E-Mail-Adresse und des Inhalts Ihrer Nachricht, zur Bearbeitung Ihrer Anfrage verarbeitet. Je nach Inhalt der Anfrage erfolgt die Verarbeitung auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO im Rahmen vorvertraglicher Kommunikation oder auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO aufgrund des berechtigten Interesses an der Beantwortung von Anfragen. Die Daten werden gelöscht, sobald sie für die Kommunikation nicht mehr erforderlich sind, sofern keine gesetzlichen Aufbewahrungspflichten entgegenstehen.';
+
+  @override
+  String get privacyFontsTitle => '5. Lokale Schriftarten';
+
+  @override
+  String get privacyFontsText =>
+      'Die auf dieser Website verwendeten Schriftarten werden lokal mit der Website gespeichert und ausgeliefert. Beim Anzeigen der Website ist daher keine Verbindung zu externen Schriftart-Anbietern wie Google Fonts erforderlich.';
+
+  @override
+  String get privacyExternalLinksTitle => '6. Externe Links';
+
+  @override
+  String get privacyExternalLinksText =>
+      'Diese Website enthält Links zu externen Websites und Diensten, darunter berufliche Profile, Quellcode-Repositories und Projektwebsites. Eine Verbindung zum jeweiligen Anbieter wird erst hergestellt, wenn Sie den entsprechenden Link öffnen. Für die Datenverarbeitung auf der externen Website ist der jeweilige Anbieter verantwortlich.';
+
+  @override
+  String get privacyCookiesTitle => '7. Cookies und Tracking';
+
+  @override
+  String get privacyCookiesText =>
+      'Diese Website verwendet derzeit keine Analyse-, Werbe- oder Tracking-Dienste und setzt keine nicht erforderlichen Cookies ein.';
+
+  @override
+  String get privacyRightsTitle => '8. Ihre Rechte';
+
+  @override
+  String get privacyRightsText =>
+      'Im Rahmen der geltenden Datenschutzbestimmungen können Ihnen insbesondere Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Widerspruch gegen die Verarbeitung und Datenübertragbarkeit zustehen. Darüber hinaus haben Sie das Recht, sich bei einer zuständigen Datenschutzaufsichtsbehörde zu beschweren.';
 }

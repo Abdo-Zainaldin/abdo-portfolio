@@ -8,6 +8,7 @@ abstract class PortfolioData with _$PortfolioData {
   const factory PortfolioData({
     required int schemaVersion,
     required Profile profile,
+    required LegalInfo legal,
     required About about,
     @Default(<PortfolioStatistic>[]) List<PortfolioStatistic> statistics,
     @Default(<Skill>[]) List<Skill> skills,
@@ -58,6 +59,19 @@ abstract class Availability with _$Availability {
 
   factory Availability.fromJson(Map<String, dynamic> json) =>
       _$AvailabilityFromJson(json);
+}
+
+@freezed
+abstract class LegalInfo with _$LegalInfo {
+  const factory LegalInfo({
+    String? street,
+    String? postalCode,
+    required String city,
+    required String country,
+  }) = _LegalInfo;
+
+  factory LegalInfo.fromJson(Map<String, dynamic> json) =>
+      _$LegalInfoFromJson(json);
 }
 
 @freezed

@@ -16,7 +16,7 @@ class HeroSection extends StatelessWidget {
     required this.experiences,
     required this.socialLinks,
     required this.tools,
-    this.onViewProjects,
+    required this.onViewProjects,
     super.key,
   });
 
@@ -25,7 +25,7 @@ class HeroSection extends StatelessWidget {
   final List<Experience> experiences;
   final List<SocialLink> socialLinks;
   final List<PortfolioTool> tools;
-  final VoidCallback? onViewProjects;
+  final VoidCallback onViewProjects;
 
   @override
   Widget build(BuildContext context) {

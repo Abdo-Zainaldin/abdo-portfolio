@@ -25,6 +25,7 @@ class _AboutHighlightItemState extends State<AboutHighlightItem> {
   @override
   Widget build(BuildContext context) {
     final highlight = widget.highlight;
+
     final accentColor = widget.isPrimary
         ? AppTheme.primary
         : AppTheme.secondary;
@@ -40,7 +41,6 @@ class _AboutHighlightItemState extends State<AboutHighlightItem> {
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 220),
         curve: Curves.easeOutCubic,
-        transform: Matrix4.translationValues(0, _isHovered ? -5 : 0, 0),
         padding: EdgeInsets.symmetric(
           horizontal: context.isDesktop ? 20 : 4,
           vertical: 24,
@@ -65,13 +65,7 @@ class _AboutHighlightItemState extends State<AboutHighlightItem> {
       mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Row(
-          children: [
-            _HighlightIcon(iconName: highlight.icon, color: accentColor),
-            const Spacer(),
-            _AnimatedArrow(isHovered: _isHovered),
-          ],
-        ),
+        _HighlightIcon(iconName: highlight.icon, color: accentColor),
         const SizedBox(height: 24),
         Text(
           context.localized(highlight.title),
@@ -127,8 +121,6 @@ class _AboutHighlightItemState extends State<AboutHighlightItem> {
             ],
           ),
         ),
-        const SizedBox(width: 12),
-        _AnimatedArrow(isHovered: _isHovered),
       ],
     );
   }
@@ -155,7 +147,6 @@ class _HighlightIcon extends StatelessWidget {
     );
   }
 
-  // The JSON stores simple icon names instead of Flutter-specific values.
   IconData _resolveIcon(String value) {
     switch (value.trim().toLowerCase()) {
       case 'code':
@@ -180,25 +171,5 @@ class _HighlightIcon extends StatelessWidget {
       default:
         return Icons.auto_awesome_rounded;
     }
-  }
-}
-
-class _AnimatedArrow extends StatelessWidget {
-  const _AnimatedArrow({required this.isHovered});
-
-  final bool isHovered;
-
-  @override
-  Widget build(BuildContext context) {
-    return AnimatedSlide(
-      duration: const Duration(milliseconds: 220),
-      curve: Curves.easeOutCubic,
-      offset: isHovered ? const Offset(0.15, -0.15) : Offset.zero,
-      child: Icon(
-        Icons.arrow_outward_rounded,
-        size: 20,
-        color: isHovered ? AppTheme.primary : AppTheme.textMuted,
-      ),
-    );
   }
 }

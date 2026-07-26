@@ -25,6 +25,9 @@ class ProjectNotFoundView extends StatelessWidget {
       icon: Icons.search_off_rounded,
       title: context.l10n.projectNotFound,
       buttonLabel: context.l10n.backToProjects,
+      onPressed: () {
+        context.go(AppRouter.projectsLocation);
+      },
     );
   }
 }
@@ -53,8 +56,8 @@ class ProjectStateMessage extends StatelessWidget {
     required this.icon,
     required this.title,
     required this.buttonLabel,
+    required this.onPressed,
     this.description,
-    this.onPressed,
     super.key,
   });
 
@@ -62,7 +65,7 @@ class ProjectStateMessage extends StatelessWidget {
   final String title;
   final String buttonLabel;
   final String? description;
-  final VoidCallback? onPressed;
+  final VoidCallback onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -95,14 +98,7 @@ class ProjectStateMessage extends StatelessWidget {
                 ),
               ],
               const SizedBox(height: 26),
-              FilledButton(
-                onPressed:
-                    onPressed ??
-                    () {
-                      context.go(AppRouter.homePath);
-                    },
-                child: Text(buttonLabel),
-              ),
+              FilledButton(onPressed: onPressed, child: Text(buttonLabel)),
             ],
           ),
         ),

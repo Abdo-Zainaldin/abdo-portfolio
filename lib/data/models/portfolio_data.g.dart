@@ -10,6 +10,7 @@ _PortfolioData _$PortfolioDataFromJson(Map<String, dynamic> json) =>
     _PortfolioData(
       schemaVersion: (json['schemaVersion'] as num).toInt(),
       profile: Profile.fromJson(json['profile'] as Map<String, dynamic>),
+      legal: LegalInfo.fromJson(json['legal'] as Map<String, dynamic>),
       about: About.fromJson(json['about'] as Map<String, dynamic>),
       statistics:
           (json['statistics'] as List<dynamic>?)
@@ -48,6 +49,7 @@ Map<String, dynamic> _$PortfolioDataToJson(_PortfolioData instance) =>
     <String, dynamic>{
       'schemaVersion': instance.schemaVersion,
       'profile': instance.profile.toJson(),
+      'legal': instance.legal.toJson(),
       'about': instance.about.toJson(),
       'statistics': instance.statistics.map((e) => e.toJson()).toList(),
       'skills': instance.skills.map((e) => e.toJson()).toList(),
@@ -106,6 +108,21 @@ Map<String, dynamic> _$AvailabilityToJson(_Availability instance) =>
     <String, dynamic>{
       'isAvailable': instance.isAvailable,
       'text': instance.text.toJson(),
+    };
+
+_LegalInfo _$LegalInfoFromJson(Map<String, dynamic> json) => _LegalInfo(
+  street: json['street'] as String?,
+  postalCode: json['postalCode'] as String?,
+  city: json['city'] as String,
+  country: json['country'] as String,
+);
+
+Map<String, dynamic> _$LegalInfoToJson(_LegalInfo instance) =>
+    <String, dynamic>{
+      'street': instance.street,
+      'postalCode': instance.postalCode,
+      'city': instance.city,
+      'country': instance.country,
     };
 
 _About _$AboutFromJson(Map<String, dynamic> json) => _About(

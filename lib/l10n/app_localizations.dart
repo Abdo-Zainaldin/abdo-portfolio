@@ -368,11 +368,17 @@ abstract class AppLocalizations {
   /// **'Project not found.'**
   String get projectNotFound;
 
-  /// No description provided for @builtWithFlutter.
+  /// No description provided for @footerBuiltWith.
   ///
   /// In en, this message translates to:
-  /// **'Built with Flutter'**
-  String get builtWithFlutter;
+  /// **'Built with Flutter, crafted with'**
+  String get footerBuiltWith;
+
+  /// No description provided for @footerBy.
+  ///
+  /// In en, this message translates to:
+  /// **'by'**
+  String get footerBy;
 
   /// No description provided for @allRightsReserved.
   ///
@@ -661,6 +667,144 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'The action could not be completed. Please try again.'**
   String get contactActionFailed;
+
+  /// No description provided for @impressum.
+  ///
+  /// In en, this message translates to:
+  /// **'Imprint'**
+  String get impressum;
+
+  /// No description provided for @datenschutz.
+  ///
+  /// In en, this message translates to:
+  /// **'Privacy Policy'**
+  String get datenschutz;
+
+  /// No description provided for @legalAddressPending.
+  ///
+  /// In en, this message translates to:
+  /// **'A full postal address will be added if and when it becomes legally required for this website.'**
+  String get legalAddressPending;
+
+  /// No description provided for @legalContactPending.
+  ///
+  /// In en, this message translates to:
+  /// **'Contact information will be provided here when required.'**
+  String get legalContactPending;
+
+  /// No description provided for @impressumProviderTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Provider information'**
+  String get impressumProviderTitle;
+
+  /// No description provided for @impressumContactTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Contact'**
+  String get impressumContactTitle;
+
+  /// No description provided for @impressumWebsitePurposeTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Purpose of this website'**
+  String get impressumWebsitePurposeTitle;
+
+  /// No description provided for @impressumWebsitePurposeText.
+  ///
+  /// In en, this message translates to:
+  /// **'This website is a personal professional portfolio used to present my work, experience and skills. It does not currently operate as an online shop or offer paid services directly through the website.'**
+  String get impressumWebsitePurposeText;
+
+  /// No description provided for @privacyControllerTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'1. Controller'**
+  String get privacyControllerTitle;
+
+  /// No description provided for @privacyGeneralTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'2. General information'**
+  String get privacyGeneralTitle;
+
+  /// No description provided for @privacyGeneralText.
+  ///
+  /// In en, this message translates to:
+  /// **'This website processes personal data only where necessary to provide the website, maintain its security, or respond to direct contact. No personal data is collected for advertising or profiling purposes.'**
+  String get privacyGeneralText;
+
+  /// No description provided for @privacyHostingTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'3. Hosting and server logs'**
+  String get privacyHostingTitle;
+
+  /// No description provided for @privacyHostingText.
+  ///
+  /// In en, this message translates to:
+  /// **'This website is hosted by Hostinger. When the website is accessed, technically necessary server data may be processed, such as the IP address, date and time of access, requested page or file, browser information and technical request information. This processing is necessary for the secure and reliable operation of the website. The legal basis is Article 6(1)(f) GDPR, based on the legitimate interest in securely providing and maintaining this website. Server data is retained only for as long as necessary for operation, security and troubleshooting, unless a longer retention period is legally required.'**
+  String get privacyHostingText;
+
+  /// No description provided for @privacyEmailTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'4. Contact by email'**
+  String get privacyEmailTitle;
+
+  /// No description provided for @privacyEmailText.
+  ///
+  /// In en, this message translates to:
+  /// **'If you contact me by email, the information you provide, including your email address and message content, is processed in order to respond to your request. Depending on the nature of the request, processing is based on Article 6(1)(b) GDPR for pre-contractual communication or Article 6(1)(f) GDPR based on the legitimate interest in responding to enquiries. The data is deleted when it is no longer required for the purpose of the communication, unless legal retention obligations apply.'**
+  String get privacyEmailText;
+
+  /// No description provided for @privacyFontsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'5. Local fonts'**
+  String get privacyFontsTitle;
+
+  /// No description provided for @privacyFontsText.
+  ///
+  /// In en, this message translates to:
+  /// **'The fonts used on this website are stored and delivered locally with the website. No connection to external font providers such as Google Fonts is required when displaying the website.'**
+  String get privacyFontsText;
+
+  /// No description provided for @privacyExternalLinksTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'6. External links'**
+  String get privacyExternalLinksTitle;
+
+  /// No description provided for @privacyExternalLinksText.
+  ///
+  /// In en, this message translates to:
+  /// **'This website contains links to external websites and services, including professional profiles, source-code repositories and project websites. A connection to those providers is established only when you open the corresponding link. The respective provider is responsible for data processing on its website.'**
+  String get privacyExternalLinksText;
+
+  /// No description provided for @privacyCookiesTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'7. Cookies and tracking'**
+  String get privacyCookiesTitle;
+
+  /// No description provided for @privacyCookiesText.
+  ///
+  /// In en, this message translates to:
+  /// **'This website currently does not use analytics, advertising or tracking services and does not use non-essential cookies.'**
+  String get privacyCookiesText;
+
+  /// No description provided for @privacyRightsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'8. Your rights'**
+  String get privacyRightsTitle;
+
+  /// No description provided for @privacyRightsText.
+  ///
+  /// In en, this message translates to:
+  /// **'Under the applicable data protection laws, you may have rights including access to your personal data, rectification, erasure, restriction of processing, objection to processing and data portability. You also have the right to lodge a complaint with a competent data protection supervisory authority.'**
+  String get privacyRightsText;
 }
 
 class _AppLocalizationsDelegate

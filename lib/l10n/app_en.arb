@@ -54,7 +54,8 @@
   "tryAgain": "Try Again",
   "projectNotFound": "Project not found.",
 
-  "builtWithFlutter": "Built with Flutter",
+  "footerBuiltWith": "Built with Flutter, crafted with",
+  "footerBy": "by",
   "allRightsReserved": "All rights reserved.",
 
   "changeLanguage": "Change language",
@@ -108,5 +109,38 @@
   "contactOpenLink": "Open",
   "contactDownloadCv": "Download CV",
   "contactCvFormat": "PDF · English",
-  "contactActionFailed": "The action could not be completed. Please try again."
+  "contactActionFailed": "The action could not be completed. Please try again.",
+
+  "impressum": "Imprint",
+  "datenschutz": "Privacy Policy",
+
+  "legalAddressPending": "A full postal address will be added if and when it becomes legally required for this website.",
+  "legalContactPending": "Contact information will be provided here when required.",
+
+  "impressumProviderTitle": "Provider information",
+  "impressumContactTitle": "Contact",
+  "impressumWebsitePurposeTitle": "Purpose of this website",
+  "impressumWebsitePurposeText": "This website is a personal professional portfolio used to present my work, experience and skills. It does not currently operate as an online shop or offer paid services directly through the website.",
+
+  "privacyControllerTitle": "1. Controller",
+  "privacyGeneralTitle": "2. General information",
+  "privacyGeneralText": "This website processes personal data only where necessary to provide the website, maintain its security, or respond to direct contact. No personal data is collected for advertising or profiling purposes.",
+
+  "privacyHostingTitle": "3. Hosting and server logs",
+  "privacyHostingText": "This website is hosted by Hostinger. When the website is accessed, technically necessary server data may be processed, such as the IP address, date and time of access, requested page or file, browser information and technical request information. This processing is necessary for the secure and reliable operation of the website. The legal basis is Article 6(1)(f) GDPR, based on the legitimate interest in securely providing and maintaining this website. Server data is retained only for as long as necessary for operation, security and troubleshooting, unless a longer retention period is legally required.",
+
+  "privacyEmailTitle": "4. Contact by email",
+  "privacyEmailText": "If you contact me by email, the information you provide, including your email address and message content, is processed in order to respond to your request. Depending on the nature of the request, processing is based on Article 6(1)(b) GDPR for pre-contractual communication or Article 6(1)(f) GDPR based on the legitimate interest in responding to enquiries. The data is deleted when it is no longer required for the purpose of the communication, unless legal retention obligations apply.",
+
+  "privacyFontsTitle": "5. Local fonts",
+  "privacyFontsText": "The fonts used on this website are stored and delivered locally with the website. No connection to external font providers such as Google Fonts is required when displaying the website.",
+
+  "privacyExternalLinksTitle": "6. External links",
+  "privacyExternalLinksText": "This website contains links to external websites and services, including professional profiles, source-code repositories and project websites. A connection to those providers is established only when you open the corresponding link. The respective provider is responsible for data processing on its website.",
+
+  "privacyCookiesTitle": "7. Cookies and tracking",
+  "privacyCookiesText": "This website currently does not use analytics, advertising or tracking services and does not use non-essential cookies.",
+
+  "privacyRightsTitle": "8. Your rights",
+  "privacyRightsText": "Under the applicable data protection laws, you may have rights including access to your personal data, rectification, erasure, restriction of processing, objection to processing and data portability. You also have the right to lodge a complaint with a competent data protection supervisory authority."
 }

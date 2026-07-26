@@ -6,6 +6,7 @@ import '../../l10n/localization_helper.dart';
 import '../app_widget/responsive/responsive_helper.dart';
 import '../app_widget/theme/app_theme.dart';
 import 'app_button.dart';
+import 'language_switcher.dart';
 import 'responsive_container.dart';
 
 class PortfolioHeader extends StatelessWidget {
@@ -72,6 +73,7 @@ class _DesktopHeader extends StatelessWidget {
       children: [
         const _PortfolioLogo(),
         const Spacer(),
+
         for (final section in PortfolioSection.values)
           _NavigationItem(
             label: _sectionLabel(context, section),
@@ -80,7 +82,12 @@ class _DesktopHeader extends StatelessWidget {
               onSectionSelected(section);
             },
           ),
+
         const Spacer(),
+
+        const LanguageSwitcher(),
+        const SizedBox(width: 12),
+
         AppButton(
           label: context.l10n.letsTalk,
           trailingIcon: Icons.arrow_outward_rounded,
@@ -108,6 +115,10 @@ class _MobileHeader extends StatelessWidget {
       children: [
         const _PortfolioLogo(),
         const Spacer(),
+
+        const LanguageSwitcher(),
+        const SizedBox(width: 8),
+
         PopupMenuButton<PortfolioSection>(
           initialValue: activeSection,
           color: AppTheme.surface1,

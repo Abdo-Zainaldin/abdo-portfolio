@@ -54,7 +54,8 @@
   "tryAgain": "Erneut versuchen",
   "projectNotFound": "Projekt wurde nicht gefunden.",
 
-  "builtWithFlutter": "Mit Flutter entwickelt",
+  "footerBuiltWith": "Mit Flutter entwickelt, mit",
+  "footerBy": "gestaltet von",
   "allRightsReserved": "Alle Rechte vorbehalten.",
 
   "changeLanguage": "Sprache ändern",
@@ -108,5 +109,38 @@
   "contactOpenLink": "Öffnen",
   "contactDownloadCv": "Lebenslauf herunterladen",
   "contactCvFormat": "PDF · Deutsch",
-  "contactActionFailed": "Die Aktion konnte nicht ausgeführt werden. Bitte versuchen Sie es erneut."
+  "contactActionFailed": "Die Aktion konnte nicht ausgeführt werden. Bitte versuchen Sie es erneut.",
+
+  "impressum": "Impressum",
+  "datenschutz": "Datenschutzerklärung",
+
+  "legalAddressPending": "Eine vollständige Postanschrift wird ergänzt, sofern und sobald sie für diese Website gesetzlich erforderlich ist.",
+  "legalContactPending": "Erforderliche Kontaktangaben werden hier ergänzt, sobald dies notwendig ist.",
+
+  "impressumProviderTitle": "Angaben zum Anbieter",
+  "impressumContactTitle": "Kontakt",
+  "impressumWebsitePurposeTitle": "Zweck dieser Website",
+  "impressumWebsitePurposeText": "Diese Website ist ein persönliches berufliches Portfolio zur Darstellung meiner Arbeiten, Erfahrungen und Fähigkeiten. Derzeit wird über die Website weder ein Online-Shop betrieben noch werden unmittelbar kostenpflichtige Leistungen angeboten.",
+
+  "privacyControllerTitle": "1. Verantwortlicher",
+  "privacyGeneralTitle": "2. Allgemeine Hinweise",
+  "privacyGeneralText": "Auf dieser Website werden personenbezogene Daten nur verarbeitet, soweit dies für die Bereitstellung der Website, ihre Sicherheit oder die Beantwortung einer direkten Kontaktaufnahme erforderlich ist. Eine Verarbeitung zu Werbe- oder Profilingzwecken findet nicht statt.",
+
+  "privacyHostingTitle": "3. Hosting und Server-Logfiles",
+  "privacyHostingText": "Diese Website wird bei Hostinger gehostet. Beim Aufruf der Website können technisch erforderliche Serverdaten verarbeitet werden, beispielsweise die IP-Adresse, Datum und Uhrzeit des Zugriffs, die aufgerufene Seite oder Datei, Browserinformationen sowie technische Informationen zur Anfrage. Die Verarbeitung dient dem sicheren und zuverlässigen Betrieb der Website. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO aufgrund des berechtigten Interesses an der sicheren Bereitstellung und dem Betrieb dieser Website. Serverdaten werden nur so lange gespeichert, wie dies für Betrieb, Sicherheit und Fehleranalyse erforderlich ist, sofern keine längere gesetzliche Aufbewahrungspflicht besteht.",
+
+  "privacyEmailTitle": "4. Kontakt per E-Mail",
+  "privacyEmailText": "Wenn Sie mich per E-Mail kontaktieren, werden die von Ihnen übermittelten Angaben, einschließlich Ihrer E-Mail-Adresse und des Inhalts Ihrer Nachricht, zur Bearbeitung Ihrer Anfrage verarbeitet. Je nach Inhalt der Anfrage erfolgt die Verarbeitung auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO im Rahmen vorvertraglicher Kommunikation oder auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO aufgrund des berechtigten Interesses an der Beantwortung von Anfragen. Die Daten werden gelöscht, sobald sie für die Kommunikation nicht mehr erforderlich sind, sofern keine gesetzlichen Aufbewahrungspflichten entgegenstehen.",
+
+  "privacyFontsTitle": "5. Lokale Schriftarten",
+  "privacyFontsText": "Die auf dieser Website verwendeten Schriftarten werden lokal mit der Website gespeichert und ausgeliefert. Beim Anzeigen der Website ist daher keine Verbindung zu externen Schriftart-Anbietern wie Google Fonts erforderlich.",
+
+  "privacyExternalLinksTitle": "6. Externe Links",
+  "privacyExternalLinksText": "Diese Website enthält Links zu externen Websites und Diensten, darunter berufliche Profile, Quellcode-Repositories und Projektwebsites. Eine Verbindung zum jeweiligen Anbieter wird erst hergestellt, wenn Sie den entsprechenden Link öffnen. Für die Datenverarbeitung auf der externen Website ist der jeweilige Anbieter verantwortlich.",
+
+  "privacyCookiesTitle": "7. Cookies und Tracking",
+  "privacyCookiesText": "Diese Website verwendet derzeit keine Analyse-, Werbe- oder Tracking-Dienste und setzt keine nicht erforderlichen Cookies ein.",
+
+  "privacyRightsTitle": "8. Ihre Rechte",
+  "privacyRightsText": "Im Rahmen der geltenden Datenschutzbestimmungen können Ihnen insbesondere Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Widerspruch gegen die Verarbeitung und Datenübertragbarkeit zustehen. Darüber hinaus haben Sie das Recht, sich bei einer zuständigen Datenschutzaufsichtsbehörde zu beschweren."
 }
