@@ -10,8 +10,8 @@ class AvailabilityBadge extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      constraints: const BoxConstraints(maxWidth: 190),
-      padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 12),
+      width: double.infinity,
+      padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 14),
       decoration: BoxDecoration(
         color: AppTheme.surface1,
         borderRadius: BorderRadius.circular(AppTheme.radiusSmall),
@@ -25,16 +25,16 @@ class AvailabilityBadge extends StatelessWidget {
         ],
       ),
       child: Row(
-        mainAxisSize: MainAxisSize.min,
         children: [
           const _AvailabilityIndicator(),
-          const SizedBox(width: 10),
-          Flexible(
+          const SizedBox(width: 12),
+          Expanded(
             child: Text(
               text,
-              style: Theme.of(
-                context,
-              ).textTheme.bodySmall?.copyWith(color: AppTheme.textPrimary),
+              style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                color: AppTheme.textPrimary,
+                height: 1.45,
+              ),
             ),
           ),
         ],

@@ -108,8 +108,9 @@ class _HeroPortraitState extends State<HeroPortrait>
               ),
               if (profile.availability.isAvailable)
                 Positioned(
-                  top: context.isDesktop ? 46 : 24,
-                  right: context.isDesktop ? -8 : 0,
+                  left: context.isDesktop ? 44 : 24,
+                  right: context.isDesktop ? 44 : 24,
+                  bottom: context.isDesktop ? 8 : 4,
                   child: AvailabilityBadge(
                     text: context.localized(profile.availability.text),
                   ),

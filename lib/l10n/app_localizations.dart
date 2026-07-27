@@ -128,6 +128,60 @@ abstract class AppLocalizations {
   /// **'Contact'**
   String get navContact;
 
+  /// No description provided for @changeLanguage.
+  ///
+  /// In en, this message translates to:
+  /// **'Change language'**
+  String get changeLanguage;
+
+  /// No description provided for @english.
+  ///
+  /// In en, this message translates to:
+  /// **'English'**
+  String get english;
+
+  /// No description provided for @german.
+  ///
+  /// In en, this message translates to:
+  /// **'German'**
+  String get german;
+
+  /// No description provided for @loading.
+  ///
+  /// In en, this message translates to:
+  /// **'Loading portfolio...'**
+  String get loading;
+
+  /// No description provided for @somethingWentWrong.
+  ///
+  /// In en, this message translates to:
+  /// **'Something went wrong.'**
+  String get somethingWentWrong;
+
+  /// No description provided for @tryAgain.
+  ///
+  /// In en, this message translates to:
+  /// **'Try Again'**
+  String get tryAgain;
+
+  /// No description provided for @pageNotFoundTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Page not found'**
+  String get pageNotFoundTitle;
+
+  /// No description provided for @pageNotFoundDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'The page you are looking for does not exist or may have been moved.'**
+  String get pageNotFoundDescription;
+
+  /// No description provided for @backToHome.
+  ///
+  /// In en, this message translates to:
+  /// **'Back to home'**
+  String get backToHome;
+
   /// No description provided for @letsTalk.
   ///
   /// In en, this message translates to:
@@ -152,11 +206,77 @@ abstract class AppLocalizations {
   /// **'Scroll to explore'**
   String get scrollToExplore;
 
-  /// No description provided for @allProjects.
+  /// No description provided for @toolsBehindMyWork.
+  ///
+  /// In en, this message translates to:
+  /// **'Tools behind my work'**
+  String get toolsBehindMyWork;
+
+  /// No description provided for @languagesSpoken.
+  ///
+  /// In en, this message translates to:
+  /// **'Languages spoken'**
+  String get languagesSpoken;
+
+  /// No description provided for @yearsExperience.
+  ///
+  /// In en, this message translates to:
+  /// **'Years of experience'**
+  String get yearsExperience;
+
+  /// No description provided for @projectsDelivered.
+  ///
+  /// In en, this message translates to:
+  /// **'Projects delivered'**
+  String get projectsDelivered;
+
+  /// No description provided for @clientCollaborations.
+  ///
+  /// In en, this message translates to:
+  /// **'Client collaborations'**
+  String get clientCollaborations;
+
+  /// No description provided for @projectsSectionLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Projects'**
+  String get projectsSectionLabel;
+
+  /// No description provided for @projectsSectionHeadline.
+  ///
+  /// In en, this message translates to:
+  /// **'Selected work built around real problems.'**
+  String get projectsSectionHeadline;
+
+  /// No description provided for @projectsSectionDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Software applications, web solutions and creative work presented through the decisions and problems behind them.'**
+  String get projectsSectionDescription;
+
+  /// No description provided for @projectFilterAll.
   ///
   /// In en, this message translates to:
   /// **'All'**
-  String get allProjects;
+  String get projectFilterAll;
+
+  /// No description provided for @projectFilterSoftware.
+  ///
+  /// In en, this message translates to:
+  /// **'Software Development'**
+  String get projectFilterSoftware;
+
+  /// No description provided for @projectFilterWeb.
+  ///
+  /// In en, this message translates to:
+  /// **'Web Development'**
+  String get projectFilterWeb;
+
+  /// No description provided for @projectFilterCreative.
+  ///
+  /// In en, this message translates to:
+  /// **'Creative Design'**
+  String get projectFilterCreative;
 
   /// No description provided for @softwareDevelopment.
   ///
@@ -176,6 +296,36 @@ abstract class AppLocalizations {
   /// **'Creative Design'**
   String get creativeDesign;
 
+  /// No description provided for @projectCategorySoftware.
+  ///
+  /// In en, this message translates to:
+  /// **'Software'**
+  String get projectCategorySoftware;
+
+  /// No description provided for @projectCategoryWeb.
+  ///
+  /// In en, this message translates to:
+  /// **'Web'**
+  String get projectCategoryWeb;
+
+  /// No description provided for @projectCategoryCreative.
+  ///
+  /// In en, this message translates to:
+  /// **'Creative'**
+  String get projectCategoryCreative;
+
+  /// No description provided for @projectStatusCompleted.
+  ///
+  /// In en, this message translates to:
+  /// **'Completed'**
+  String get projectStatusCompleted;
+
+  /// No description provided for @projectStatusInProgress.
+  ///
+  /// In en, this message translates to:
+  /// **'In progress'**
+  String get projectStatusInProgress;
+
   /// No description provided for @viewProject.
   ///
   /// In en, this message translates to:
@@ -188,23 +338,23 @@ abstract class AppLocalizations {
   /// **'View All Projects'**
   String get viewAllProjects;
 
-  /// No description provided for @visitWebsite.
+  /// No description provided for @projectViewAction.
   ///
   /// In en, this message translates to:
-  /// **'Visit Website'**
-  String get visitWebsite;
+  /// **'View project'**
+  String get projectViewAction;
 
-  /// No description provided for @viewSourceCode.
+  /// No description provided for @projectsEmptyTitle.
   ///
   /// In en, this message translates to:
-  /// **'View Source Code'**
-  String get viewSourceCode;
+  /// **'No projects published in this category yet.'**
+  String get projectsEmptyTitle;
 
-  /// No description provided for @backToProjects.
+  /// No description provided for @projectsEmptyDescription.
   ///
   /// In en, this message translates to:
-  /// **'Back to Projects'**
-  String get backToProjects;
+  /// **'New work will be added here soon.'**
+  String get projectsEmptyDescription;
 
   /// No description provided for @projectOverview.
   ///
@@ -314,227 +464,29 @@ abstract class AppLocalizations {
   /// **'In Progress'**
   String get inProgress;
 
-  /// No description provided for @getInTouch.
+  /// No description provided for @visitWebsite.
   ///
   /// In en, this message translates to:
-  /// **'Get in Touch'**
-  String get getInTouch;
+  /// **'Visit Website'**
+  String get visitWebsite;
 
-  /// No description provided for @sendMessage.
+  /// No description provided for @viewSourceCode.
   ///
   /// In en, this message translates to:
-  /// **'Send Message'**
-  String get sendMessage;
+  /// **'View Source Code'**
+  String get viewSourceCode;
 
-  /// No description provided for @email.
+  /// No description provided for @backToProjects.
   ///
   /// In en, this message translates to:
-  /// **'Email'**
-  String get email;
-
-  /// No description provided for @location.
-  ///
-  /// In en, this message translates to:
-  /// **'Location'**
-  String get location;
-
-  /// No description provided for @followMe.
-  ///
-  /// In en, this message translates to:
-  /// **'Follow Me'**
-  String get followMe;
-
-  /// No description provided for @loading.
-  ///
-  /// In en, this message translates to:
-  /// **'Loading portfolio...'**
-  String get loading;
-
-  /// No description provided for @somethingWentWrong.
-  ///
-  /// In en, this message translates to:
-  /// **'Something went wrong.'**
-  String get somethingWentWrong;
-
-  /// No description provided for @tryAgain.
-  ///
-  /// In en, this message translates to:
-  /// **'Try Again'**
-  String get tryAgain;
+  /// **'Back to Projects'**
+  String get backToProjects;
 
   /// No description provided for @projectNotFound.
   ///
   /// In en, this message translates to:
   /// **'Project not found.'**
   String get projectNotFound;
-
-  /// No description provided for @footerBuiltWith.
-  ///
-  /// In en, this message translates to:
-  /// **'Built with Flutter, crafted with'**
-  String get footerBuiltWith;
-
-  /// No description provided for @footerBy.
-  ///
-  /// In en, this message translates to:
-  /// **'by'**
-  String get footerBy;
-
-  /// No description provided for @allRightsReserved.
-  ///
-  /// In en, this message translates to:
-  /// **'All rights reserved.'**
-  String get allRightsReserved;
-
-  /// No description provided for @changeLanguage.
-  ///
-  /// In en, this message translates to:
-  /// **'Change language'**
-  String get changeLanguage;
-
-  /// No description provided for @english.
-  ///
-  /// In en, this message translates to:
-  /// **'English'**
-  String get english;
-
-  /// No description provided for @german.
-  ///
-  /// In en, this message translates to:
-  /// **'German'**
-  String get german;
-
-  /// No description provided for @toolsBehindMyWork.
-  ///
-  /// In en, this message translates to:
-  /// **'Tools behind my work'**
-  String get toolsBehindMyWork;
-
-  /// No description provided for @languagesSpoken.
-  ///
-  /// In en, this message translates to:
-  /// **'Languages spoken'**
-  String get languagesSpoken;
-
-  /// No description provided for @yearsExperience.
-  ///
-  /// In en, this message translates to:
-  /// **'Years of experience'**
-  String get yearsExperience;
-
-  /// No description provided for @projectsDelivered.
-  ///
-  /// In en, this message translates to:
-  /// **'Projects delivered'**
-  String get projectsDelivered;
-
-  /// No description provided for @clientCollaborations.
-  ///
-  /// In en, this message translates to:
-  /// **'Client collaborations'**
-  String get clientCollaborations;
-
-  /// No description provided for @projectsSectionLabel.
-  ///
-  /// In en, this message translates to:
-  /// **'Projects'**
-  String get projectsSectionLabel;
-
-  /// No description provided for @projectsSectionHeadline.
-  ///
-  /// In en, this message translates to:
-  /// **'Selected work built around real problems.'**
-  String get projectsSectionHeadline;
-
-  /// No description provided for @projectsSectionDescription.
-  ///
-  /// In en, this message translates to:
-  /// **'Software applications, web solutions and creative work presented through the decisions and problems behind them.'**
-  String get projectsSectionDescription;
-
-  /// No description provided for @projectFilterSoftware.
-  ///
-  /// In en, this message translates to:
-  /// **'Software Development'**
-  String get projectFilterSoftware;
-
-  /// No description provided for @projectFilterWeb.
-  ///
-  /// In en, this message translates to:
-  /// **'Web Development'**
-  String get projectFilterWeb;
-
-  /// No description provided for @projectFilterCreative.
-  ///
-  /// In en, this message translates to:
-  /// **'Creative Design'**
-  String get projectFilterCreative;
-
-  /// No description provided for @projectCategorySoftware.
-  ///
-  /// In en, this message translates to:
-  /// **'Software'**
-  String get projectCategorySoftware;
-
-  /// No description provided for @projectCategoryWeb.
-  ///
-  /// In en, this message translates to:
-  /// **'Web'**
-  String get projectCategoryWeb;
-
-  /// No description provided for @projectCategoryCreative.
-  ///
-  /// In en, this message translates to:
-  /// **'Creative'**
-  String get projectCategoryCreative;
-
-  /// No description provided for @projectStatusCompleted.
-  ///
-  /// In en, this message translates to:
-  /// **'Completed'**
-  String get projectStatusCompleted;
-
-  /// No description provided for @projectStatusInProgress.
-  ///
-  /// In en, this message translates to:
-  /// **'In progress'**
-  String get projectStatusInProgress;
-
-  /// No description provided for @projectViewAction.
-  ///
-  /// In en, this message translates to:
-  /// **'View project'**
-  String get projectViewAction;
-
-  /// No description provided for @projectsEmptyTitle.
-  ///
-  /// In en, this message translates to:
-  /// **'No projects published in this category yet.'**
-  String get projectsEmptyTitle;
-
-  /// No description provided for @projectsEmptyDescription.
-  ///
-  /// In en, this message translates to:
-  /// **'New work will be added here soon.'**
-  String get projectsEmptyDescription;
-
-  /// No description provided for @pageNotFoundTitle.
-  ///
-  /// In en, this message translates to:
-  /// **'Page not found'**
-  String get pageNotFoundTitle;
-
-  /// No description provided for @pageNotFoundDescription.
-  ///
-  /// In en, this message translates to:
-  /// **'The page you are looking for does not exist or may have been moved.'**
-  String get pageNotFoundDescription;
-
-  /// No description provided for @backToHome.
-  ///
-  /// In en, this message translates to:
-  /// **'Back to home'**
-  String get backToHome;
 
   /// No description provided for @experienceSectionLabel.
   ///
@@ -608,6 +560,36 @@ abstract class AppLocalizations {
   /// **'Let\'s talk'**
   String get contactPanelLabel;
 
+  /// No description provided for @email.
+  ///
+  /// In en, this message translates to:
+  /// **'Email'**
+  String get email;
+
+  /// No description provided for @location.
+  ///
+  /// In en, this message translates to:
+  /// **'Location'**
+  String get location;
+
+  /// No description provided for @getInTouch.
+  ///
+  /// In en, this message translates to:
+  /// **'Get in Touch'**
+  String get getInTouch;
+
+  /// No description provided for @sendMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Send Message'**
+  String get sendMessage;
+
+  /// No description provided for @followMe.
+  ///
+  /// In en, this message translates to:
+  /// **'Follow Me'**
+  String get followMe;
+
   /// No description provided for @contactEmailLabel.
   ///
   /// In en, this message translates to:
@@ -667,6 +649,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'The action could not be completed. Please try again.'**
   String get contactActionFailed;
+
+  /// No description provided for @footerBuiltWith.
+  ///
+  /// In en, this message translates to:
+  /// **'Built with Flutter, crafted with'**
+  String get footerBuiltWith;
+
+  /// No description provided for @footerBy.
+  ///
+  /// In en, this message translates to:
+  /// **'by'**
+  String get footerBy;
+
+  /// No description provided for @allRightsReserved.
+  ///
+  /// In en, this message translates to:
+  /// **'All rights reserved.'**
+  String get allRightsReserved;
 
   /// No description provided for @impressum.
   ///

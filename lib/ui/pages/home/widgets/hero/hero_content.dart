@@ -24,6 +24,9 @@ class HeroContent extends StatelessWidget {
   Widget build(BuildContext context) {
     final nameParts = profile.name.trim().split(RegExp(r'\s+'));
 
+    final cvPath = context.localized(profile.cv).trim();
+    final hasCv = cvPath.isNotEmpty;
+
     // Separating the last name creates the two-line hero composition.
     final firstName = nameParts.length > 1
         ? nameParts.sublist(0, nameParts.length - 1).join(' ')
@@ -77,7 +80,7 @@ class HeroContent extends StatelessWidget {
               label: context.l10n.downloadCv,
               variant: AppButtonVariant.outline,
               trailingIcon: Icons.download_rounded,
-              onPressed: () => _openCv(context),
+              onPressed: hasCv ? () => _openCv(context, cvPath) : null,
             ),
           ],
         ),
@@ -105,9 +108,7 @@ class HeroContent extends StatelessWidget {
     );
   }
 
-  Future<void> _openCv(BuildContext context) async {
-    final path = context.isGerman ? profile.cv.de : profile.cv.en;
-
+  Future<void> _openCv(BuildContext context, String path) async {
     final opened = await launchUrl(
       Uri.parse(path),
       webOnlyWindowName: '_blank',

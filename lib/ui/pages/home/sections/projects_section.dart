@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 
 import '../../../../data/models/portfolio_data.dart';
 import '../../../../l10n/localization_helper.dart';
@@ -20,8 +19,7 @@ class ProjectsSection extends StatefulWidget {
 }
 
 class _ProjectsSectionState extends State<ProjectsSection> {
-  ProjectCategoryFilter _selectedCategory =
-      ProjectCategoryFilter.softwareDevelopment;
+  ProjectCategoryFilter _selectedCategory = ProjectCategoryFilter.all;
 
   @override
   Widget build(BuildContext context) {
@@ -30,9 +28,11 @@ class _ProjectsSectionState extends State<ProjectsSection> {
           (first, second) => first.sortOrder.compareTo(second.sortOrder),
         );
 
-    final filteredProjects = visibleProjects.where((project) {
-      return project.categories.contains(_selectedCategory.jsonValue);
-    }).toList();
+    final filteredProjects = _selectedCategory == ProjectCategoryFilter.all
+        ? visibleProjects
+        : visibleProjects.where((project) {
+            return project.categories.contains(_selectedCategory.jsonValue);
+          }).toList();
 
     return Container(
       width: double.infinity,

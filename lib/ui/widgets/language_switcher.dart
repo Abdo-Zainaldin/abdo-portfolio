@@ -12,72 +12,46 @@ class LanguageSwitcher extends StatelessWidget {
   Widget build(BuildContext context) {
     final isGerman = context.isGerman;
 
-    return PopupMenuButton<String>(
-      tooltip: context.l10n.changeLanguage,
-      onSelected: (languageCode) {
-        switch (languageCode) {
-          case 'en':
-            context.read<LocalizationCubit>().setEnglish();
-
-          case 'de':
-            context.read<LocalizationCubit>().setGerman();
-        }
-      },
-      itemBuilder: (context) {
-        return [
-          PopupMenuItem(
-            value: 'de',
-            child: _LanguageOption(
-              label: context.l10n.german,
-              code: 'DE',
-              selected: isGerman,
-            ),
-          ),
-          PopupMenuItem(
-            value: 'en',
-            child: _LanguageOption(
-              label: context.l10n.english,
-              code: 'EN',
-              selected: !isGerman,
-            ),
-          ),
-        ];
-      },
-      child: Semantics(
-        button: true,
-        label: context.l10n.changeLanguage,
-        child: Container(
-          height: 40,
-          padding: const EdgeInsets.symmetric(horizontal: 12),
-          decoration: BoxDecoration(
-            color: AppTheme.surface1,
-            borderRadius: BorderRadius.circular(10),
-            border: Border.all(color: AppTheme.borderSubtle),
-          ),
-          child: Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              const Icon(
+    return Semantics(
+      label: context.l10n.changeLanguage,
+      child: Container(
+        height: 40,
+        padding: const EdgeInsets.all(4),
+        decoration: BoxDecoration(
+          color: AppTheme.surface1,
+          borderRadius: BorderRadius.circular(12),
+          border: Border.all(color: AppTheme.borderSubtle),
+        ),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 7),
+              child: Icon(
                 Icons.language_rounded,
-                size: 18,
-                color: AppTheme.textSecondary,
-              ),
-              const SizedBox(width: 7),
-              Text(
-                isGerman ? 'DE' : 'EN',
-                style: Theme.of(context).textTheme.labelMedium?.copyWith(
-                  color: AppTheme.textPrimary,
-                  fontWeight: FontWeight.w700,
-                ),
-              ),
-              const SizedBox(width: 3),
-              const Icon(
-                Icons.keyboard_arrow_down_rounded,
                 size: 17,
                 color: AppTheme.textMuted,
               ),
-            ],
-          ),
+            ),
+
+            _LanguageOption(
+              code: 'DE',
+              tooltip: context.l10n.german,
+              selected: isGerman,
+              onPressed: () {
+                context.read<LocalizationCubit>().setGerman();
+              },
+            ),
+
+            _LanguageOption(
+              code: 'EN',
+              tooltip: context.l10n.english,
+              selected: !isGerman,
+              onPressed: () {
+                context.read<LocalizationCubit>().setEnglish();
+              },
+            ),
+          ],
         ),
       ),
     );
@@ -86,36 +60,61 @@ class LanguageSwitcher extends StatelessWidget {
 
 class _LanguageOption extends StatelessWidget {
   const _LanguageOption({
-    required this.label,
     required this.code,
+    required this.tooltip,
     required this.selected,
+    required this.onPressed,
   });
 
-  final String label;
   final String code;
+  final String tooltip;
   final bool selected;
+  final VoidCallback onPressed;
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: 150,
-      child: Row(
-        children: [
-          SizedBox(
-            width: 28,
-            child: Text(
-              code,
-              style: Theme.of(context).textTheme.labelMedium?.copyWith(
-                color: selected ? AppTheme.primary : AppTheme.textSecondary,
-                fontWeight: FontWeight.w700,
-              ),
+    return Tooltip(
+      message: tooltip,
+      child: Semantics(
+        button: true,
+        selected: selected,
+        label: tooltip,
+        child: InkWell(
+          onTap: selected ? null : onPressed,
+          borderRadius: BorderRadius.circular(8),
+          child: AnimatedContainer(
+            duration: const Duration(milliseconds: 220),
+            curve: Curves.easeOutCubic,
+            padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 7),
+            decoration: BoxDecoration(
+              color: selected ? AppTheme.primary : Colors.transparent,
+              borderRadius: BorderRadius.circular(8),
+              boxShadow: selected
+                  ? [
+                      BoxShadow(
+                        color: AppTheme.primary.withAlpha(30),
+                        blurRadius: 12,
+                        offset: const Offset(0, 4),
+                      ),
+                    ]
+                  : const [],
+            ),
+            child: AnimatedDefaultTextStyle(
+              duration: const Duration(milliseconds: 220),
+              curve: Curves.easeOutCubic,
+              style:
+                  Theme.of(context).textTheme.labelMedium?.copyWith(
+                    color: selected
+                        ? AppTheme.background
+                        : AppTheme.textSecondary,
+                    fontWeight: FontWeight.w700,
+                    letterSpacing: 0.4,
+                  ) ??
+                  const TextStyle(),
+              child: Text(code),
             ),
           ),
-          const SizedBox(width: 10),
-          Expanded(child: Text(label)),
-          if (selected)
-            const Icon(Icons.check_rounded, size: 18, color: AppTheme.primary),
-        ],
+        ),
       ),
     );
   }

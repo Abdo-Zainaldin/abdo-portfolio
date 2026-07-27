@@ -24,6 +24,34 @@ class AppLocalizationsEn extends AppLocalizations {
   String get navContact => 'Contact';
 
   @override
+  String get changeLanguage => 'Change language';
+
+  @override
+  String get english => 'English';
+
+  @override
+  String get german => 'German';
+
+  @override
+  String get loading => 'Loading portfolio...';
+
+  @override
+  String get somethingWentWrong => 'Something went wrong.';
+
+  @override
+  String get tryAgain => 'Try Again';
+
+  @override
+  String get pageNotFoundTitle => 'Page not found';
+
+  @override
+  String get pageNotFoundDescription =>
+      'The page you are looking for does not exist or may have been moved.';
+
+  @override
+  String get backToHome => 'Back to home';
+
+  @override
   String get letsTalk => 'Let\'s Talk';
 
   @override
@@ -36,7 +64,42 @@ class AppLocalizationsEn extends AppLocalizations {
   String get scrollToExplore => 'Scroll to explore';
 
   @override
-  String get allProjects => 'All';
+  String get toolsBehindMyWork => 'Tools behind my work';
+
+  @override
+  String get languagesSpoken => 'Languages spoken';
+
+  @override
+  String get yearsExperience => 'Years of experience';
+
+  @override
+  String get projectsDelivered => 'Projects delivered';
+
+  @override
+  String get clientCollaborations => 'Client collaborations';
+
+  @override
+  String get projectsSectionLabel => 'Projects';
+
+  @override
+  String get projectsSectionHeadline =>
+      'Selected work built around real problems.';
+
+  @override
+  String get projectsSectionDescription =>
+      'Software applications, web solutions and creative work presented through the decisions and problems behind them.';
+
+  @override
+  String get projectFilterAll => 'All';
+
+  @override
+  String get projectFilterSoftware => 'Software Development';
+
+  @override
+  String get projectFilterWeb => 'Web Development';
+
+  @override
+  String get projectFilterCreative => 'Creative Design';
 
   @override
   String get softwareDevelopment => 'Software Development';
@@ -48,19 +111,35 @@ class AppLocalizationsEn extends AppLocalizations {
   String get creativeDesign => 'Creative Design';
 
   @override
+  String get projectCategorySoftware => 'Software';
+
+  @override
+  String get projectCategoryWeb => 'Web';
+
+  @override
+  String get projectCategoryCreative => 'Creative';
+
+  @override
+  String get projectStatusCompleted => 'Completed';
+
+  @override
+  String get projectStatusInProgress => 'In progress';
+
+  @override
   String get viewProject => 'View Project';
 
   @override
   String get viewAllProjects => 'View All Projects';
 
   @override
-  String get visitWebsite => 'Visit Website';
+  String get projectViewAction => 'View project';
 
   @override
-  String get viewSourceCode => 'View Source Code';
+  String get projectsEmptyTitle =>
+      'No projects published in this category yet.';
 
   @override
-  String get backToProjects => 'Back to Projects';
+  String get projectsEmptyDescription => 'New work will be added here soon.';
 
   @override
   String get projectOverview => 'Project Overview';
@@ -117,119 +196,16 @@ class AppLocalizationsEn extends AppLocalizations {
   String get inProgress => 'In Progress';
 
   @override
-  String get getInTouch => 'Get in Touch';
+  String get visitWebsite => 'Visit Website';
 
   @override
-  String get sendMessage => 'Send Message';
+  String get viewSourceCode => 'View Source Code';
 
   @override
-  String get email => 'Email';
-
-  @override
-  String get location => 'Location';
-
-  @override
-  String get followMe => 'Follow Me';
-
-  @override
-  String get loading => 'Loading portfolio...';
-
-  @override
-  String get somethingWentWrong => 'Something went wrong.';
-
-  @override
-  String get tryAgain => 'Try Again';
+  String get backToProjects => 'Back to Projects';
 
   @override
   String get projectNotFound => 'Project not found.';
-
-  @override
-  String get footerBuiltWith => 'Built with Flutter, crafted with';
-
-  @override
-  String get footerBy => 'by';
-
-  @override
-  String get allRightsReserved => 'All rights reserved.';
-
-  @override
-  String get changeLanguage => 'Change language';
-
-  @override
-  String get english => 'English';
-
-  @override
-  String get german => 'German';
-
-  @override
-  String get toolsBehindMyWork => 'Tools behind my work';
-
-  @override
-  String get languagesSpoken => 'Languages spoken';
-
-  @override
-  String get yearsExperience => 'Years of experience';
-
-  @override
-  String get projectsDelivered => 'Projects delivered';
-
-  @override
-  String get clientCollaborations => 'Client collaborations';
-
-  @override
-  String get projectsSectionLabel => 'Projects';
-
-  @override
-  String get projectsSectionHeadline =>
-      'Selected work built around real problems.';
-
-  @override
-  String get projectsSectionDescription =>
-      'Software applications, web solutions and creative work presented through the decisions and problems behind them.';
-
-  @override
-  String get projectFilterSoftware => 'Software Development';
-
-  @override
-  String get projectFilterWeb => 'Web Development';
-
-  @override
-  String get projectFilterCreative => 'Creative Design';
-
-  @override
-  String get projectCategorySoftware => 'Software';
-
-  @override
-  String get projectCategoryWeb => 'Web';
-
-  @override
-  String get projectCategoryCreative => 'Creative';
-
-  @override
-  String get projectStatusCompleted => 'Completed';
-
-  @override
-  String get projectStatusInProgress => 'In progress';
-
-  @override
-  String get projectViewAction => 'View project';
-
-  @override
-  String get projectsEmptyTitle =>
-      'No projects published in this category yet.';
-
-  @override
-  String get projectsEmptyDescription => 'New work will be added here soon.';
-
-  @override
-  String get pageNotFoundTitle => 'Page not found';
-
-  @override
-  String get pageNotFoundDescription =>
-      'The page you are looking for does not exist or may have been moved.';
-
-  @override
-  String get backToHome => 'Back to home';
 
   @override
   String get experienceSectionLabel => 'Experience';
@@ -272,6 +248,21 @@ class AppLocalizationsEn extends AppLocalizations {
   String get contactPanelLabel => 'Let\'s talk';
 
   @override
+  String get email => 'Email';
+
+  @override
+  String get location => 'Location';
+
+  @override
+  String get getInTouch => 'Get in Touch';
+
+  @override
+  String get sendMessage => 'Send Message';
+
+  @override
+  String get followMe => 'Follow Me';
+
+  @override
   String get contactEmailLabel => 'Email';
 
   @override
@@ -302,6 +293,15 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get contactActionFailed =>
       'The action could not be completed. Please try again.';
+
+  @override
+  String get footerBuiltWith => 'Built with Flutter, crafted with';
+
+  @override
+  String get footerBy => 'by';
+
+  @override
+  String get allRightsReserved => 'All rights reserved.';
 
   @override
   String get impressum => 'Imprint';

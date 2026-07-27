@@ -4,6 +4,7 @@ import '../../../../../l10n/localization_helper.dart';
 import '../../../../app_widget/theme/app_theme.dart';
 
 enum ProjectCategoryFilter {
+  all('all'),
   softwareDevelopment('softwareDevelopment'),
   webDevelopment('webDevelopment'),
   creativeDesign('creativeDesign');
@@ -41,6 +42,9 @@ class ProjectFilterTabs extends StatelessWidget {
 
   String _labelFor(BuildContext context, ProjectCategoryFilter category) {
     switch (category) {
+      case ProjectCategoryFilter.all:
+        return context.l10n.projectFilterAll;
+
       case ProjectCategoryFilter.softwareDevelopment:
         return context.l10n.projectFilterSoftware;
 

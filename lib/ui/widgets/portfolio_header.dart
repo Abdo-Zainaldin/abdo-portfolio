@@ -10,10 +10,17 @@ import 'language_switcher.dart';
 import 'responsive_container.dart';
 
 class PortfolioHeader extends StatelessWidget {
-  const PortfolioHeader({this.onSectionSelected, super.key});
+  const PortfolioHeader({
+    required this.isScrolled,
+    required this.onSectionSelected,
+    super.key,
+  });
 
-  // The homepage can provide the scrolling functionality later.
-  final ValueChanged<PortfolioSection>? onSectionSelected;
+  /// Fixed visual height excluding the device/browser safe-area inset.
+  static const double height = 80;
+
+  final bool isScrolled;
+  final ValueChanged<PortfolioSection> onSectionSelected;
 
   @override
   Widget build(BuildContext context) {
@@ -22,39 +29,50 @@ class PortfolioHeader extends StatelessWidget {
         return previous.activeSection != current.activeSection;
       },
       builder: (context, state) {
-        return Container(
+        return AnimatedContainer(
+          duration: const Duration(milliseconds: 240),
+          curve: Curves.easeOutCubic,
           width: double.infinity,
-          decoration: const BoxDecoration(
-            color: AppTheme.background,
-            border: Border(bottom: BorderSide(color: AppTheme.borderSubtle)),
+          decoration: BoxDecoration(
+            color: isScrolled ? AppTheme.surface1 : AppTheme.background,
+            border: Border(
+              bottom: BorderSide(
+                color: isScrolled
+                    ? AppTheme.primary.withAlpha(35)
+                    : AppTheme.borderSubtle,
+              ),
+            ),
+            boxShadow: isScrolled
+                ? const [
+                    BoxShadow(
+                      color: Color(0x30000000),
+                      blurRadius: 24,
+                      offset: Offset(0, 10),
+                    ),
+                  ]
+                : const [],
           ),
           child: SafeArea(
             bottom: false,
-            child: ResponsiveContainer(
-              verticalPadding: 16,
-              child: context.isDesktop
-                  ? _DesktopHeader(
-                      activeSection: state.activeSection,
-                      onSectionSelected: (section) {
-                        _selectSection(context, section);
-                      },
-                    )
-                  : _MobileHeader(
-                      activeSection: state.activeSection,
-                      onSectionSelected: (section) {
-                        _selectSection(context, section);
-                      },
-                    ),
+            child: SizedBox(
+              height: height,
+              child: ResponsiveContainer(
+                verticalPadding: 16,
+                child: context.isDesktop
+                    ? _DesktopHeader(
+                        activeSection: state.activeSection,
+                        onSectionSelected: onSectionSelected,
+                      )
+                    : _MobileHeader(
+                        activeSection: state.activeSection,
+                        onSectionSelected: onSectionSelected,
+                      ),
+              ),
             ),
           ),
         );
       },
     );
-  }
-
-  void _selectSection(BuildContext context, PortfolioSection section) {
-    context.read<NavigationCubit>().setActiveSection(section);
-    onSectionSelected?.call(section);
   }
 }
 
@@ -72,6 +90,7 @@ class _DesktopHeader extends StatelessWidget {
     return Row(
       children: [
         const _PortfolioLogo(),
+
         const Spacer(),
 
         for (final section in PortfolioSection.values)
@@ -86,6 +105,7 @@ class _DesktopHeader extends StatelessWidget {
         const Spacer(),
 
         const LanguageSwitcher(),
+
         const SizedBox(width: 12),
 
         AppButton(
@@ -114,9 +134,11 @@ class _MobileHeader extends StatelessWidget {
     return Row(
       children: [
         const _PortfolioLogo(),
+
         const Spacer(),
 
         const LanguageSwitcher(),
+
         const SizedBox(width: 8),
 
         PopupMenuButton<PortfolioSection>(
@@ -186,20 +208,34 @@ class _NavigationItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final baseTextStyle =
+        Theme.of(context).textTheme.labelLarge ?? const TextStyle();
+
     return TextButton(
       onPressed: onPressed,
       style: TextButton.styleFrom(
-        foregroundColor: isActive ? AppTheme.primary : AppTheme.textSecondary,
+        foregroundColor: AppTheme.textSecondary,
         padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
       ),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Text(label),
+          AnimatedDefaultTextStyle(
+            duration: const Duration(milliseconds: 200),
+            curve: Curves.easeOutCubic,
+            style: baseTextStyle.copyWith(
+              color: isActive ? AppTheme.primary : AppTheme.textSecondary,
+              fontWeight: isActive ? FontWeight.w700 : FontWeight.w600,
+            ),
+            child: Text(label),
+          ),
+
           const SizedBox(height: 5),
+
           AnimatedContainer(
             duration: const Duration(milliseconds: 200),
-            width: isActive ? 18 : 0,
+            curve: Curves.easeOutCubic,
+            width: isActive ? 20 : 0,
             height: 2,
             decoration: BoxDecoration(
               color: AppTheme.primary,

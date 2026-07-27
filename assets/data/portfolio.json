@@ -21,8 +21,8 @@
             }
         },
         "cv": {
-            "en": "assets/documents/cv_en.pdf",
-            "de": "assets/documents/cv_de.pdf"
+            "en": "",
+            "de": ""
         },
         "languages": [
             "Kurdish",
@@ -316,7 +316,7 @@
             "year": 2025,
             "featured": false,
             "isVisible": true,
-            "sortOrder": 0,
+            "sortOrder": 100,
             "title": {
                 "en": "SH Clean Website",
                 "de": "SH Clean Website"
@@ -491,7 +491,7 @@
             "year": 2026,
             "featured": true,
             "isVisible": true,
-            "sortOrder": 0,
+            "sortOrder": 101,
             "title": {
                 "en": "Prime Trockenbau",
                 "de": "Prime Trockenbau"
@@ -689,7 +689,7 @@
             "year": 2026,
             "featured": true,
             "isVisible": true,
-            "sortOrder": 1,
+            "sortOrder": 0,
             "title": {
                 "en": "Orbit Task Manager",
                 "de": "Orbit Aufgabenmanager"

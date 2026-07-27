@@ -24,6 +24,34 @@ class AppLocalizationsDe extends AppLocalizations {
   String get navContact => 'Kontakt';
 
   @override
+  String get changeLanguage => 'Sprache ändern';
+
+  @override
+  String get english => 'Englisch';
+
+  @override
+  String get german => 'Deutsch';
+
+  @override
+  String get loading => 'Portfolio wird geladen...';
+
+  @override
+  String get somethingWentWrong => 'Etwas ist schiefgelaufen.';
+
+  @override
+  String get tryAgain => 'Erneut versuchen';
+
+  @override
+  String get pageNotFoundTitle => 'Seite nicht gefunden';
+
+  @override
+  String get pageNotFoundDescription =>
+      'Die gesuchte Seite existiert nicht oder wurde möglicherweise verschoben.';
+
+  @override
+  String get backToHome => 'Zurück zur Startseite';
+
+  @override
   String get letsTalk => 'Kontakt aufnehmen';
 
   @override
@@ -36,7 +64,42 @@ class AppLocalizationsDe extends AppLocalizations {
   String get scrollToExplore => 'Weiter scrollen';
 
   @override
-  String get allProjects => 'Alle';
+  String get toolsBehindMyWork => 'Tools hinter meiner Arbeit';
+
+  @override
+  String get languagesSpoken => 'Gesprochene Sprachen';
+
+  @override
+  String get yearsExperience => 'Jahre Erfahrung';
+
+  @override
+  String get projectsDelivered => 'Realisierte Projekte';
+
+  @override
+  String get clientCollaborations => 'Kundenkooperationen';
+
+  @override
+  String get projectsSectionLabel => 'Projekte';
+
+  @override
+  String get projectsSectionHeadline =>
+      'Ausgewählte Arbeiten rund um reale Probleme.';
+
+  @override
+  String get projectsSectionDescription =>
+      'Softwareanwendungen, Weblösungen und kreative Arbeiten, dargestellt anhand der Entscheidungen und Probleme dahinter.';
+
+  @override
+  String get projectFilterAll => 'Alle';
+
+  @override
+  String get projectFilterSoftware => 'Softwareentwicklung';
+
+  @override
+  String get projectFilterWeb => 'Webentwicklung';
+
+  @override
+  String get projectFilterCreative => 'Design und Branding';
 
   @override
   String get softwareDevelopment => 'Softwareentwicklung';
@@ -45,7 +108,22 @@ class AppLocalizationsDe extends AppLocalizations {
   String get webDevelopment => 'Webentwicklung';
 
   @override
-  String get creativeDesign => 'Kreativdesign';
+  String get creativeDesign => 'Design und Branding';
+
+  @override
+  String get projectCategorySoftware => 'Software';
+
+  @override
+  String get projectCategoryWeb => 'Web';
+
+  @override
+  String get projectCategoryCreative => 'Kreativ';
+
+  @override
+  String get projectStatusCompleted => 'Abgeschlossen';
+
+  @override
+  String get projectStatusInProgress => 'In Arbeit';
 
   @override
   String get viewProject => 'Projekt ansehen';
@@ -54,13 +132,15 @@ class AppLocalizationsDe extends AppLocalizations {
   String get viewAllProjects => 'Alle Projekte ansehen';
 
   @override
-  String get visitWebsite => 'Website besuchen';
+  String get projectViewAction => 'Projekt ansehen';
 
   @override
-  String get viewSourceCode => 'Quellcode ansehen';
+  String get projectsEmptyTitle =>
+      'In dieser Kategorie sind noch keine Projekte veröffentlicht.';
 
   @override
-  String get backToProjects => 'Zurück zu den Projekten';
+  String get projectsEmptyDescription =>
+      'Neue Arbeiten werden hier bald ergänzt.';
 
   @override
   String get projectOverview => 'Projektübersicht';
@@ -108,7 +188,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get status => 'Status';
 
   @override
-  String get current => 'Heute';
+  String get current => 'Aktuell';
 
   @override
   String get completed => 'Abgeschlossen';
@@ -117,120 +197,16 @@ class AppLocalizationsDe extends AppLocalizations {
   String get inProgress => 'In Arbeit';
 
   @override
-  String get getInTouch => 'Kontakt aufnehmen';
+  String get visitWebsite => 'Website besuchen';
 
   @override
-  String get sendMessage => 'Nachricht senden';
+  String get viewSourceCode => 'Quellcode ansehen';
 
   @override
-  String get email => 'E-Mail';
-
-  @override
-  String get location => 'Standort';
-
-  @override
-  String get followMe => 'Folgen';
-
-  @override
-  String get loading => 'Portfolio wird geladen...';
-
-  @override
-  String get somethingWentWrong => 'Etwas ist schiefgelaufen.';
-
-  @override
-  String get tryAgain => 'Erneut versuchen';
+  String get backToProjects => 'Zurück zu den Projekten';
 
   @override
   String get projectNotFound => 'Projekt wurde nicht gefunden.';
-
-  @override
-  String get footerBuiltWith => 'Mit Flutter entwickelt, mit';
-
-  @override
-  String get footerBy => 'gestaltet von';
-
-  @override
-  String get allRightsReserved => 'Alle Rechte vorbehalten.';
-
-  @override
-  String get changeLanguage => 'Sprache ändern';
-
-  @override
-  String get english => 'Englisch';
-
-  @override
-  String get german => 'Deutsch';
-
-  @override
-  String get toolsBehindMyWork => 'Tools hinter meiner Arbeit';
-
-  @override
-  String get languagesSpoken => 'Gesprochene Sprachen';
-
-  @override
-  String get yearsExperience => 'Jahre Erfahrung';
-
-  @override
-  String get projectsDelivered => 'Realisierte Projekte';
-
-  @override
-  String get clientCollaborations => 'Kundenkooperationen';
-
-  @override
-  String get projectsSectionLabel => 'Projekte';
-
-  @override
-  String get projectsSectionHeadline =>
-      'Ausgewählte Arbeiten rund um reale Probleme.';
-
-  @override
-  String get projectsSectionDescription =>
-      'Softwareanwendungen, Weblösungen und kreative Arbeiten, dargestellt anhand der Entscheidungen und Probleme dahinter.';
-
-  @override
-  String get projectFilterSoftware => 'Softwareentwicklung';
-
-  @override
-  String get projectFilterWeb => 'Webentwicklung';
-
-  @override
-  String get projectFilterCreative => 'Design und Branding';
-
-  @override
-  String get projectCategorySoftware => 'Software';
-
-  @override
-  String get projectCategoryWeb => 'Web';
-
-  @override
-  String get projectCategoryCreative => 'Kreativ';
-
-  @override
-  String get projectStatusCompleted => 'Abgeschlossen';
-
-  @override
-  String get projectStatusInProgress => 'In Arbeit';
-
-  @override
-  String get projectViewAction => 'Projekt ansehen';
-
-  @override
-  String get projectsEmptyTitle =>
-      'In dieser Kategorie sind noch keine Projekte veröffentlicht.';
-
-  @override
-  String get projectsEmptyDescription =>
-      'Neue Arbeiten werden hier bald ergänzt.';
-
-  @override
-  String get pageNotFoundTitle => 'Seite nicht gefunden';
-
-  @override
-  String get pageNotFoundDescription =>
-      'Die gesuchte Seite existiert nicht oder wurde möglicherweise verschoben.';
-
-  @override
-  String get backToHome => 'Zurück zur Startseite';
 
   @override
   String get experienceSectionLabel => 'Erfahrung';
@@ -273,6 +249,21 @@ class AppLocalizationsDe extends AppLocalizations {
   String get contactPanelLabel => 'Kontakt aufnehmen';
 
   @override
+  String get email => 'E-Mail';
+
+  @override
+  String get location => 'Standort';
+
+  @override
+  String get getInTouch => 'Kontakt aufnehmen';
+
+  @override
+  String get sendMessage => 'Nachricht senden';
+
+  @override
+  String get followMe => 'Folgen';
+
+  @override
   String get contactEmailLabel => 'E-Mail';
 
   @override
@@ -303,6 +294,15 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get contactActionFailed =>
       'Die Aktion konnte nicht ausgeführt werden. Bitte versuchen Sie es erneut.';
+
+  @override
+  String get footerBuiltWith => 'Mit Flutter entwickelt, mit';
+
+  @override
+  String get footerBy => 'gestaltet von';
+
+  @override
+  String get allRightsReserved => 'Alle Rechte vorbehalten.';
 
   @override
   String get impressum => 'Impressum';
