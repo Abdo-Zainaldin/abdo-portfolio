@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_svg/svg.dart';
 
 import '../../application/navigation/navigation_cubit.dart';
 import '../../l10n/localization_helper.dart';
@@ -179,19 +180,7 @@ class _PortfolioLogo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return RichText(
-      text: TextSpan(
-        children: [
-          TextSpan(text: 'AZ', style: Theme.of(context).textTheme.titleLarge),
-          TextSpan(
-            text: '.',
-            style: Theme.of(
-              context,
-            ).textTheme.titleLarge?.copyWith(color: AppTheme.primary),
-          ),
-        ],
-      ),
-    );
+    return SvgPicture.asset('assets/images/logos/logo.svg', height: 36);
   }
 }
 

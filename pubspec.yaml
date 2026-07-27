@@ -79,10 +79,14 @@ flutter:
   assets:
     - assets/data/portfolio.json
     - assets/images/Profile/
+    - assets/images/logos/
     - assets/images/logos/technologies/
     - assets/images/experience/
+    - assets/images/projects/lavielo/
     - assets/images/projects/sh_clean/
     - assets/images/projects/primetrockenbau/
+    - assets/images/projects/alfaclean_gebaeudeservice/
+    - assets/images/projects/rm_finanzservice/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

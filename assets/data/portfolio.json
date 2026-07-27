@@ -306,6 +306,252 @@
     ],
     "projects": [
         {
+            "id": "lavielo",
+            "slug": "lavielo",
+            "isSample": false,
+            "categories": [
+                "softwareDevelopment",
+                "webDevelopment"
+            ],
+            "status": "inProgress",
+            "year": 2026,
+            "featured": true,
+            "isVisible": true,
+            "sortOrder": 1,
+            "title": {
+                "en": "LaVielo",
+                "de": "LaVielo"
+            },
+            "role": {
+                "en": "Software Developer & Product Creator",
+                "de": "Softwareentwickler & Produktentwickler"
+            },
+            "shortDescription": {
+                "en": "A reusable Flutter Web platform that turns structured restaurant data into branded, multilingual QR menus for real restaurants.",
+                "de": "Eine wiederverwendbare Flutter-Web-Plattform, die strukturierte Restaurantdaten in individuelle, mehrsprachige QR-Speisekarten verwandelt."
+            },
+            "fullDescription": {
+                "en": "LaVielo was created after repeated restaurant clients needed flexible digital menus and existing solutions did not fit the workflow I wanted to offer. One Flutter codebase powers independent restaurant experiences using structured data for branding, menus, languages and service configuration. The current version focuses on QR-accessible digital catalogs, while ordering and table reservations are planned extensions. LaVielo is currently optimized for mobile devices and is best experienced on a smartphone.",
+                "de": "LaVielo entstand aus wiederkehrenden Anfragen von Restaurants nach flexiblen digitalen Speisekarten, für die bestehende Lösungen nicht zu meinem gewünschten Arbeitsablauf passten. Eine gemeinsame Flutter-Codebasis erzeugt eigenständige Restaurant-Erlebnisse aus strukturierten Daten für Branding, Speisekarten, Sprachen und Servicekonfigurationen. Aktuell liegt der Fokus auf digitalen QR-Katalogen, Bestellungen und Tischreservierungen sind als Erweiterungen geplant. LaVielo ist derzeit für Mobilgeräte optimiert und bietet das beste Nutzungserlebnis auf dem Smartphone."
+            },
+            "problem": {
+                "en": "Restaurant clients repeatedly needed modern QR menus, but creating a separate website or application for every business duplicated development and maintenance work. Existing menu services also lacked the combination of branding control, multilingual content, flexibility and onboarding workflow I wanted to provide.",
+                "de": "Restaurantkunden benötigten wiederholt moderne QR-Speisekarten, doch eine eigene Website oder Anwendung für jeden Betrieb führte zu wiederholtem Entwicklungs- und Wartungsaufwand. Bestehende Lösungen boten zudem nicht die gewünschte Kombination aus Branding, Mehrsprachigkeit, Flexibilität und einem passenden Onboarding-Prozess."
+            },
+            "solution": {
+                "en": "I designed LaVielo as one reusable, data-driven Flutter platform. Restaurant-specific branding, menus, languages, images and service options are loaded from structured data instead of being hardcoded. New restaurants can therefore be onboarded mainly through content, configuration and visual preparation, including an AI-assisted workflow for producing consistent menu imagery when professional photography is unavailable.",
+                "de": "Ich entwickelte LaVielo als eine wiederverwendbare, datengetriebene Flutter-Plattform. Restaurant-spezifisches Branding, Speisekarten, Sprachen, Bilder und Serviceoptionen werden aus strukturierten Daten geladen statt fest programmiert. Neue Restaurants können dadurch hauptsächlich über Inhalte, Konfiguration und visuelle Aufbereitung integriert werden, einschließlich eines KI-gestützten Workflows für konsistente Menübilder, wenn keine professionelle Food-Fotografie vorhanden ist."
+            },
+            "responsibilities": [
+                {
+                    "en": "Designed the product and software architecture to turn repeated restaurant requests into one reusable multi-restaurant platform.",
+                    "de": "Konzipierte Produkt und Softwarearchitektur, um wiederkehrende Restaurant-Anforderungen in einer wiederverwendbaren Multi-Restaurant-Plattform zu lösen."
+                },
+                {
+                    "en": "Built the layered Flutter architecture using Cubit, Freezed, repository abstractions and dedicated data sources.",
+                    "de": "Entwickelte die geschichtete Flutter-Architektur mit Cubit, Freezed, Repository-Abstraktionen und getrennten Datenquellen."
+                },
+                {
+                    "en": "Modeled restaurant and menu data and separated shared business values from language-specific content.",
+                    "de": "Modellierte Restaurant- und Menüdaten und trennte gemeinsame Geschäftsdaten von sprachabhängigen Inhalten."
+                },
+                {
+                    "en": "Implemented restaurant, language and service-mode deep linking for direct QR-based access.",
+                    "de": "Implementierte Deep Links für Restaurant, Sprache und Servicemodus für direkten Zugriff über QR-Codes."
+                },
+                {
+                    "en": "Created reusable responsive UI components that adapt to each restaurant's content, branding and configuration.",
+                    "de": "Erstellte wiederverwendbare responsive UI-Komponenten, die sich an Inhalte, Branding und Konfiguration jedes Restaurants anpassen."
+                },
+                {
+                    "en": "Designed the restaurant onboarding workflow from structured menu preparation to visual content, configuration and deployment.",
+                    "de": "Entwickelte den Restaurant-Onboarding-Prozess von der strukturierten Menüaufbereitung über visuelle Inhalte und Konfiguration bis zum Deployment."
+                }
+            ],
+            "features": [
+                {
+                    "en": "Multiple independent restaurant experiences powered by one shared Flutter codebase.",
+                    "de": "Mehrere unabhängige Restaurant-Erlebnisse auf Basis einer gemeinsamen Flutter-Codebasis."
+                },
+                {
+                    "en": "Data-driven restaurant branding, menus, images and configuration.",
+                    "de": "Datengetriebenes Restaurant-Branding sowie dynamische Menüs, Bilder und Konfigurationen."
+                },
+                {
+                    "en": "Multilingual application UI and restaurant-specific menu content.",
+                    "de": "Mehrsprachige Benutzeroberfläche und Restaurant-spezifische Menüinhalte."
+                },
+                {
+                    "en": "Restaurant-specific QR deep links with language and service-mode routing.",
+                    "de": "Restaurant-spezifische QR-Deep-Links mit Sprach- und Servicemodus-Routing."
+                },
+                {
+                    "en": "Structured categories, products, sizes, prices, add-ons, allergens and additives.",
+                    "de": "Strukturierte Kategorien, Produkte, Größen, Preise, Extras, Allergene und Zusatzstoffe."
+                },
+                {
+                    "en": "Configurable dine-in, pickup and delivery availability for each restaurant.",
+                    "de": "Konfigurierbare Vor-Ort-, Abhol- und Lieferoptionen für jedes Restaurant."
+                },
+                {
+                    "en": "Dynamic restaurant information including opening hours, contacts, galleries, offers and legal information.",
+                    "de": "Dynamische Restaurantinformationen wie Öffnungszeiten, Kontakte, Galerien, Angebote und rechtliche Angaben."
+                },
+                {
+                    "en": "Structured onboarding with AI-assisted bulk visual production for consistent restaurant menu imagery.",
+                    "de": "Strukturiertes Onboarding mit KI-gestützter Erstellung konsistenter Menübilder in größerem Umfang."
+                }
+            ],
+            "challenges": [
+                {
+                    "title": {
+                        "en": "Scaling One Codebase Across Restaurants",
+                        "de": "Eine Codebasis für unterschiedliche Restaurants"
+                    },
+                    "description": {
+                        "en": "Restaurants differ in branding, languages, menus, services and content. I modeled these differences as structured configuration so new restaurants could reuse the same application instead of introducing restaurant-specific UI branches.",
+                        "de": "Restaurants unterscheiden sich bei Branding, Sprachen, Speisekarten, Services und Inhalten. Ich modellierte diese Unterschiede als strukturierte Konfiguration, damit neue Restaurants dieselbe Anwendung nutzen können, ohne Restaurant-spezifische UI-Logik einzuführen."
+                    }
+                },
+                {
+                    "title": {
+                        "en": "Designing Scalable Multilingual Data",
+                        "de": "Skalierbare mehrsprachige Datenstruktur"
+                    },
+                    "description": {
+                        "en": "Duplicating complete restaurant datasets for every language created consistency risks. I separated stable values such as IDs, prices and asset paths from localized text and connected both layers through shared identifiers.",
+                        "de": "Vollständige Restaurantdaten für jede Sprache zu duplizieren erzeugte Konsistenzrisiken. Deshalb trennte ich stabile Werte wie IDs, Preise und Asset-Pfade von übersetzten Texten und verband beide Ebenen über gemeinsame Kennungen."
+                    }
+                },
+                {
+                    "title": {
+                        "en": "Keeping Routes and Application State Synchronized",
+                        "de": "Synchronisation von Routing und Anwendungszustand"
+                    },
+                    "description": {
+                        "en": "Restaurant, language and service mode can all originate from deep links. Coordinating routing, asynchronous restaurant loading, locale state and Cubit state required careful ownership of route-derived values and debugging of widget lifecycle behavior.",
+                        "de": "Restaurant, Sprache und Servicemodus können direkt aus Deep Links stammen. Die Abstimmung von Routing, asynchronem Laden, Locale und Cubit-Zuständen erforderte eine klare Zuständigkeit für URL-basierte Werte und gezieltes Debugging des Flutter-Widget-Lebenszyklus."
+                    }
+                }
+            ],
+            "results": [
+                {
+                    "value": "3",
+                    "label": {
+                        "en": "Real restaurant implementations",
+                        "de": "Reale Restaurant-Implementierungen"
+                    },
+                    "description": {
+                        "en": "LaVielo currently powers dedicated experiences created for 1001 Nacht Restaurant & Cafe, Mokka Neuwied and Kleiner Genuss.",
+                        "de": "Mit LaVielo wurden eigene digitale Restaurant-Erlebnisse für 1001 Nacht Restaurant & Cafe, Mokka Neuwied und Kleiner Genuss umgesetzt."
+                    }
+                }
+            ],
+            "lessonsLearned": [
+                {
+                    "en": "Reusable software scales best when differences between clients are represented as data and configuration instead of conditional UI logic.",
+                    "de": "Wiederverwendbare Software skaliert besser, wenn Unterschiede zwischen Kunden durch Daten und Konfiguration statt durch bedingte UI-Logik abgebildet werden."
+                },
+                {
+                    "en": "Multilingual applications become easier to maintain when translated presentation text is separated from prices, IDs and other language-independent business data.",
+                    "de": "Mehrsprachige Anwendungen werden wartbarer, wenn übersetzte Inhalte von Preisen, IDs und anderen sprachunabhängigen Geschäftsdaten getrennt werden."
+                },
+                {
+                    "en": "Deep links are part of application state, so route-derived values should have clear ownership instead of being independently duplicated across multiple state holders.",
+                    "de": "Deep Links sind Teil des Anwendungszustands, deshalb sollten URL-basierte Werte eine klare Zuständigkeit besitzen und nicht unabhängig in mehreren Zuständen dupliziert werden."
+                }
+            ],
+            "technologies": [
+                "Flutter",
+                "Dart",
+                "Flutter Web",
+                "Cubit",
+                "Freezed",
+                "go_router",
+                "JSON",
+                "Flutter l10n"
+            ],
+            "platforms": [
+                "Web"
+            ],
+            "tags": [
+                "Software Architecture",
+                "Data-Driven",
+                "Multi-Restaurant",
+                "Localization",
+                "Deep Linking",
+                "Responsive Design"
+            ],
+            "coverImage": {
+                "path": "assets/images/projects/lavielo/cover.webp",
+                "alt": {
+                    "en": "LaVielo restaurant platform shown on desktop and mobile devices",
+                    "de": "LaVielo Restaurant-Plattform auf Desktop- und Mobilgeräten"
+                }
+            },
+            "gallery": [
+                {
+                    "type": "image",
+                    "path": "assets/images/projects/lavielo/1001nacht.webp",
+                    "alt": {
+                        "en": "1001 Nacht Restaurant & Cafe digital menu powered by LaVielo",
+                        "de": "Digitale Speisekarte von 1001 Nacht Restaurant & Cafe mit LaVielo"
+                    },
+                    "caption": {
+                        "en": "1001 Nacht Restaurant & Cafe, a real restaurant implementation using the shared LaVielo platform.",
+                        "de": "1001 Nacht Restaurant & Cafe, eine reale Restaurant-Implementierung auf der gemeinsamen LaVielo-Plattform."
+                    },
+                    "sortOrder": 1
+                },
+                {
+                    "type": "image",
+                    "path": "assets/images/projects/lavielo/mokka-neuwied.webp",
+                    "alt": {
+                        "en": "Mokka Neuwied digital menu powered by LaVielo",
+                        "de": "Digitale Speisekarte von Mokka Neuwied mit LaVielo"
+                    },
+                    "caption": {
+                        "en": "Mokka Neuwied demonstrates how the same platform adapts to a different restaurant identity and menu.",
+                        "de": "Mokka Neuwied zeigt, wie sich dieselbe Plattform an eine andere Restaurantidentität und Speisekarte anpasst."
+                    },
+                    "sortOrder": 2
+                },
+                {
+                    "type": "image",
+                    "path": "assets/images/projects/lavielo/kleiner-genuss.webp",
+                    "alt": {
+                        "en": "Kleiner Genuss digital menu powered by LaVielo",
+                        "de": "Digitale Speisekarte von Kleiner Genuss mit LaVielo"
+                    },
+                    "caption": {
+                        "en": "Kleiner Genuss provides another real example of restaurant-specific content and branding running on the shared system.",
+                        "de": "Kleiner Genuss ist ein weiteres reales Beispiel für individuelle Inhalte und Branding innerhalb des gemeinsamen Systems."
+                    },
+                    "sortOrder": 3
+                },
+                {
+                    "type": "image",
+                    "path": "assets/images/projects/lavielo/multilingual.webp",
+                    "alt": {
+                        "en": "LaVielo restaurant menu displayed in German and Arabic",
+                        "de": "LaVielo Restaurant-Speisekarte auf Deutsch und Arabisch"
+                    },
+                    "caption": {
+                        "en": "The same restaurant experience presented in German and Arabic through the multilingual data architecture.",
+                        "de": "Dasselbe Restaurant-Erlebnis auf Deutsch und Arabisch durch die mehrsprachige Datenarchitektur."
+                    },
+                    "sortOrder": 4
+                }
+            ],
+            "links": [
+                {
+                    "type": "live",
+                    "url": "https://menu.lavielo.de/",
+                    "isVisible": true
+                }
+            ]
+        },
+        {
             "id": "sh-clean-website",
             "slug": "sh-clean-website",
             "isSample": false,
@@ -679,168 +925,403 @@
             ]
         },
         {
-            "id": "sample-orbit-task-app",
-            "slug": "sample-orbit-task-app",
-            "isSample": true,
+            "id": "alfaclean-gebaeudeservice",
+            "slug": "alfaclean-gebaeudeservice",
+            "isSample": false,
             "categories": [
-                "softwareDevelopment"
+                "webDevelopment",
+                "creativeDesign"
             ],
             "status": "completed",
             "year": 2026,
             "featured": true,
             "isVisible": true,
-            "sortOrder": 0,
+            "sortOrder": 102,
             "title": {
-                "en": "Orbit Task Manager",
-                "de": "Orbit Aufgabenmanager"
+                "en": "AlfaClean Gebäudeservice",
+                "de": "AlfaClean Gebäudeservice"
             },
             "role": {
-                "en": "Sample Software Developer",
-                "de": "Beispiel Softwareentwickler"
+                "en": "Web Designer & Graphic Designer",
+                "de": "Webdesigner & Grafikdesigner"
             },
             "client": {
-                "en": "Fictional sample project",
-                "de": "Fiktives Beispielprojekt"
+                "en": "AlfaClean Gebäudeservice",
+                "de": "AlfaClean Gebäudeservice"
             },
             "shortDescription": {
-                "en": "A fictional cross-platform productivity application used to test project cards and detail layouts.",
-                "de": "Eine fiktive plattformübergreifende Produktivitätsanwendung zum Testen von Projektkarten und Detailansichten."
+                "en": "Website and complete visual identity for a facility-service company, covering web, branding, email and print materials.",
+                "de": "Website und vollständiger Markenauftritt für einen Gebäudeservice mit Web, Branding, E-Mail und Printmedien."
             },
             "fullDescription": {
-                "en": "Orbit is sample content created only for interface development. It demonstrates how a completed software project appears across cards, filters and the project detail page.",
-                "de": "Orbit ist ein Beispielinhalt, der ausschließlich für die Entwicklung der Benutzeroberfläche erstellt wurde. Er zeigt, wie ein abgeschlossenes Softwareprojekt in Karten, Filtern und auf der Projektdetailseite dargestellt wird."
+                "en": "AlfaClean Gebäudeservice is a complete digital and visual identity project for a facility-service company in Koblenz. I created the website, brand system, logo, domain and professional email setup, and extended the identity to an A5 flyer and business card.",
+                "de": "AlfaClean Gebäudeservice ist ein umfassendes Digital- und Branding-Projekt für einen Gebäudeservice in Koblenz. Ich erstellte Website, Designsystem, Logo, Domain und professionelle E-Mail sowie einen A5-Flyer und eine Visitenkarte."
             },
             "problem": {
-                "en": "The portfolio needed realistic structured data for testing a complete software project presentation.",
-                "de": "Das Portfolio benötigte realistisch strukturierte Daten, um die vollständige Darstellung eines Softwareprojekts zu testen."
+                "en": "The business needed a consistent professional identity for a wide range of cleaning and facility services. Its website, domain, business communication and printed materials all needed to present the same clear and trustworthy company image.",
+                "de": "Das Unternehmen benötigte einen einheitlichen professionellen Auftritt für zahlreiche Reinigungs- und Gebäudeservices. Website, Domain, Geschäftskommunikation und Printmedien sollten dieselbe klare und vertrauenswürdige Marke vermitteln."
             },
             "solution": {
-                "en": "A fictional task-management case study with localized content, features, challenges, results, media and links.",
-                "de": "Eine fiktive Fallstudie für Aufgabenverwaltung mit lokalisierten Inhalten, Funktionen, Herausforderungen, Ergebnissen, Medien und Links."
+                "en": "I developed a unified blue and green design system and applied it across the website and printed materials. I structured the service catalog for clear navigation, configured the domain and business email, and created consistent customer touchpoints across digital and print channels.",
+                "de": "Ich entwickelte ein einheitliches blau-grünes Designsystem und übertrug es auf Website und Printmedien. Das Leistungsangebot wurde klar strukturiert, Domain und Geschäfts-E-Mail eingerichtet und digitale sowie gedruckte Kontaktpunkte einheitlich gestaltet."
             },
             "responsibilities": [
                 {
-                    "en": "Structured the sample application architecture.",
-                    "de": "Strukturierung der Beispiel-Anwendungsarchitektur."
+                    "en": "Created the website structure, visual design and customer journey.",
+                    "de": "Erstellung von Website-Struktur, visuellem Design und Nutzerführung."
                 },
                 {
-                    "en": "Created responsive mobile and web interface concepts.",
-                    "de": "Erstellung responsiver Oberflächenkonzepte für Mobilgeräte und Web."
+                    "en": "Developed the logo, typography, colors and overall brand system.",
+                    "de": "Entwicklung von Logo, Typografie, Farben und vollständigem Designsystem."
                 },
                 {
-                    "en": "Prepared sample project data for UI testing.",
-                    "de": "Vorbereitung von Beispielprojektdaten für UI-Tests."
+                    "en": "Organized the broad service catalog into clear customer-facing content.",
+                    "de": "Strukturierung des umfangreichen Leistungsangebots für eine klare Kundendarstellung."
+                },
+                {
+                    "en": "Purchased and configured the domain and professional business email.",
+                    "de": "Beschaffung und Einrichtung der Domain sowie professioneller Geschäfts-E-Mail."
+                },
+                {
+                    "en": "Designed the A5 flyer and business card using the same brand identity.",
+                    "de": "Gestaltung von A5-Flyer und Visitenkarte im einheitlichen Markenauftritt."
                 }
             ],
             "features": [
                 {
-                    "en": "Responsive dashboard",
-                    "de": "Responsives Dashboard"
+                    "en": "One-page business website",
+                    "de": "Einseitige Geschäftswebsite"
                 },
                 {
-                    "en": "Task organization",
-                    "de": "Aufgabenorganisation"
+                    "en": "Structured facility-service catalog",
+                    "de": "Strukturierter Gebäudeservice-Katalog"
                 },
                 {
-                    "en": "Localized interface content",
-                    "de": "Lokalisierte Oberflächeninhalte"
+                    "en": "Quote and contact-focused customer flow",
+                    "de": "Anfrage- und kontaktorientierte Nutzerführung"
+                },
+                {
+                    "en": "Professional domain email",
+                    "de": "Professionelle Domain-E-Mail"
+                },
+                {
+                    "en": "Unified digital and print identity",
+                    "de": "Einheitlicher Digital- und Printauftritt"
+                },
+                {
+                    "en": "SEO-oriented local business content",
+                    "de": "SEO-orientierte lokale Unternehmensinhalte"
                 }
             ],
             "challenges": [
                 {
                     "title": {
-                        "en": "Responsive hierarchy",
-                        "de": "Responsive Hierarchie"
+                        "en": "Changing business identity",
+                        "de": "Änderung der Geschäftsidentität"
                     },
                     "description": {
-                        "en": "Testing how dense project information adapts across mobile and desktop layouts.",
-                        "de": "Testen, wie umfangreiche Projektinformationen an mobile und Desktop-Layouts angepasst werden."
+                        "en": "The company name and domain changed during the project, affecting branding, website content, email and print materials. I paused dependent work and continued once the final identity was established.",
+                        "de": "Firmenname und Domain änderten sich während des Projekts und beeinflussten Branding, Website, E-Mail und Printmedien. Abhängige Arbeiten wurden pausiert und nach Festlegung der finalen Identität fortgeführt."
+                    }
+                },
+                {
+                    "title": {
+                        "en": "Structuring diverse services",
+                        "de": "Strukturierung vielfältiger Leistungen"
+                    },
+                    "description": {
+                        "en": "The company offers cleaning, property care, outdoor maintenance and additional services. I grouped related offerings and created a clear hierarchy that kept the website understandable despite the broad scope.",
+                        "de": "Das Unternehmen bietet Reinigung, Objektbetreuung, Außenpflege und weitere Leistungen. Ich gruppierte verwandte Services und entwickelte eine klare Hierarchie für eine verständliche Website."
+                    }
+                },
+                {
+                    "title": {
+                        "en": "Consistent cross-channel identity",
+                        "de": "Einheitlicher Markenauftritt"
+                    },
+                    "description": {
+                        "en": "The brand needed to work consistently across the website, email communication, flyer and business card. I built one visual system using shared colors, typography and graphic principles across every touchpoint.",
+                        "de": "Die Marke musste auf Website, E-Mail, Flyer und Visitenkarte einheitlich funktionieren. Dafür entwickelte ich ein gemeinsames System aus Farben, Typografie und grafischen Gestaltungsprinzipien."
                     }
                 }
             ],
             "results": [
                 {
-                    "value": "100%",
+                    "value": "Web",
                     "label": {
-                        "en": "Sample coverage",
-                        "de": "Beispielabdeckung"
+                        "en": "Business website",
+                        "de": "Geschäftswebsite"
                     },
                     "description": {
-                        "en": "Fictional value used only to test the project result component.",
-                        "de": "Fiktiver Wert, der ausschließlich zum Testen der Ergebnis-Komponente verwendet wird."
+                        "en": "A complete customer-facing website was created around the company's services and visual identity.",
+                        "de": "Eine vollständige kundenorientierte Website wurde auf Basis der Leistungen und Markenidentität erstellt."
+                    }
+                },
+                {
+                    "value": "Brand",
+                    "label": {
+                        "en": "Complete visual identity",
+                        "de": "Vollständiger Markenauftritt"
+                    },
+                    "description": {
+                        "en": "Logo, colors, typography and visual principles were developed for consistent use across the business.",
+                        "de": "Logo, Farben, Typografie und Gestaltungsprinzipien wurden für einen einheitlichen Unternehmensauftritt entwickelt."
+                    }
+                },
+                {
+                    "value": "Email",
+                    "label": {
+                        "en": "Professional communication",
+                        "de": "Professionelle Kommunikation"
+                    },
+                    "description": {
+                        "en": "The business domain and professional info email were established as part of the digital setup.",
+                        "de": "Domain und professionelle Info-E-Mail wurden als Teil des digitalen Unternehmensauftritts eingerichtet."
                     }
                 }
             ],
             "lessonsLearned": [
                 {
-                    "en": "Clearly marked sample data makes interface testing safer without presenting fictional work as real experience.",
-                    "de": "Klar gekennzeichnete Beispieldaten ermöglichen sichere UI-Tests, ohne fiktive Arbeit als echte Erfahrung darzustellen."
+                    "en": "Business identity and domain decisions should be stabilized early because they affect web, email, branding and printed materials simultaneously.",
+                    "de": "Geschäftsidentität und Domain sollten früh feststehen, da sie Website, E-Mail, Branding und Printmedien gleichzeitig beeinflussen."
+                },
+                {
+                    "en": "Large service catalogs need deliberate grouping and hierarchy to remain understandable without hiding the breadth of the business.",
+                    "de": "Umfangreiche Leistungsangebote benötigen klare Gruppierung und Hierarchie, damit sie verständlich bleiben und trotzdem die Breite des Unternehmens zeigen."
+                },
+                {
+                    "en": "A reusable design system makes it easier to maintain the same identity across digital communication and physical marketing materials.",
+                    "de": "Ein wiederverwendbares Designsystem erleichtert einen einheitlichen Auftritt über digitale Kommunikation und gedruckte Werbemittel hinweg."
                 }
             ],
             "technologies": [
-                "Flutter",
-                "Dart",
-                "Firebase",
-                "Cubit"
+                "Hostinger Builder",
+                "Hostinger Email"
             ],
             "platforms": [
-                "Android",
-                "iOS",
                 "Web"
             ],
             "tags": [
-                "Sample",
-                "Productivity",
-                "Responsive",
-                "State Management"
+                "Brand Identity",
+                "Responsive Design",
+                "Information Architecture",
+                "Business Email",
+                "Print Design"
             ],
-            "thumbnailImage": {
-                "path": "assets/images/projects/sample_orbit/thumbnail.webp",
-                "alt": {
-                    "en": "Sample Orbit task manager preview",
-                    "de": "Vorschau des Orbit Beispiel-Aufgabenmanagers"
-                }
-            },
             "coverImage": {
-                "path": "assets/images/projects/sample_orbit/cover.webp",
+                "path": "assets/images/projects/alfaclean_gebaeudeservice/cover.webp",
                 "alt": {
-                    "en": "Sample Orbit task manager interface",
-                    "de": "Oberfläche des Orbit Beispiel-Aufgabenmanagers"
+                    "en": "AlfaClean website and visual identity presentation",
+                    "de": "Website- und Markenpräsentation von AlfaClean Gebäudeservice"
                 }
             },
-            "gallery": [
-                {
-                    "type": "image",
-                    "path": "assets/images/projects/sample_orbit/dashboard.webp",
-                    "alt": {
-                        "en": "Sample dashboard screen",
-                        "de": "Beispiel-Dashboard"
-                    },
-                    "caption": {
-                        "en": "Fictional responsive dashboard used for layout testing",
-                        "de": "Fiktives responsives Dashboard für Layout-Tests"
-                    },
-                    "sortOrder": 1
-                },
-                {
-                    "type": "image",
-                    "path": "assets/images/projects/sample_orbit/mobile.webp",
-                    "alt": {
-                        "en": "Sample mobile task screen",
-                        "de": "Beispiel einer mobilen Aufgabenansicht"
-                    },
-                    "caption": {
-                        "en": "Fictional mobile interface used for gallery testing",
-                        "de": "Fiktive mobile Oberfläche für Galerie-Tests"
-                    },
-                    "sortOrder": 2
-                }
-            ],
+            "gallery": [],
             "links": [
                 {
-                    "type": "github",
-                    "url": "https://example.com/sample-orbit",
-                    "isVisible": false
+                    "type": "live",
+                    "url": "https://www.alfaclean-gebaeudeservice.de/",
+                    "isVisible": true
+                }
+            ]
+        },
+        {
+            "id": "rm-finanzservice",
+            "slug": "rm-finanzservice",
+            "isSample": false,
+            "categories": [
+                "webDevelopment"
+            ],
+            "status": "completed",
+            "year": 2026,
+            "featured": true,
+            "isVisible": true,
+            "sortOrder": 103,
+            "title": {
+                "en": "RM Finanzservice Website",
+                "de": "RM Finanzservice Website"
+            },
+            "role": {
+                "en": "Web Developer & Web Designer",
+                "de": "Webentwickler & Webdesigner"
+            },
+            "client": {
+                "en": "RM Finanzservice",
+                "de": "RM Finanzservice"
+            },
+            "shortDescription": {
+                "en": "Professional business website for RM Finanzservice with appointment booking and a dedicated affiliate recommendations area.",
+                "de": "Professionelle Website für RM Finanzservice mit Terminbuchung und separatem Bereich für Partnerempfehlungen."
+            },
+            "fullDescription": {
+                "en": "RM Finanzservice is a responsive business website for bookkeeping and commercial organization services. I designed and developed the website, structured the company's services and customer journey, integrated appointment booking, and created a dedicated recommendations page for external affiliate offers.",
+                "de": "RM Finanzservice ist eine responsive Geschäftswebsite für Buchhaltung und kaufmännische Organisation. Ich gestaltete und entwickelte die Website, strukturierte Leistungen und Nutzerführung, integrierte Terminbuchung und erstellte eine separate Empfehlungsseite für Partnerangebote."
+            },
+            "problem": {
+                "en": "The client needed a professional website that clearly explained the company's services and supported customer contact and appointments. External insurance and financial affiliate offers also needed to be integrated without confusing them with RM Finanzservice's own services.",
+                "de": "Der Kunde benötigte eine professionelle Website mit klarer Leistungsdarstellung, Kontaktmöglichkeiten und Terminbuchung. Externe Versicherungs- und Finanzangebote sollten integriert werden, ohne sie mit den eigenen Leistungen von RM Finanzservice zu vermischen."
+            },
+            "solution": {
+                "en": "I created a structured business website with clear service, contact and booking flows. Affiliate products were separated into a dedicated recommendations page and presented through responsive website-native cards instead of inconsistent advertising banners.",
+                "de": "Ich entwickelte eine klar strukturierte Geschäftswebsite mit Leistungs-, Kontakt- und Terminbereichen. Partnerangebote wurden auf einer eigenen Empfehlungsseite in responsiven, zum Webdesign passenden Karten statt uneinheitlicher Werbebanner dargestellt."
+            },
+            "responsibilities": [
+                {
+                    "en": "Designed and developed the website structure and responsive user interface.",
+                    "de": "Gestaltung und Entwicklung der Website-Struktur und responsiven Benutzeroberfläche."
+                },
+                {
+                    "en": "Organized business information and services into a clear customer journey.",
+                    "de": "Strukturierung von Unternehmensinformationen und Leistungen für eine klare Nutzerführung."
+                },
+                {
+                    "en": "Integrated Calendly into the website's appointment booking workflow.",
+                    "de": "Integration von Calendly in den Terminbuchungsablauf der Website."
+                },
+                {
+                    "en": "Analyzed and reorganized client-provided affiliate links and partner offers.",
+                    "de": "Analyse und Neuorganisation der bereitgestellten Affiliate-Links und Partnerangebote."
+                },
+                {
+                    "en": "Developed a responsive recommendations page with custom affiliate cards.",
+                    "de": "Entwicklung einer responsiven Empfehlungsseite mit individuellen Affiliate-Karten."
+                }
+            ],
+            "features": [
+                {
+                    "en": "Responsive business website",
+                    "de": "Responsive Geschäftswebsite"
+                },
+                {
+                    "en": "Service and company presentation",
+                    "de": "Leistungs- und Unternehmensdarstellung"
+                },
+                {
+                    "en": "Calendly appointment booking",
+                    "de": "Terminbuchung mit Calendly"
+                },
+                {
+                    "en": "Dedicated affiliate recommendations page",
+                    "de": "Separate Seite für Partnerempfehlungen"
+                },
+                {
+                    "en": "Responsive affiliate product cards",
+                    "de": "Responsive Karten für Partnerangebote"
+                },
+                {
+                    "en": "Clear separation of services and partner offers",
+                    "de": "Klare Trennung von Leistungen und Partnerangeboten"
+                }
+            ],
+            "challenges": [
+                {
+                    "title": {
+                        "en": "Integrating affiliate content",
+                        "de": "Integration von Partnerangeboten"
+                    },
+                    "description": {
+                        "en": "The client supplied affiliate banners with very different dimensions that did not fit the website design. I retained the tracking links and rebuilt their presentation as consistent responsive cards.",
+                        "de": "Die bereitgestellten Affiliate-Banner hatten sehr unterschiedliche Formate und passten nicht zum Webdesign. Ich behielt die Tracking-Links und gestaltete die Darstellung als einheitliche responsive Karten neu."
+                    }
+                },
+                {
+                    "title": {
+                        "en": "Separating external offers",
+                        "de": "Trennung externer Angebote"
+                    },
+                    "description": {
+                        "en": "Insurance and financial partner products differed from the client's own services. I created a separate recommendations page so visitors could clearly distinguish company services from external offers.",
+                        "de": "Versicherungs- und Finanzprodukte von Partnern unterschieden sich von den eigenen Leistungen. Eine separate Empfehlungsseite sorgt für eine klare Trennung."
+                    }
+                },
+                {
+                    "title": {
+                        "en": "Processing client-provided code",
+                        "de": "Aufbereitung bereitgestellter Links"
+                    },
+                    "description": {
+                        "en": "The supplied affiliate material contained raw links, different creatives and a duplicate entry. I analyzed the parameters, removed duplication and organized the offers before integrating them.",
+                        "de": "Das bereitgestellte Affiliate-Material enthielt verschiedene Links, Werbemittel und einen doppelten Eintrag. Ich analysierte die Parameter, entfernte Duplikate und strukturierte die Angebote vor der Integration."
+                    }
+                }
+            ],
+            "results": [
+                {
+                    "value": "1",
+                    "label": {
+                        "en": "Dedicated partner page",
+                        "de": "Separate Partnerseite"
+                    },
+                    "description": {
+                        "en": "External insurance and financial offers were moved into a dedicated recommendations area separate from the core business services.",
+                        "de": "Externe Versicherungs- und Finanzangebote wurden in einem eigenen Empfehlungsbereich getrennt von den Kerndienstleistungen dargestellt."
+                    }
+                },
+                {
+                    "value": "Calendly",
+                    "label": {
+                        "en": "Online appointments",
+                        "de": "Online-Termine"
+                    },
+                    "description": {
+                        "en": "Appointment scheduling was integrated into the website using an external booking workflow.",
+                        "de": "Die Terminvereinbarung wurde über einen externen Buchungsablauf in die Website integriert."
+                    }
+                },
+                {
+                    "value": "Responsive",
+                    "label": {
+                        "en": "Affiliate presentation",
+                        "de": "Partnerdarstellung"
+                    },
+                    "description": {
+                        "en": "Fixed advertising banners were replaced by a responsive card layout designed to match the website.",
+                        "de": "Starre Werbebanner wurden durch ein responsives Kartenlayout ersetzt, das zum Design der Website passt."
+                    }
+                }
+            ],
+            "lessonsLearned": [
+                {
+                    "en": "Client-provided third-party integrations should be analyzed before implementation instead of being inserted directly into the website.",
+                    "de": "Vom Kunden bereitgestellte Drittanbieter-Inhalte sollten vor der Integration geprüft und nicht ungefiltert in die Website übernommen werden."
+                },
+                {
+                    "en": "External partner products should remain visually and structurally separate from a company's own services to preserve clear positioning.",
+                    "de": "Externe Partnerprodukte sollten visuell und strukturell von eigenen Leistungen getrennt bleiben, um die Positionierung des Unternehmens klar zu halten."
+                },
+                {
+                    "en": "Third-party functionality should be adapted to the website's user experience instead of allowing external assets to determine the interface.",
+                    "de": "Drittanbieter-Funktionen sollten an die Nutzererfahrung der Website angepasst werden, statt die Oberfläche durch externe Werbemittel bestimmen zu lassen."
+                }
+            ],
+            "technologies": [
+                "HTML",
+                "CSS",
+                "Calendly",
+                "Affiliate Links"
+            ],
+            "platforms": [
+                "Web"
+            ],
+            "tags": [
+                "Responsive Design",
+                "Affiliate Integration",
+                "Booking Workflow",
+                "Information Architecture",
+                "Business Website"
+            ],
+            "coverImage": {
+                "path": "assets/images/projects/rm_finanzservice/cover.webp",
+                "alt": {
+                    "en": "RM Finanzservice responsive business website presentation",
+                    "de": "Responsive Geschäftswebsite von RM Finanzservice"
+                }
+            },
+            "gallery": [],
+            "links": [
+                {
+                    "type": "live",
+                    "url": "https://rm-finanzservice.de/",
+                    "isVisible": true
                 }
             ]
         }
